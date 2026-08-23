@@ -1,0 +1,9 @@
+# fantasticEnglish — runtime + docs dependencies
+# Python 3.14 / Django 6.1. Pins verified at install; bump a patch if a 3.14 wheel is missing.
+
+Django==6.1
+djangorestframework==3.18.0
+
+# Docs site (build-time tooling)
+mkdocs==1.6.1
+mkdocs-material==9.7.7

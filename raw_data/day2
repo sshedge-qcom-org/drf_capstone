@@ -1,0 +1,254 @@
+Day: Day 2
+Mode: Lite
+Focus theme: Giving clear, diplomatic feedback in code/Gerrit reviews
+Dialogue topic: Code reviews
+Difficulty: Standard C1
+Review items reused: none provided
+Avoiding recent repeats from our chat: move the needle, trade off, draw the line, narrow down, back up, push back, paint ourselves into a corner, put a stake in the ground, not set in stone, factor in, spell out, roll back
+
+Day 2 — Lite Lesson
+Focus: Code Review English for Senior Engineers
+1 — Professional Idioms
+1. Raise a red flag
+Meaning: Point out a serious concern or possible risk.
+IPA: /reɪz ə red flæɡ/
+Formality: Neutral
+
+Common learner mistake:
+❌ “I have one doubt on this implementation.”
+✅ “I want to raise a red flag about this implementation.”
+
+Engineering example:
+“This shared mutable state raises a red flag because it can behave unpredictably under concurrency.”
+
+Meeting example:
+“I don’t want to block the change unnecessarily, but I do want to raise a red flag on the retry behavior.”
+
+Presentation example:
+“One issue that raised a red flag during testing was the spike in memory usage under sustained load.”
+
+2. Get to the bottom of something
+Meaning: Find the real cause of a problem, not just the symptom.
+IPA: /ɡet tə ðə ˈbɑːtəm əv ˈsʌmθɪŋ/
+Formality: Neutral
+
+Common learner mistake:
+❌ “We need to find the root exactly.”
+✅ “We need to get to the bottom of why this regression happens.”
+
+Engineering example:
+“Before we change the scheduler logic, let’s get to the bottom of why the timeout only appears on large payloads.”
+
+Meeting example:
+“We shouldn’t guess here. Let’s get to the bottom of the failure pattern using logs and traces.”
+
+Presentation example:
+“The team got to the bottom of the issue by correlating deployment timing with request latency.”
+
+3. A moving target
+Meaning: Something that keeps changing, making planning or implementation difficult.
+IPA: /ə ˈmuːvɪŋ ˈtɑːrɡɪt/
+Formality: Neutral
+
+Common learner mistake:
+❌ “The requirement is changing again and again.”
+✅ “The requirement is becoming a moving target.”
+
+Engineering example:
+“The API contract has become a moving target, so it’s risky to build the client integration this sprint.”
+
+Meeting example:
+“If the acceptance criteria remain a moving target, we’ll keep reworking the same patch.”
+
+Presentation example:
+“To reduce churn, we stabilized the interface first because the requirements had become a moving target.”
+
+2 — Phrasal Verbs
+1. Call out
+Meaning: Explicitly mention something important, often a concern, assumption, or risk.
+IPA: /kɔːl aʊt/
+
+Common mistake:
+❌ “I want to highlight out one issue.”
+✅ “I want to call out one issue.”
+
+Technical-discussion example:
+“I want to call out that this design assumes the cache is always warm.”
+
+Code-review example:
+“Can you call out this ownership assumption in the commit message?”
+
+Leadership example:
+“We should call out the dependency on the platform team before committing to the date.”
+
+2. Clean up
+Meaning: Improve clarity, remove unnecessary code, or make something easier to maintain.
+IPA: /kliːn ʌp/
+
+Common mistake:
+❌ “Please make the code cleanly.”
+✅ “Please clean up this error-handling path.”
+
+Technical-discussion example:
+“We should clean up the boundary between validation and business logic.”
+
+Code-review example:
+“Could you clean up the duplicated null checks before landing this?”
+
+Leadership example:
+“We need time next sprint to clean up the migration scripts before handing this over.”
+
+3. Follow through
+Meaning: Complete something properly after starting or promising it.
+IPA: /ˈfɑːloʊ θruː/
+
+Common mistake:
+❌ “Please do the remaining follow-up completely.”
+✅ “Please follow through on the remaining review comments.”
+
+Technical-discussion example:
+“If we agree to add metrics, we need to follow through with dashboards and alerts.”
+
+Code-review example:
+“Thanks for addressing the main issue. Please follow through on the test coverage comment as well.”
+
+Leadership example:
+“We need owners who can follow through across design, implementation, rollout, and support.”
+
+3 — C1/C2 Vocabulary
+1. Rationale
+Meaning: The reasoning behind a decision.
+IPA: /ˌræʃəˈnæl/
+Synonyms: reasoning, justification, basis
+Antonyms: guess, impulse, assumption
+Common collocations: design rationale, technical rationale, clear rationale, document the rationale
+
+Common learner mistake:
+❌ “Please mention the logic why you did this.”
+✅ “Please document the rationale for this approach.”
+
+Software-engineering example:
+“The implementation is fine, but the rationale for choosing polling over events should be documented.”
+
+Stakeholder example:
+“The rationale is that this approach reduces operational risk without delaying the release.”
+
+2. Regression
+Meaning: A new bug or broken behavior introduced by a change.
+IPA: /rɪˈɡreʃən/
+Synonyms: breakage, reintroduced bug, unintended failure
+Antonyms: fix, improvement, stabilization
+Common collocations: performance regression, functional regression, regression test, regression risk
+
+Common learner mistake:
+❌ “This change created one issue again.”
+✅ “This change introduced a regression.”
+
+Software-engineering example:
+“The patch fixes the crash but introduces a regression in the reconnect flow.”
+
+Stakeholder example:
+“We delayed the rollout because we found a regression in a high-traffic path.”
+
+3. Maintainable
+Meaning: Easy to understand, change, debug, and extend over time.
+IPA: /meɪnˈteɪnəbəl/
+Synonyms: sustainable, readable, supportable, extensible
+Antonyms: brittle, messy, hard-coded, fragile
+Common collocations: maintainable code, maintainable design, maintainable architecture, more maintainable approach
+
+Common learner mistake:
+❌ “This code is not looking good for future.”
+✅ “This code may not be maintainable long term.”
+
+Software-engineering example:
+“This version is shorter, but the explicit version is more maintainable for future owners.”
+
+Stakeholder example:
+“We’re taking an extra day to make the solution maintainable, not just functional.”
+
+4. Edge case
+Meaning: A rare or unusual scenario that can still break the system.
+IPA: /edʒ keɪs/
+Synonyms: corner case, rare scenario, boundary condition
+Antonyms: common case, typical path, happy path
+Common collocations: handle an edge case, miss an edge case, edge-case behavior, edge-case coverage
+
+Common learner mistake:
+❌ “This is a corner scenario which can come sometimes.”
+✅ “This is an edge case we still need to handle.”
+
+Software-engineering example:
+“The parser works for normal input, but it misses an edge case where the payload is empty.”
+
+Stakeholder example:
+“The issue affects only an edge case, but it’s still important because it can block enterprise customers.”
+
+4 — Natural English Upgrade
+Common Indian corporate English	Natural international English	Why it’s better
+“I have one doubt in this code.”	“I have a question about this code.” / “I have a concern here.”	“Doubt” often sounds like mistrust in US/UK workplace English.
+“Please do the needful.”	“Could you take care of this?” / “Could you handle this?”	More natural, direct, and modern.
+“Kindly check and confirm.”	“Could you review this and confirm?”	Less stiff; clearer action.
+“This logic is not proper.”	“This logic looks fragile.” / “This may not handle all cases.”	More precise and less vague.
+“Please revert on this comment.”	“Please respond to this comment.”	“Revert” does not mean “reply” in standard workplace English.
+“I will update the same.”	“I’ll update it.” / “I’ll update the patch.”	“The same” sounds old-fashioned and unnatural.
+“Can you explain me this?”	“Can you explain this to me?”	Correct verb pattern: explain something to someone.
+“This issue is coming intermittently.”	“This issue happens intermittently.” / “We’re seeing this intermittently.”	More natural technical phrasing.
+“I am having a blocker.”	“I’m blocked on this.” / “This is blocking me.”	More idiomatic for engineering status updates.
+“The code is working fine.”	“The code works for the main path, but we should verify edge cases.”	More senior-sounding and less overconfident.
+6 — Speaking Practice
+Instruction: Answer these ALOUD. Keep each answer to 30–45 seconds. Force the listed expressions into your answer naturally.
+
+Meeting questions
+A teammate proposes merging a risky patch late in the release cycle. What do you say?
+Force: raise a red flag, regression
+
+The team keeps changing the API requirements during implementation. How do you respond?
+Force: a moving target, rationale
+
+A bug appears only under rare timing conditions. How would you guide the debugging discussion?
+Force: get to the bottom of, edge case
+
+Presentation questions
+Present why your team chose a slightly more verbose implementation.
+Force: maintainable, rationale
+
+Explain why you paused a rollout after testing.
+Force: regression, call out
+
+Explain how the team improved code quality before release.
+Force: clean up, follow through
+
+Leadership-discussion questions
+Your manager asks why the review is taking longer than expected. What do you say?
+Force: edge case, maintainable
+
+A stakeholder wants a quick workaround. How do you respond professionally?
+Force: raise a red flag, follow through
+
+You need another team to clarify an unstable interface. What do you say?
+Force: a moving target, call out
+
+9 — Output Correction
+No MY_ANSWERS were provided today.
+
+For next session, write or speak 2 sentences using at least 4 of today’s expressions. Example topics:
+
+A Gerrit review where you disagree with the implementation.
+A design discussion where requirements keep changing.
+Use any of these: raise a red flag, get to the bottom of, a moving target, call out, clean up, follow through, rationale, regression, maintainable, edge case.
+
+I’ll correct them at C2 level next time.
+
+Tracker
+Date	Day	Expression	Type	5-word meaning	Status (new/review)
+2026-08-20	Day 2	raise a red flag	Idiom	Point out serious potential risk	new
+2026-08-20	Day 2	get to the bottom of something	Idiom	Find the real underlying cause	new
+2026-08-20	Day 2	a moving target	Idiom	Something keeps changing over time	new
+2026-08-20	Day 2	call out	Phrasal verb	Explicitly mention important concern	new
+2026-08-20	Day 2	clean up	Phrasal verb	Improve clarity and remove mess	new
+2026-08-20	Day 2	follow through	Phrasal verb	Complete promised actions properly	new
+2026-08-20	Day 2	rationale	Vocabulary	Reasoning behind a decision	new
+2026-08-20	Day 2	regression	Vocabulary	New bug from a change	new
+2026-08-20	Day 2	maintainable	Vocabulary	Easy to change over time	new
+2026-08-20	Day 2	edge case	Vocabulary	Rare scenario needing handling	new

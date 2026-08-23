@@ -1,0 +1,270 @@
+Day: Day 1
+Mode: Lite
+Focus theme: Sounding natural and confident in system design discussions
+Dialogue topic: System design
+Difficulty: Standard C1
+Review items: None provided
+My answers: Empty
+
+Day 1 — Lite Lesson
+Focus: System Design English for Senior Engineers
+1 — Professional Idioms
+1. Paint ourselves into a corner
+Meaning: Create a situation where future options become limited.
+IPA: /peɪnt aʊərˈsɛlvz ˈɪntu ə ˈkɔːrnər/
+Formality: Neutral
+
+Common learner mistake:
+❌ “This design may block us in future.”
+✅ “This design may paint us into a corner later.”
+
+Engineering example:
+“If we hard-code the tenant model now, we may paint ourselves into a corner when enterprise customers ask for custom isolation.”
+
+Meeting example:
+“I’m fine with the short-term fix, but let’s make sure we don’t paint ourselves into a corner architecturally.”
+
+Presentation example:
+“We avoided a single-region assumption because it would have painted us into a corner for global rollout.”
+
+2. Put a stake in the ground
+Meaning: Make an initial clear decision or proposal so discussion can move forward.
+IPA: /pʊt ə steɪk ɪn ðə ɡraʊnd/
+Formality: Neutral
+
+Common learner mistake:
+❌ “Let us freeze one proposal for discussion.”
+✅ “Let’s put a stake in the ground and iterate from there.”
+
+Engineering example:
+“To unblock the design review, I’ll put a stake in the ground: we should start with async replication and revisit sync guarantees later.”
+
+Meeting example:
+“We don’t need the perfect answer today. Let’s put a stake in the ground and validate it with data.”
+
+Presentation example:
+“Our initial architecture puts a stake in the ground around service ownership and failure isolation.”
+
+3. Not set in stone
+Meaning: Still changeable; not final.
+IPA: /nɑːt sɛt ɪn stoʊn/
+Formality: Neutral
+
+Common learner mistake:
+❌ “This is not freezed yet.”
+✅ “This is not set in stone yet.”
+
+Engineering example:
+“The API shape is not set in stone, but the ownership boundaries should be stable.”
+
+Meeting example:
+“The timeline is not set in stone, but we need a realistic estimate before committing externally.”
+
+Presentation example:
+“These numbers are not set in stone; they’re based on early load-test results.”
+
+2 — Phrasal Verbs
+1. Factor in
+Meaning: Include something as part of your thinking, estimate, or decision.
+IPA: /ˈfæktər ɪn/
+
+Common mistake:
+❌ “We should consider about migration cost.”
+✅ “We should factor in the migration cost.”
+
+Technical-discussion example:
+“We need to factor in retry storms when estimating peak load.”
+
+Code-review example:
+“This looks correct, but can we factor in the null-response case before merging?”
+
+Leadership example:
+“When we discuss the deadline, we should factor in testing, rollout, and support readiness.”
+
+2. Spell out
+Meaning: Explain clearly and explicitly.
+IPA: /spɛl aʊt/
+
+Common mistake:
+❌ “Please explain in more detailly.”
+✅ “Can you spell out the failure scenario?”
+
+Technical-discussion example:
+“Can you spell out what happens if the primary region becomes unavailable?”
+
+Code-review example:
+“Please spell out the assumption in a comment so future maintainers don’t misread this.”
+
+Leadership example:
+“We should spell out the risk clearly instead of saying the plan is ‘mostly fine.’”
+
+3. Roll back
+Meaning: Revert to an earlier version or previous state.
+IPA: /roʊl bæk/
+
+Common mistake:
+❌ “We will revert back the deployment.”
+✅ “We will roll back the deployment.”
+✅ “We will revert the change.”
+⚠️ Avoid “revert back” — “revert” already means “go back.”
+
+Technical-discussion example:
+“If the error rate crosses the threshold, we’ll roll back automatically.”
+
+Code-review example:
+“Can we make this easier to roll back if the new parser behaves differently in production?”
+
+Leadership example:
+“We have a controlled rollout plan and a clear path to roll back if customer impact appears.”
+
+3 — C1/C2 Vocabulary
+1. Constraint
+Meaning: A limitation or condition that shapes what you can do.
+IPA: /kənˈstreɪnt/
+
+Synonyms: limitation, restriction, boundary
+Antonyms: freedom, flexibility, openness
+Common collocations: technical constraint, design constraint, resource constraint, latency constraint
+
+Common learner mistake:
+❌ “We have one limitation that latency should be low.”
+✅ “We have a latency constraint.”
+
+Software-engineering example:
+“The main constraint is that the service must respond within 50 milliseconds under peak load.”
+
+Stakeholder example:
+“Given the timeline constraint, we can deliver the core workflow first and defer advanced reporting.”
+
+2. Robust
+Meaning: Strong, reliable, and able to handle failures or edge cases.
+IPA: /roʊˈbʌst/
+
+Synonyms: resilient, reliable, sturdy
+Antonyms: fragile, brittle, unreliable
+Common collocations: robust design, robust implementation, robust error handling, robust validation
+
+Common learner mistake:
+❌ “We need a strong error handling.”
+✅ “We need robust error handling.”
+
+Software-engineering example:
+“The parser needs to be robust against malformed input, not just valid test data.”
+
+Stakeholder example:
+“This approach gives us a more robust rollout because we can isolate failures by region.”
+
+3. Pragmatic
+Meaning: Practical and realistic rather than overly theoretical or idealistic.
+IPA: /præɡˈmætɪk/
+
+Synonyms: practical, realistic, sensible
+Antonyms: idealistic, theoretical, impractical
+Common collocations: pragmatic approach, pragmatic solution, pragmatic compromise, pragmatic decision
+
+Common learner mistake:
+❌ “We need a practical way only.”
+✅ “We need a pragmatic approach.”
+
+Software-engineering example:
+“A fully generic framework would be elegant, but a pragmatic implementation is better for this release.”
+
+Stakeholder example:
+“We’re taking a pragmatic approach: reduce the highest-risk failures first, then improve automation.”
+
+4. Defensible
+Meaning: Easy to justify with solid reasoning, data, or constraints.
+IPA: /dɪˈfɛnsəbəl/
+
+Synonyms: justifiable, reasonable, supportable
+Antonyms: weak, unjustified, arbitrary
+Common collocations: defensible decision, defensible estimate, defensible architecture, defensible position
+
+Common learner mistake:
+❌ “This decision can be defended by us.”
+✅ “This is a defensible decision.”
+
+Software-engineering example:
+“Choosing Postgres here is defensible because the access pattern is relational and the team already has operational experience.”
+
+Stakeholder example:
+“The revised timeline is defensible because it includes integration testing and staged rollout.”
+
+4 — Natural English Upgrade
+Common Indian corporate English	Natural international English	Why it's better
+“This is not freezed yet.”	“This is not set in stone yet.”	“Freezed” is incorrect; this sounds natural in meetings.
+“Please explain in detailly.”	“Can you spell out the details?”	“Detailly” is not natural English.
+“We need to consider about latency.”	“We need to factor in latency.”	“Consider about” is incorrect; “factor in” is concise.
+“We will revert back the deployment.”	“We’ll roll back the deployment.”	Avoids the redundant phrase “revert back.”
+“This design will block us in future.”	“This design may paint us into a corner later.”	More idiomatic and executive-level.
+“Let us freeze one proposal.”	“Let’s put a stake in the ground.”	Sounds collaborative, not rigid.
+“We need strong error handling.”	“We need robust error handling.”	More precise technical vocabulary.
+“Due to timeline limitation…”	“Given the timeline constraint…”	More natural and professional.
+“This is a practical solution.”	“This is a pragmatic solution.”	More senior-level wording.
+“This decision has justification.”	“This is a defensible decision.”	Cleaner, more natural phrasing.
+6 — Speaking Practice
+Answer these ALOUD. Don’t just read them silently. Your goal is to make the expressions feel automatic.
+
+Meeting questions
+Design review:
+“The team wants to hard-code a customer-specific rule to meet a deadline. What would you say?”
+Force these expressions: paint ourselves into a corner, pragmatic
+
+Architecture discussion:
+“You need the team to choose an initial design even though some details are still open. What would you say?”
+Force these expressions: put a stake in the ground, not set in stone
+
+Risk discussion:
+“A proposed solution looks simple, but it ignores failure recovery. What would you say?”
+Force these expressions: factor in, robust
+
+Presentation questions
+Management update:
+“Explain why your team chose a slightly slower but safer rollout plan.”
+Force these expressions: defensible, constraint
+
+Technical presentation:
+“Explain why your API proposal may change after performance testing.”
+Force these expressions: not set in stone, spell out
+
+Release readiness:
+“Describe your rollback strategy for a risky deployment.”
+Force these expressions: roll back, robust
+
+Leadership-discussion questions
+Pushback upward:
+“A stakeholder wants the fastest possible delivery, but the quality risk is high. What would you say?”
+Force these expressions: factor in, defensible
+
+Cross-team alignment:
+“Two teams disagree on ownership boundaries. How would you frame the discussion?”
+Force these expressions: put a stake in the ground, spell out
+
+Strategic design:
+“Your team is choosing between a quick fix and a scalable design. What would you say?”
+Force these expressions: paint ourselves into a corner, pragmatic
+
+9 — Output Correction
+No MY_ANSWERS were provided.
+
+For next session, write or speak 2 sentences using today’s expressions. Example prompts:
+
+Use paint ourselves into a corner and constraint in one sentence.
+Use factor in and defensible in one sentence.
+I’ll correct them for C2-level tone, naturalness, and leadership polish.
+
+Tomorrow’s preview
+Next topic: Code reviews — focus on giving firm but respectful feedback without sounding blunt or defensive.
+
+Tracker
+Date	Day	Expression	Type	5-word meaning	Status (new/review)
+2026-08-19	Day 1	paint ourselves into a corner	Idiom	limit our future options badly	new
+2026-08-19	Day 1	put a stake in the ground	Idiom	make initial clear proposal now	new
+2026-08-19	Day 1	not set in stone	Idiom	still changeable, not final yet	new
+2026-08-19	Day 1	factor in	Phrasal verb	include in decision or estimate	new
+2026-08-19	Day 1	spell out	Phrasal verb	explain clearly and explicitly	new
+2026-08-19	Day 1	roll back	Phrasal verb	revert to previous working state	new
+2026-08-19	Day 1	constraint	Vocabulary	limitation shaping possible choices	new
+2026-08-19	Day 1	robust	Vocabulary	reliable under difficult conditions	new
+2026-08-19	Day 1	pragmatic	Vocabulary	practical rather than overly idealistic	new
+2026-08-19	Day 1	defensible	Vocabulary	justifiable with solid reasoning	new
