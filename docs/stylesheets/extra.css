@@ -159,3 +159,38 @@
   font-size: 0.75rem;
   margin-top: 0.6em;
 }
+
+/* ── Kind / status badges under each expression heading ──────────────────── */
+.md-typeset p:has(> .fe-badges) {
+  margin: -0.3em 0 0.9em;
+}
+
+.md-typeset .fe-badges {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+}
+
+.md-typeset .fe-badge {
+  display: inline-block;
+  padding: 0.12em 0.66em;
+  border-radius: 999px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  line-height: 1.75;
+}
+
+.md-typeset .fe-badge--idiom       { background: rgba(91, 108, 255, 0.14); color: #4453d6; }
+.md-typeset .fe-badge--phrasal_verb { background: rgba(0, 150, 136, 0.15); color: #00796b; }
+.md-typeset .fe-badge--vocabulary  { background: rgba(245, 158, 11, 0.18); color: #b45309; }
+.md-typeset .fe-badge--new         { background: rgba(16, 185, 129, 0.16); color: #047857; }
+.md-typeset .fe-badge--review      { background: rgba(100, 116, 139, 0.16); color: #475569; }
+
+/* Dark scheme: keep the pills readable with lighter text. */
+[data-md-color-scheme="slate"] .md-typeset .fe-badge--idiom       { color: #a5b0ff; }
+[data-md-color-scheme="slate"] .md-typeset .fe-badge--phrasal_verb { color: #4db6ac; }
+[data-md-color-scheme="slate"] .md-typeset .fe-badge--vocabulary  { color: #fbbf24; }
+[data-md-color-scheme="slate"] .md-typeset .fe-badge--new         { color: #34d399; }
+[data-md-color-scheme="slate"] .md-typeset .fe-badge--review      { color: #94a3b8; }

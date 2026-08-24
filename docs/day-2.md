@@ -11,6 +11,8 @@
 
 ### 1. Raise a red flag
 
+<span class="fe-badges"><span class="fe-badge fe-badge--idiom">Idiom</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Point out a serious concern or possible risk.
 - **IPA:** `/reɪz ə red flæɡ/`
 - **Formality:** Neutral
@@ -29,6 +31,8 @@
 
 ### 2. Get to the bottom of something
 
+<span class="fe-badges"><span class="fe-badge fe-badge--idiom">Idiom</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Find the real cause of a problem, not just the symptom.
 - **IPA:** `/ɡet tə ðə ˈbɑːtəm əv ˈsʌmθɪŋ/`
 - **Formality:** Neutral
@@ -46,6 +50,8 @@
 - *Presentation:* The team got to the bottom of the issue by correlating deployment timing with request latency.
 
 ### 3. A moving target
+
+<span class="fe-badges"><span class="fe-badge fe-badge--idiom">Idiom</span><span class="fe-badge fe-badge--new">New</span></span>
 
 - **Meaning:** Something that keeps changing, making planning or implementation difficult.
 - **IPA:** `/ə ˈmuːvɪŋ ˈtɑːrɡɪt/`
@@ -67,6 +73,8 @@
 
 ### 1. Call out
 
+<span class="fe-badges"><span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Explicitly mention something important, often a concern, assumption, or risk.
 - **IPA:** `/kɔːl aʊt/`
 
@@ -84,6 +92,8 @@
 
 ### 2. Clean up
 
+<span class="fe-badges"><span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Improve clarity, remove unnecessary code, or make something easier to maintain.
 - **IPA:** `/kliːn ʌp/`
 
@@ -100,6 +110,8 @@
 - *Leadership:* We need time next sprint to clean up the migration scripts before handing this over.
 
 ### 3. Follow through
+
+<span class="fe-badges"><span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span><span class="fe-badge fe-badge--new">New</span></span>
 
 - **Meaning:** Complete something properly after starting or promising it.
 - **IPA:** `/ˈfɑːloʊ θruː/`
@@ -120,6 +132,8 @@
 
 ### 1. Rationale
 
+<span class="fe-badges"><span class="fe-badge fe-badge--vocabulary">Vocabulary</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** The reasoning behind a decision.
 - **IPA:** `/ˌræʃəˈnæl/`
 - **Synonyms:** reasoning, justification, basis
@@ -138,6 +152,8 @@
 - *Stakeholder:* The rationale is that this approach reduces operational risk without delaying the release.
 
 ### 2. Regression
+
+<span class="fe-badges"><span class="fe-badge fe-badge--vocabulary">Vocabulary</span><span class="fe-badge fe-badge--new">New</span></span>
 
 - **Meaning:** A new bug or broken behavior introduced by a change.
 - **IPA:** `/rɪˈɡreʃən/`
@@ -158,6 +174,8 @@
 
 ### 3. Maintainable
 
+<span class="fe-badges"><span class="fe-badge fe-badge--vocabulary">Vocabulary</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Easy to understand, change, debug, and extend over time.
 - **IPA:** `/meɪnˈteɪnəbəl/`
 - **Synonyms:** sustainable, readable, supportable, extensible
@@ -176,6 +194,8 @@
 - *Stakeholder:* We’re taking an extra day to make the solution maintainable, not just functional.
 
 ### 4. Edge case
+
+<span class="fe-badges"><span class="fe-badge fe-badge--vocabulary">Vocabulary</span><span class="fe-badge fe-badge--new">New</span></span>
 
 - **Meaning:** A rare or unusual scenario that can still break the system.
 - **IPA:** `/edʒ keɪs/`

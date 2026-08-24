@@ -1,8 +1,8 @@
 # Business English for Senior Engineers
 
-A daily Business-English lesson corpus — professional idioms, phrasal verbs, and C1/C2 vocabulary for system design, code reviews, production issues, sprint planning, and root cause analysis. Rendered from `raw_data/` via the shared parser, the same source that powers the REST API.
+A daily Business-English lesson corpus — professional idioms, phrasal verbs, and C1/C2 vocabulary for system design, code reviews, production issues, sprint planning, and more. Rendered from `raw_data/` via the shared parser, the same source that powers the REST API.
 
-**5 lessons · 50 expressions** — each day takes about 10 minutes.
+**A fresh lesson lands every day** — each one is about a 10-minute read, and the collection keeps growing. Pick up where you left off below.
 
 !!! tip "How to use this site"
     Read each expression **aloud**, lean on the ✅ corrections over the ❌ mistakes, and reuse the labelled example sentences as your own templates. Practice the Speaking Practice prompts without reading them.

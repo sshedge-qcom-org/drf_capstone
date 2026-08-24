@@ -11,6 +11,8 @@
 
 ### 1. Stop the bleeding
 
+<span class="fe-badges"><span class="fe-badge fe-badge--idiom">Idiom</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Take immediate action to limit damage before solving the deeper problem.
 - **IPA:** `/stɑːp ðə ˈbliːdɪŋ/`
 - **Formality:** Neutral; common in incident discussions
@@ -29,6 +31,8 @@
 
 ### 2. Under the hood
 
+<span class="fe-badges"><span class="fe-badge fe-badge--idiom">Idiom</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Refers to internal implementation details that are not visible to users.
 - **IPA:** `/ˈʌndər ðə hʊd/`
 - **Formality:** Neutral
@@ -46,6 +50,8 @@
 - *Presentation:* Under the hood, we replaced synchronous writes with buffered writes to reduce latency.
 
 ### 3. The blast radius
+
+<span class="fe-badges"><span class="fe-badge fe-badge--idiom">Idiom</span><span class="fe-badge fe-badge--new">New</span></span>
 
 - **Meaning:** The scope or scale of impact caused by a failure or change.
 - **IPA:** `/ðə blæst ˈreɪdiəs/`
@@ -67,6 +73,8 @@
 
 ### 1. Rule out
 
+<span class="fe-badges"><span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Eliminate a possible cause after checking evidence.
 - **IPA:** `/ruːl aʊt/`
 
@@ -83,6 +91,8 @@
 - *Leadership:* We’ve ruled out infrastructure capacity, so the remaining risk is application-level behavior.
 
 ### 2. Dig into
+
+<span class="fe-badges"><span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span><span class="fe-badge fe-badge--new">New</span></span>
 
 - **Meaning:** Investigate something in detail.
 - **IPA:** `/dɪɡ ˈɪntuː/`
@@ -105,6 +115,8 @@
 
 ### 3. Hold off on
 
+<span class="fe-badges"><span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Delay or pause an action until there is more clarity.
 - **IPA:** `/hoʊld ɔːf ɑːn/`
 
@@ -123,6 +135,8 @@
 ## C1/C2 Vocabulary
 
 ### 1. Intermittent
+
+<span class="fe-badges"><span class="fe-badge fe-badge--vocabulary">Vocabulary</span><span class="fe-badge fe-badge--new">New</span></span>
 
 - **Meaning:** Happening irregularly; not continuous or easily reproducible.
 - **IPA:** `/ˌɪntərˈmɪtənt/`
@@ -143,6 +157,8 @@
 
 ### 2. Mitigation
 
+<span class="fe-badges"><span class="fe-badge fe-badge--vocabulary">Vocabulary</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** A temporary or partial action that reduces impact or risk.
 - **IPA:** `/ˌmɪtɪˈɡeɪʃən/`
 - **Synonyms:** containment, risk reduction, workaround
@@ -162,6 +178,8 @@
 
 ### 3. Degradation
 
+<span class="fe-badges"><span class="fe-badge fe-badge--vocabulary">Vocabulary</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** A drop in system quality, performance, reliability, or user experience.
 - **IPA:** `/ˌdeɡrəˈdeɪʃən/`
 - **Synonyms:** decline, deterioration, slowdown
@@ -180,6 +198,8 @@
 - *Stakeholder:* Users may see some degradation during peak traffic, but the service remains available.
 
 ### 4. Resilient
+
+<span class="fe-badges"><span class="fe-badge fe-badge--vocabulary">Vocabulary</span><span class="fe-badge fe-badge--new">New</span></span>
 
 - **Meaning:** Able to keep working or recover quickly after failure.
 - **IPA:** `/rɪˈzɪliənt/`

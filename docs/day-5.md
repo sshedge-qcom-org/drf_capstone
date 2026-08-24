@@ -11,6 +11,8 @@
 
 ### 1. Connect the dots
 
+<span class="fe-badges"><span class="fe-badge fe-badge--idiom">Idiom</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Link separate pieces of evidence to understand the full picture.
 - **IPA:** `/kəˈnekt ðə dɑːts/`
 - **Formality:** Neutral
@@ -29,6 +31,8 @@
 
 ### 2. The smoking gun
 
+<span class="fe-badges"><span class="fe-badge fe-badge--idiom">Idiom</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** A clear piece of evidence that strongly points to the cause.
 - **IPA:** `/ðə ˈsmoʊkɪŋ ɡʌn/`
 - **Formality:** Neutral; slightly vivid, common in incident reviews
@@ -46,6 +50,8 @@
 - *Presentation:* The heap dump gave us the smoking gun: leaked references from the session cache.
 
 ### 3. Close the loop
+
+<span class="fe-badges"><span class="fe-badge fe-badge--idiom">Idiom</span><span class="fe-badge fe-badge--new">New</span></span>
 
 - **Meaning:** Finish a discussion or process by confirming the outcome, owner, or next step.
 - **IPA:** `/kloʊz ðə luːp/`
@@ -67,6 +73,8 @@
 
 ### 1. Zero in on
 
+<span class="fe-badges"><span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Focus closely on the most likely cause or area.
 - **IPA:** `/ˈzɪroʊ ɪn ɑːn/`
 
@@ -84,6 +92,8 @@
 
 ### 2. Trace back
 
+<span class="fe-badges"><span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Follow evidence backward to find where something started.
 - **IPA:** `/treɪs bæk/`
 
@@ -100,6 +110,8 @@
 - *Leadership:* We traced the issue back to a deployment configuration mismatch, not a capacity problem.
 
 ### 3. Tighten up
+
+<span class="fe-badges"><span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span><span class="fe-badge fe-badge--new">New</span></span>
 
 - **Meaning:** Make something more precise, reliable, or controlled.
 - **IPA:** `/ˈtaɪtən ʌp/`
@@ -120,6 +132,8 @@
 
 ### 1. Intermittent
 
+<span class="fe-badges"><span class="fe-badge fe-badge--vocabulary">Vocabulary</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Happening occasionally, not continuously.
 - **IPA:** `/ˌɪntərˈmɪtənt/`
 - **Synonyms:** sporadic, occasional, irregular
@@ -138,6 +152,8 @@
 - *Stakeholder:* We’re investigating an intermittent timeout that affects a small percentage of requests.
 
 ### 2. Correlate
+
+<span class="fe-badges"><span class="fe-badge fe-badge--vocabulary">Vocabulary</span><span class="fe-badge fe-badge--new">New</span></span>
 
 - **Meaning:** Show a relationship or pattern between two things.
 - **IPA:** `/ˈkɔːrəleɪt/`
@@ -158,6 +174,8 @@
 
 ### 3. Mitigation
 
+<span class="fe-badges"><span class="fe-badge fe-badge--vocabulary">Vocabulary</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** An action that reduces impact or risk, even if it does not fully fix the root cause.
 - **IPA:** `/ˌmɪtɪˈɡeɪʃən/`
 - **Synonyms:** risk reduction, containment, workaround
@@ -176,6 +194,8 @@
 - *Stakeholder:* We’ve deployed a mitigation to reduce user impact while the permanent fix is being validated.
 
 ### 4. Regression
+
+<span class="fe-badges"><span class="fe-badge fe-badge--vocabulary">Vocabulary</span><span class="fe-badge fe-badge--new">New</span></span>
 
 - **Meaning:** A new bug or behavior break introduced into something that previously worked.
 - **IPA:** `/rɪˈɡreʃən/`

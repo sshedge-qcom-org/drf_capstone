@@ -11,6 +11,8 @@
 
 ### 1. Paint ourselves into a corner
 
+<span class="fe-badges"><span class="fe-badge fe-badge--idiom">Idiom</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Create a situation where future options become limited.
 - **IPA:** `/peɪnt aʊərˈsɛlvz ˈɪntu ə ˈkɔːrnər/`
 - **Formality:** Neutral
@@ -29,6 +31,8 @@
 
 ### 2. Put a stake in the ground
 
+<span class="fe-badges"><span class="fe-badge fe-badge--idiom">Idiom</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Make an initial clear decision or proposal so discussion can move forward.
 - **IPA:** `/pʊt ə steɪk ɪn ðə ɡraʊnd/`
 - **Formality:** Neutral
@@ -46,6 +50,8 @@
 - *Presentation:* Our initial architecture puts a stake in the ground around service ownership and failure isolation.
 
 ### 3. Not set in stone
+
+<span class="fe-badges"><span class="fe-badge fe-badge--idiom">Idiom</span><span class="fe-badge fe-badge--new">New</span></span>
 
 - **Meaning:** Still changeable; not final.
 - **IPA:** `/nɑːt sɛt ɪn stoʊn/`
@@ -67,6 +73,8 @@
 
 ### 1. Factor in
 
+<span class="fe-badges"><span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Include something as part of your thinking, estimate, or decision.
 - **IPA:** `/ˈfæktər ɪn/`
 
@@ -84,6 +92,8 @@
 
 ### 2. Spell out
 
+<span class="fe-badges"><span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Explain clearly and explicitly.
 - **IPA:** `/spɛl aʊt/`
 
@@ -100,6 +110,8 @@
 - *Leadership:* We should spell out the risk clearly instead of saying the plan is ‘mostly fine.’
 
 ### 3. Roll back
+
+<span class="fe-badges"><span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span><span class="fe-badge fe-badge--new">New</span></span>
 
 - **Meaning:** Revert to an earlier version or previous state.
 - **IPA:** `/roʊl bæk/`
@@ -124,6 +136,8 @@
 
 ### 1. Constraint
 
+<span class="fe-badges"><span class="fe-badge fe-badge--vocabulary">Vocabulary</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** A limitation or condition that shapes what you can do.
 - **IPA:** `/kənˈstreɪnt/`
 - **Synonyms:** limitation, restriction, boundary
@@ -142,6 +156,8 @@
 - *Stakeholder:* Given the timeline constraint, we can deliver the core workflow first and defer advanced reporting.
 
 ### 2. Robust
+
+<span class="fe-badges"><span class="fe-badge fe-badge--vocabulary">Vocabulary</span><span class="fe-badge fe-badge--new">New</span></span>
 
 - **Meaning:** Strong, reliable, and able to handle failures or edge cases.
 - **IPA:** `/roʊˈbʌst/`
@@ -162,6 +178,8 @@
 
 ### 3. Pragmatic
 
+<span class="fe-badges"><span class="fe-badge fe-badge--vocabulary">Vocabulary</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Practical and realistic rather than overly theoretical or idealistic.
 - **IPA:** `/præɡˈmætɪk/`
 - **Synonyms:** practical, realistic, sensible
@@ -180,6 +198,8 @@
 - *Stakeholder:* We’re taking a pragmatic approach: reduce the highest-risk failures first, then improve automation.
 
 ### 4. Defensible
+
+<span class="fe-badges"><span class="fe-badge fe-badge--vocabulary">Vocabulary</span><span class="fe-badge fe-badge--new">New</span></span>
 
 - **Meaning:** Easy to justify with solid reasoning, data, or constraints.
 - **IPA:** `/dɪˈfɛnsəbəl/`

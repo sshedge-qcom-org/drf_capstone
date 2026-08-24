@@ -34,8 +34,22 @@ def _preserve_breaks(text: str) -> str:
     return "\n".join((line + "  ") if line.strip() else "" for line in text.split("\n"))
 
 
+def _badges(expr: ParsedExpression) -> str:
+    """A row of pill badges (kind + status) shown under an expression heading."""
+    pills = [
+        f'<span class="fe-badge fe-badge--{expr.kind}">'
+        f'{_TYPE_LABEL.get(expr.kind, expr.kind)}</span>'
+    ]
+    if expr.status:
+        pills.append(
+            f'<span class="fe-badge fe-badge--{expr.status}">'
+            f'{expr.status.title()}</span>'
+        )
+    return '<span class="fe-badges">' + "".join(pills) + "</span>"
+
+
 def _render_expression(expr: ParsedExpression) -> list[str]:
-    out = [f"### {expr.order}. {expr.name}", ""]
+    out = [f"### {expr.order}. {expr.name}", "", _badges(expr), ""]
     out.append(f"- **Meaning:** {expr.meaning}")
     if expr.ipa:
         out.append(f"- **IPA:** `{expr.ipa}`")
@@ -136,16 +150,14 @@ def _day_icon(day_number: int) -> str:
 
 def render_index(lessons: list[ParsedLesson]) -> str:
     """Render the docs landing page as a grid of clickable day cards."""
-    total_expressions = sum(len(lesson.expressions) for lesson in lessons)
     lines = [
         "# Business English for Senior Engineers", "",
         "A daily Business-English lesson corpus — professional idioms, phrasal "
         "verbs, and C1/C2 vocabulary for system design, code reviews, production "
-        "issues, sprint planning, and root cause analysis. Rendered from "
-        "`raw_data/` via the shared parser, the same source that powers the REST "
-        "API.", "",
-        f"**{len(lessons)} lessons · {total_expressions} expressions** — "
-        "each day takes about 10 minutes.", "",
+        "issues, sprint planning, and more. Rendered from `raw_data/` via the "
+        "shared parser, the same source that powers the REST API.", "",
+        "**A fresh lesson lands every day** — each one is about a 10-minute read, "
+        "and the collection keeps growing. Pick up where you left off below.", "",
         '!!! tip "How to use this site"',
         "    Read each expression **aloud**, lean on the ✅ corrections over the "
         "❌ mistakes, and reuse the labelled example sentences as your own "

@@ -11,6 +11,8 @@
 
 ### 1. Bite off more than we can chew
 
+<span class="fe-badges"><span class="fe-badge fe-badge--idiom">Idiom</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Take on more work than the team can realistically handle.
 - **IPA:** `/baɪt ɔːf mɔːr ðən wi kən tʃuː/`
 - **Formality:** Neutral
@@ -29,6 +31,8 @@
 
 ### 2. Keep the plates spinning
 
+<span class="fe-badges"><span class="fe-badge fe-badge--idiom">Idiom</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Manage several ongoing responsibilities at the same time without letting anything fail.
 - **IPA:** `/kiːp ðə pleɪts ˈspɪnɪŋ/`
 - **Formality:** Neutral
@@ -46,6 +50,8 @@
 - *Presentation:* The team kept the plates spinning by splitting ownership across feature delivery, release readiness, and customer escalations.
 
 ### 3. A stretch goal
+
+<span class="fe-badges"><span class="fe-badge fe-badge--idiom">Idiom</span><span class="fe-badge fe-badge--new">New</span></span>
 
 - **Meaning:** An ambitious target beyond the core commitment; nice to achieve, not mandatory.
 - **IPA:** `/ə stretʃ ɡoʊl/`
@@ -67,6 +73,8 @@
 
 ### 1. Scope out
 
+<span class="fe-badges"><span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Define the size, boundaries, and work involved in a task.
 - **IPA:** `/skoʊp aʊt/`
 
@@ -84,6 +92,8 @@
 
 ### 2. Break down
 
+<span class="fe-badges"><span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Split a large task into smaller, manageable pieces.
 - **IPA:** `/breɪk daʊn/`
 
@@ -100,6 +110,8 @@
 - *Leadership:* We can make the plan more credible by breaking down the work into clear milestones.
 
 ### 3. Line up
+
+<span class="fe-badges"><span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span><span class="fe-badge fe-badge--new">New</span></span>
 
 - **Meaning:** Arrange or coordinate people, dependencies, approvals, or resources.
 - **IPA:** `/laɪn ʌp/`
@@ -120,6 +132,8 @@
 
 ### 1. Feasible
 
+<span class="fe-badges"><span class="fe-badge fe-badge--vocabulary">Vocabulary</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Realistic and possible to do.
 - **IPA:** `/ˈfiːzəbəl/`
 - **Synonyms:** realistic, achievable, practical
@@ -138,6 +152,8 @@
 - *Stakeholder:* The feature is technically feasible, but the current deadline leaves very little room for validation.
 
 ### 2. Bandwidth
+
+<span class="fe-badges"><span class="fe-badge fe-badge--vocabulary">Vocabulary</span><span class="fe-badge fe-badge--new">New</span></span>
 
 - **Meaning:** Available time, attention, or team capacity.
 - **IPA:** `/ˈbændwɪdθ/`
@@ -158,6 +174,8 @@
 
 ### 3. Dependency
 
+<span class="fe-badges"><span class="fe-badge fe-badge--vocabulary">Vocabulary</span><span class="fe-badge fe-badge--new">New</span></span>
+
 - **Meaning:** Something another task relies on before it can move forward.
 - **IPA:** `/dɪˈpendənsi/`
 - **Synonyms:** prerequisite, blocker, required input
@@ -176,6 +194,8 @@
 - *Stakeholder:* Our main delivery risk is an external dependency on the security review.
 
 ### 4. Commitment
+
+<span class="fe-badges"><span class="fe-badge fe-badge--vocabulary">Vocabulary</span><span class="fe-badge fe-badge--new">New</span></span>
 
 - **Meaning:** Work the team formally agrees to deliver.
 - **IPA:** `/kəˈmɪtmənt/`
