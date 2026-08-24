@@ -159,28 +159,30 @@ _LEGEND = (
 
 
 def render_index(lessons: list[ParsedLesson]) -> str:
-    """Render the docs landing page as a grid of clickable day cards."""
+    """Render the docs landing page: a hero banner + a grid of day cards."""
+    latest = lessons[-1] if lessons else None
+    cta = (
+        f"[:material-arrow-right-circle: Start today's lesson — Day "
+        f"{latest.day_number}: {latest.dialogue_topic}]"
+        f"(day-{latest.day_number}.md){{ .md-button .md-button--primary }}"
+        if latest else ""
+    )
+
     lines = [
+        "---",
+        "title: Business English for Senior Engineers",
+        "hide:",
+        "  - toc",
+        "---", "",
+        '<div class="fe-hero" markdown>', "",
         "# Business English for Senior Engineers", "",
-        "A daily Business-English lesson corpus — professional idioms, phrasal "
-        "verbs, and C1/C2 vocabulary for system design, code reviews, production "
-        "issues, sprint planning, and more. Rendered from `raw_data/` via the "
-        "shared parser, the same source that powers the REST API.", "",
+        "Speak with clarity, precision, and confidence. A daily dose of "
+        "professional idioms, phrasal verbs, and C1/C2 vocabulary for system "
+        "design, code reviews, production issues, sprint planning, and more.", "",
+        cta, "",
+        "</div>", "",
         "**A fresh lesson lands every day** — each one is about a 10-minute read, "
         "and the collection keeps growing. Pick up where you left off below.", "",
-    ]
-
-    if lessons:
-        latest = lessons[-1]
-        lines += [
-            f"[:material-arrow-right-circle: Today's lesson — Day "
-            f"{latest.day_number}: {latest.dialogue_topic}]"
-            f"(day-{latest.day_number}.md)"
-            "{ .md-button .md-button--primary }",
-            "",
-        ]
-
-    lines += [
         '!!! tip "How to use this site"',
         "    Read each expression **aloud**, lean on the ✅ corrections over the "
         "❌ mistakes, and reuse the labelled example sentences as your own "

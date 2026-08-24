@@ -1,10 +1,20 @@
+---
+title: Business English for Senior Engineers
+hide:
+  - toc
+---
+
+<div class="fe-hero" markdown>
+
 # Business English for Senior Engineers
 
-A daily Business-English lesson corpus — professional idioms, phrasal verbs, and C1/C2 vocabulary for system design, code reviews, production issues, sprint planning, and more. Rendered from `raw_data/` via the shared parser, the same source that powers the REST API.
+Speak with clarity, precision, and confidence. A daily dose of professional idioms, phrasal verbs, and C1/C2 vocabulary for system design, code reviews, production issues, sprint planning, and more.
+
+[:material-arrow-right-circle: Start today's lesson — Day 5: Root cause analysis](day-5.md){ .md-button .md-button--primary }
+
+</div>
 
 **A fresh lesson lands every day** — each one is about a 10-minute read, and the collection keeps growing. Pick up where you left off below.
-
-[:material-arrow-right-circle: Today's lesson — Day 5: Root cause analysis](day-5.md){ .md-button .md-button--primary }
 
 !!! tip "How to use this site"
     Read each expression **aloud**, lean on the ✅ corrections over the ❌ mistakes, and reuse the labelled example sentences as your own templates. Practice the Speaking Practice prompts without reading them.

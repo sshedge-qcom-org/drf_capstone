@@ -220,3 +220,105 @@
 .md-typeset h2.fe-sec--idiom        { border-bottom-color: #5b6cff; }
 .md-typeset h2.fe-sec--phrasal_verb { border-bottom-color: #009688; }
 .md-typeset h2.fe-sec--vocabulary   { border-bottom-color: #f59e0b; }
+
+/* ── Landing-page hero banner ────────────────────────────────────────────── */
+.md-typeset .fe-hero {
+  margin: 0.4em 0 2.2em;
+  padding: 3em 2em;
+  border-radius: 18px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #4453d6 0%, #6d5cff 45%, #8b3ff0 100%);
+  box-shadow: 0 16px 40px rgba(76, 60, 200, 0.32);
+  position: relative;
+  overflow: hidden;
+}
+
+/* A soft radial glow in the corner for a little depth. */
+.md-typeset .fe-hero::after {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 60%;
+  height: 160%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.18), transparent 70%);
+  pointer-events: none;
+}
+
+.md-typeset .fe-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.md-typeset .fe-hero h1 {
+  color: #fff;
+  font-size: 2.2rem;
+  line-height: 1.15;
+  margin: 0 0 0.5em;
+  letter-spacing: -0.6px;
+}
+
+.md-typeset .fe-hero p {
+  max-width: 44rem;
+  margin: 0 auto 1.4em;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* Invert the CTA so it pops against the gradient. */
+.md-typeset .fe-hero .md-button {
+  margin: 0;
+  border-color: #fff;
+  color: #fff;
+}
+
+.md-typeset .fe-hero .md-button--primary {
+  background: #fff;
+  color: #4453d6;
+  border-color: #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.md-typeset .fe-hero .md-button--primary:hover,
+.md-typeset .fe-hero .md-button--primary:focus {
+  background: rgba(255, 255, 255, 0.9);
+  color: #3a45c2;
+  transform: translateY(-2px);
+}
+
+/* ── Global polish ───────────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(91, 108, 255, 0.24);
+}
+
+/* Body links gain a subtle underline on hover (buttons excluded). */
+.md-typeset a:not(.md-button):hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+/* A slimmer, themed scrollbar on desktop. */
+@media (pointer: fine) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--md-default-fg-color--lighter) transparent;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--md-default-fg-color--lighter);
+    border-radius: 6px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--md-default-fg-color--light);
+  }
+}
