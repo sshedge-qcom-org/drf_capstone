@@ -25,6 +25,15 @@ from BusinessEnglish.services.markdown_renderer import render_index, render_less
 
 RAW_DIR = Path(settings.BASE_DIR) / "raw_data"
 
+# Expected totals are derived from raw_data/ (not hard-coded) so that adding a
+# new dayN file never breaks the suite.
+_PARSED = parse_all(RAW_DIR)
+EXPECTED_LESSONS = len(_PARSED)
+EXPECTED_EXPRESSIONS = sum(len(l.expressions) for l in _PARSED)
+EXPECTED_EXAMPLES = sum(len(e.examples) for l in _PARSED for e in l.expressions)
+EXPECTED_UPGRADES = sum(len(l.upgrades) for l in _PARSED)
+EXPECTED_VOCAB = sum(1 for l in _PARSED for e in l.expressions if e.kind == "vocabulary")
+
 
 class ParserTests(SimpleTestCase):
     """Exercise the parser directly — no database involved."""
@@ -34,8 +43,9 @@ class ParserTests(SimpleTestCase):
         super().setUpClass()
         cls.lessons = {lesson.day_number: lesson for lesson in parse_all(RAW_DIR)}
 
-    def test_all_four_days_parsed(self):
-        self.assertEqual(sorted(self.lessons), [1, 2, 3, 4])
+    def test_days_are_contiguous(self):
+        self.assertGreaterEqual(len(self.lessons), 4)
+        self.assertEqual(sorted(self.lessons), list(range(1, len(self.lessons) + 1)))
 
     def test_expression_counts_and_kinds(self):
         for day, lesson in self.lessons.items():
@@ -93,17 +103,17 @@ class ImportCommandTests(TestCase):
 
     def test_import_counts(self):
         call_command("import_lessons", "--clear", verbosity=0)
-        self.assertEqual(Lesson.objects.count(), 4)
-        self.assertEqual(Expression.objects.count(), 40)
-        self.assertEqual(Example.objects.count(), 104)
-        self.assertEqual(UpgradePair.objects.count(), 40)
+        self.assertEqual(Lesson.objects.count(), EXPECTED_LESSONS)
+        self.assertEqual(Expression.objects.count(), EXPECTED_EXPRESSIONS)
+        self.assertEqual(Example.objects.count(), EXPECTED_EXAMPLES)
+        self.assertEqual(UpgradePair.objects.count(), EXPECTED_UPGRADES)
 
     def test_import_is_idempotent(self):
         call_command("import_lessons", "--clear", verbosity=0)
         call_command("import_lessons", verbosity=0)  # second run, no --clear
-        self.assertEqual(Lesson.objects.count(), 4)
-        self.assertEqual(Expression.objects.count(), 40)
-        self.assertEqual(Example.objects.count(), 104)
+        self.assertEqual(Lesson.objects.count(), EXPECTED_LESSONS)
+        self.assertEqual(Expression.objects.count(), EXPECTED_EXPRESSIONS)
+        self.assertEqual(Example.objects.count(), EXPECTED_EXAMPLES)
 
     def test_dry_run_writes_nothing(self):
         call_command("import_lessons", "--dry-run", verbosity=0)
@@ -121,7 +131,7 @@ class LessonAPITests(APITestCase):
         response = self.client.get("/api/lessons/")
         self.assertEqual(response.status_code, 200)
         body = response.json()
-        self.assertEqual(body["count"], 4)
+        self.assertEqual(body["count"], EXPECTED_LESSONS)
         self.assertIn("results", body)
         first = body["results"][0]
         self.assertEqual(first["expression_count"], 10)
@@ -147,21 +157,22 @@ class LessonAPITests(APITestCase):
         self.assertEqual(len(response.json()), 3)
 
     def test_expression_search(self):
-        response = self.client.get("/api/expressions/?search=roll")
+        response = self.client.get("/api/expressions/?search=roll+back")
         body = response.json()
-        self.assertEqual(body["count"], 1)
-        self.assertEqual(body["results"][0]["name"], "Roll back")
+        self.assertEqual(response.status_code, 200)
+        self.assertIn("Roll back", [r["name"] for r in body["results"]])
 
     def test_expression_kind_filter(self):
         response = self.client.get("/api/expressions/?kind=vocabulary")
-        self.assertEqual(response.json()["count"], 16)  # 4 vocab × 4 days
+        self.assertEqual(response.json()["count"], EXPECTED_VOCAB)  # 4 vocab × days
 
     def test_expression_pagination(self):
+        page_size = settings.REST_FRAMEWORK["PAGE_SIZE"]
         response = self.client.get("/api/expressions/")
         body = response.json()
-        self.assertEqual(body["count"], 40)
-        self.assertEqual(len(body["results"]), settings.REST_FRAMEWORK["PAGE_SIZE"])
-        self.assertIsNotNone(body["next"])
+        self.assertEqual(body["count"], EXPECTED_EXPRESSIONS)
+        self.assertEqual(len(body["results"]), min(page_size, EXPECTED_EXPRESSIONS))
+        self.assertEqual(body["next"] is not None, EXPECTED_EXPRESSIONS > page_size)
 
 
 class RendererTests(SimpleTestCase):

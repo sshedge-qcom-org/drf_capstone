@@ -8,4 +8,5 @@ A daily Business-English lesson corpus — professional idioms, phrasal verbs, a
 | [Day 2](day-2.md) | Code reviews | Giving clear, diplomatic feedback in code/Gerrit reviews | 2026-08-20 |
 | [Day 3](day-3.md) | Production issues | Staying calm, precise, and credible during production issues | 2026-08-21 |
 | [Day 4](day-4.md) | Sprint planning | Sounding clear, realistic, and senior during sprint planning | 2026-08-22 |
+| [Day 5](day-5.md) | Root cause analysis | Explaining root cause clearly without overclaiming | 2026-08-23 |
 
