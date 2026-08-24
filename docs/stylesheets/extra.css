@@ -4,16 +4,16 @@
    upgrade + tracker sections. */
 
 :root {
-  --md-text-font: "Inter";
-  --md-code-font: "JetBrains Mono";
+  --md-text-font: "IBM Plex Sans";
+  --md-code-font: "IBM Plex Mono";
   /* A warmer, calmer indigo/violet accent than the stock palette. */
   --fe-accent: #5b6cff;
 }
 
 /* ── Reading comfort ─────────────────────────────────────────────────────── */
 .md-typeset {
-  font-size: 0.82rem;
-  line-height: 1.75;
+  font-size: 0.84rem;
+  line-height: 1.78;
   letter-spacing: 0.1px;
 }
 
