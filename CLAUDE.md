@@ -9,9 +9,18 @@ Business-English lesson corpus as a **read-only REST API** and renders the same 
 (Material)** documentation site. Lessons are authored as plain-text files in `raw_data/` and flow through a
 single shared parser into both the database (for the API) and Markdown (for the docs).
 
-**Status: early, incremental build.** DRF is installed and configured; the data models, parser, API, and docs
-pipeline are being built phase by phase. This is a *guided learning build* — the user writes the DRF code and
-Claude explains/reviews. **Read the approved plan before changing things:**
+**Status: end-to-end pipeline working.** Models, parser, `import_lessons`, the read-only API, the Markdown
+renderer, `export_docs`, the MkDocs site, and a full test suite are all in place. The full loop is:
+
+```
+manage.py import_lessons --clear   # raw_data/ → DB   (4 lessons / 40 expressions / 104 examples / 40 upgrades)
+manage.py export_docs --clear      # DB → docs/*.md   (or --from-raw to skip the DB)
+mkdocs build --strict              # docs/ → site/
+manage.py test                     # 24 tests across parser/import/API/renderer/docs
+```
+
+The build was completed autonomously and pushed to `github.com/sshedge-qcom-org/drf_capstone` (branch
+`daily_dose`). Original phased plan (now largely realized):
 `C:\Users\sshedge\.claude\plans\i-want-to-create-quiet-perlis.md`.
 
 ## Environment & commands
