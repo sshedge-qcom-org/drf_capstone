@@ -1,11 +1,8 @@
 # Day 1 — System design
 
-**Focus theme:** Sounding natural and confident in system design discussions  
-**Difficulty:** Standard C1  
-**Mode:** Lite  
-**Date:** 2026-08-19
+*Sounding natural and confident in system design discussions*
 
-*System Design English for Senior Engineers*
+<p class="fe-meta">Standard C1 · Lite · 2026-08-19</p>
 
 ## Professional Idioms { .fe-sec--idiom }
 

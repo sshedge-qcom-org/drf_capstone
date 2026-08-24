@@ -1,11 +1,8 @@
 # Day 4 — Sprint planning
 
-**Focus theme:** Sounding clear, realistic, and senior during sprint planning  
-**Difficulty:** Standard C1  
-**Mode:** Lite  
-**Date:** 2026-08-22
+*Sounding clear, realistic, and senior during sprint planning*
 
-*Sprint Planning English for Senior Engineers*
+<p class="fe-meta">Standard C1 · Lite · 2026-08-22</p>
 
 ## Professional Idioms { .fe-sec--idiom }
 

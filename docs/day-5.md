@@ -1,11 +1,8 @@
 # Day 5 — Root cause analysis
 
-**Focus theme:** Explaining root cause clearly without overclaiming  
-**Difficulty:** Standard C1  
-**Mode:** Lite  
-**Date:** 2026-08-23
+*Explaining root cause clearly without overclaiming*
 
-*Root Cause Analysis English for Senior Engineers*
+<p class="fe-meta">Standard C1 · Lite · 2026-08-23</p>
 
 ## Professional Idioms { .fe-sec--idiom }
 

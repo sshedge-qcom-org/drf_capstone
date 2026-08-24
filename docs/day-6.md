@@ -1,11 +1,8 @@
 # Day 6 — Technical debt
 
-**Focus theme:** Discussing technical debt without sounding negative or vague  
-**Difficulty:** Standard C1  
-**Mode:** Lite  
-**Date:** 2026-08-24
+*Discussing technical debt without sounding negative or vague*
 
-*Technical Debt English for Senior Engineers*
+<p class="fe-meta">Standard C1 · Lite · 2026-08-24</p>
 
 ## Professional Idioms { .fe-sec--idiom }
 

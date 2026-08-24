@@ -1,11 +1,8 @@
 # Day 3 — Production issues
 
-**Focus theme:** Staying calm, precise, and credible during production issues  
-**Difficulty:** Standard C1  
-**Mode:** Lite  
-**Date:** 2026-08-21
+*Staying calm, precise, and credible during production issues*
 
-*Production Issue English for Senior Engineers*
+<p class="fe-meta">Standard C1 · Lite · 2026-08-21</p>
 
 ## Professional Idioms { .fe-sec--idiom }
 

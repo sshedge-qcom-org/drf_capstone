@@ -1,11 +1,8 @@
 # Day 2 — Code reviews
 
-**Focus theme:** Giving clear, diplomatic feedback in code/Gerrit reviews  
-**Difficulty:** Standard C1  
-**Mode:** Lite  
-**Date:** 2026-08-20
+*Giving clear, diplomatic feedback in code/Gerrit reviews*
 
-*Code Review English for Senior Engineers*
+<p class="fe-meta">Standard C1 · Lite · 2026-08-20</p>
 
 ## Professional Idioms { .fe-sec--idiom }
 

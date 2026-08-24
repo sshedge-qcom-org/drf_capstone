@@ -245,19 +245,17 @@ def render_lesson(lesson: ParsedLesson) -> str:
     """Render one lesson to a full Markdown page."""
     lines = [f"# Day {lesson.day_number} — {lesson.dialogue_topic}", ""]
 
-    meta = []
+    # The focus theme becomes a coloured subtitle right under the title (the one
+    # line that actually says what the lesson is about).
     if lesson.focus_theme:
-        meta.append(f"**Focus theme:** {lesson.focus_theme}")
-    if lesson.difficulty:
-        meta.append(f"**Difficulty:** {lesson.difficulty}")
-    if lesson.mode:
-        meta.append(f"**Mode:** {lesson.mode}")
-    if lesson.date:
-        meta.append(f"**Date:** {lesson.date}")
+        lines += [f"*{lesson.focus_theme}*", ""]
+
+    # Difficulty / mode / date carry little weight, so collapse them into one
+    # small, muted meta line instead of three stacked rows.
+    meta = [v for v in (lesson.difficulty, lesson.mode,
+                        str(lesson.date) if lesson.date else "") if v]
     if meta:
-        lines += ["  \n".join(meta), ""]
-    if lesson.lesson_focus:
-        lines += [f"*{lesson.lesson_focus}*", ""]
+        lines += [f'<p class="fe-meta">{" · ".join(meta)}</p>', ""]
 
     for kind, title, _ in _KIND_SECTIONS:
         exprs = [e for e in lesson.expressions if e.kind == kind]
