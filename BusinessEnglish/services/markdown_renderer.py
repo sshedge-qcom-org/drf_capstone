@@ -306,76 +306,51 @@ def render_lesson(lesson: ParsedLesson) -> str:
     return "\n".join(lines).rstrip() + "\n"
 
 
-def _day_icon(day_number: int) -> str:
-    """A numbered circle icon for days 1–9, with a book fallback beyond that."""
-    if 1 <= day_number <= 9:
-        return f":material-numeric-{day_number}-circle:"
-    return ":material-book-open-variant:"
-
-
-_LEGEND = (
-    '<p class="fe-legend"><strong>Legend:</strong> '
-    '<span class="fe-badge fe-badge--idiom">Idiom</span>'
-    '<span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span>'
-    '<span class="fe-badge fe-badge--vocabulary">Vocabulary</span>'
-    '<span class="fe-badge fe-badge--new">New</span>'
-    '<span class="fe-badge fe-badge--review">Review</span></p>'
-)
-
-
 def render_index(lessons: list[ParsedLesson]) -> str:
-    """Render the docs landing page: a hero banner + a grid of day cards."""
+    """Render the docs landing page: a short intro, a call-to-action, and a
+    clean single-column table of every lesson (newest flagged "Latest")."""
     latest = lessons[-1] if lessons else None
-    cta = (
-        f"[:material-arrow-right-circle: Start today's lesson — Day "
-        f"{latest.day_number}: {latest.dialogue_topic}]"
-        f"(day-{latest.day_number}.md){{ .md-button .md-button--primary }}"
-        if latest else ""
-    )
+    latest_day = latest.day_number if latest else None
 
     lines = [
         "---",
         "title: Business English for Senior Engineers",
-        "hide:",
-        "  - toc",
         "---", "",
-        '<div class="fe-hero" markdown>', "",
         "# Business English for Senior Engineers", "",
-        "Speak with clarity, precision, and confidence. A daily dose of "
+        "*Speak with clarity, precision, and confidence — a daily dose of "
         "professional idioms, phrasal verbs, and C1/C2 vocabulary for system "
-        "design, code reviews, production issues, sprint planning, and more.", "",
-        cta, "",
-        "</div>", "",
-        "**A fresh lesson lands every day** — each one is about a 10-minute read, "
-        "and the collection keeps growing. Pick up where you left off below.", "",
-        '!!! tip "How to use this site"',
-        "    Read each expression **aloud**, lean on the ✅ corrections over the "
-        "❌ mistakes, and reuse the labelled example sentences as your own "
-        "templates. Practice the Speaking Practice prompts without reading them.",
-        "",
-        _LEGEND, "",
-        '<div class="grid cards" markdown>', "",
+        "design, code reviews, production issues, and sprint planning.*", "",
+        "A fresh lesson lands every day. Each one is about a 10-minute read and "
+        "the collection keeps growing — pick up where you left off below.", "",
     ]
-
-    latest_day = lessons[-1].day_number if lessons else None
-    for lesson in lessons:
-        meta = [":material-book-open-page-variant: "
-                f"**{len(lesson.expressions)} expressions**"]
-        if lesson.date:
-            meta.append(f":material-calendar-month: {lesson.date}")
-        if lesson.day_number == latest_day:
-            meta.append('<span class="fe-badge fe-badge--latest">Latest</span>')
+    if latest:
         lines += [
-            f"-   {_day_icon(lesson.day_number)}{{ .lg .middle }} "
-            f"**[Day {lesson.day_number} — {lesson.dialogue_topic}]"
-            f"(day-{lesson.day_number}.md)**",
-            "",
-            "    ---",
-            "",
-            f"    {lesson.focus_theme}",
-            "",
-            "    " + "  ·  ".join(meta),
+            f"[:material-arrow-right-circle: Start today's lesson — Day "
+            f"{latest.day_number}: {latest.dialogue_topic}]"
+            f"(day-{latest.day_number}.md){{ .md-button .md-button--primary }}",
             "",
         ]
-    lines += ["</div>", ""]
+
+    lines += [
+        "## Lessons", "",
+        "| Day | Topic | Focus theme | Added |",
+        "| --- | --- | --- | --- |",
+    ]
+    for lesson in lessons:
+        day_cell = f"**[Day {lesson.day_number}](day-{lesson.day_number}.md)**"
+        if lesson.day_number == latest_day:
+            day_cell += ' <span class="fe-badge fe-badge--latest">Latest</span>'
+        added = str(lesson.date) if lesson.date else "—"
+        lines.append(
+            f"| {day_cell} | {_cell(lesson.dialogue_topic)} | "
+            f"{_cell(lesson.focus_theme)} | {added} |"
+        )
+
+    lines += [
+        "",
+        "## How to use", "",
+        "Read each expression **aloud**, lean on the ✅ corrections over the ❌ "
+        "mistakes, and reuse the labelled example sentences as your own "
+        "templates. Try the Speaking Practice prompts without reading them.", "",
+    ]
     return "\n".join(lines) + "\n"

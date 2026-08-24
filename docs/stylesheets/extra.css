@@ -152,49 +152,6 @@
   transform: translateX(2px);
 }
 
-/* ── Landing page grid cards (one per day) ───────────────────────────────── */
-.md-typeset .grid.cards > ul > li,
-.md-typeset .grid > .card {
-  border-radius: 10px;
-  border: 1px solid var(--md-default-fg-color--lightest);
-  padding: 1em 1.1em;
-  transition: box-shadow 140ms ease, transform 140ms ease,
-    border-color 140ms ease;
-}
-
-.md-typeset .grid.cards > ul > li:hover,
-.md-typeset .grid > .card:hover {
-  transform: translateY(-4px);
-  border-color: var(--md-primary-fg-color);
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
-}
-
-/* The big numbered day icon leading each card. */
-.md-typeset .grid.cards .twemoji.lg svg,
-.md-typeset .grid.cards .lg svg {
-  fill: var(--md-primary-fg-color);
-}
-
-/* The linked day title sits large and inherits the text colour (not link blue). */
-.md-typeset .grid.cards > ul > li > p:first-child {
-  font-size: 1.05rem;
-}
-
-.md-typeset .grid.cards > ul > li > p:first-child a {
-  color: var(--md-default-fg-color);
-}
-
-.md-typeset .grid.cards > ul > li > p:first-child a:hover {
-  color: var(--md-primary-fg-color);
-}
-
-/* Footer meta line (expression count · date) sits quiet and small. */
-.md-typeset .grid.cards > ul > li > p:last-child {
-  color: var(--md-default-fg-color--light);
-  font-size: 0.75rem;
-  margin-top: 0.6em;
-}
-
 /* ── Kind / status badges under each expression heading ──────────────────── */
 .md-typeset p:has(> .fe-badges) {
   margin: -0.3em 0 0.9em;
@@ -235,22 +192,6 @@
 [data-md-color-scheme="slate"] .md-typeset .fe-badge--new         { color: #34d399; }
 [data-md-color-scheme="slate"] .md-typeset .fe-badge--review      { color: #94a3b8; }
 
-/* ── Landing-page legend (a key for the badge colours) ───────────────────── */
-.md-typeset .fe-legend {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.4em;
-  padding: 0.6em 0.9em;
-  border-radius: 8px;
-  background: var(--md-default-fg-color--lightest);
-  font-size: 0.75rem;
-}
-
-.md-typeset .fe-legend strong {
-  margin-right: 0.2em;
-}
-
 /* ── Section headings tinted to match their expression kind ──────────────── */
 .md-typeset h2.fe-sec--idiom        { border-bottom-color: #5b6cff; }
 .md-typeset h2.fe-sec--phrasal_verb { border-bottom-color: #009688; }
@@ -265,97 +206,16 @@
   fill: var(--md-accent-fg-color);
 }
 
-/* ── Landing-page hero banner ────────────────────────────────────────────── */
-.md-typeset .fe-hero {
-  margin: 0.4em 0 2.2em;
-  padding: 3em 2em;
-  border-radius: 18px;
-  text-align: center;
-  color: #fff;
-  background: linear-gradient(135deg, #4453d6 0%, #6d5cff 45%, #8b3ff0 100%);
-  box-shadow: 0 16px 40px rgba(76, 60, 200, 0.32);
-  position: relative;
-  overflow: hidden;
+/* ── Landing page: a calmer, roomier intro above the lessons table ───────── */
+.md-typeset h1 + p em {
+  display: inline-block;
+  font-size: 1.02rem;
+  line-height: 1.6;
 }
 
-/* A soft radial glow in the corner for a little depth. */
-.md-typeset .fe-hero::after {
-  content: "";
-  position: absolute;
-  top: -40%;
-  right: -10%;
-  width: 60%;
-  height: 160%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.18), transparent 70%);
-  pointer-events: none;
-}
-
-.md-typeset .fe-hero > * {
-  position: relative;
-  z-index: 1;
-}
-
-.md-typeset .fe-hero h1 {
-  color: #fff;
-  font-size: 2.2rem;
-  line-height: 1.15;
-  margin: 0 0 0.5em;
-  letter-spacing: -0.6px;
-}
-
-.md-typeset .fe-hero p {
-  max-width: 44rem;
-  margin: 0 auto 1.4em;
-  font-size: 0.95rem;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.92);
-}
-
-/* Invert the CTA so it pops against the gradient. */
-.md-typeset .fe-hero .md-button {
-  margin: 0;
-  border-color: #fff;
-  color: #fff;
-}
-
-.md-typeset .fe-hero .md-button--primary {
-  background: #fff;
-  color: #4453d6;
-  border-color: #fff;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
-}
-
-.md-typeset .fe-hero .md-button--primary:hover,
-.md-typeset .fe-hero .md-button--primary:focus {
-  background: rgba(255, 255, 255, 0.9);
-  color: #3a45c2;
-  transform: translateY(-2px);
-}
-
-/* ── Sidebar nav + TOC: highlight the active item as a filled box ────────── */
-.md-nav__link {
-  padding: 0.3em 0.6em;
-  border-radius: 6px;
-  transition: background-color 100ms ease, color 100ms ease;
-}
-
-.md-nav__link:hover {
-  background: var(--md-default-fg-color--lightest);
-  color: inherit;
-}
-
-.md-nav__link--active,
-.md-nav__link--active:hover,
-.md-nav__link--active:focus {
-  background: var(--md-primary-fg-color);
-  color: var(--md-primary-bg-color) !important;
-  font-weight: 600;
-}
-
-/* Keep the active box readable in both schemes. */
-.md-nav__link--active code {
-  background: rgba(255, 255, 255, 0.2);
-  color: inherit;
+/* The single call-to-action button gets a little breathing room. */
+.md-typeset h1 ~ p > .md-button:first-child {
+  margin-top: 0.4em;
 }
 
 /* ── Global polish ───────────────────────────────────────────────────────── */
