@@ -19,10 +19,11 @@ raw_data/dayN ─► services/lesson_parser.py (Django-free dataclasses)
 
 ## The data
 
-Four "Lite" lessons for senior engineers — **System design**, **Code reviews**, **Production issues**, and
-**Sprint planning**. Each teaches 10 expressions (3 idioms, 3 phrasal verbs, 4 C1/C2 vocabulary words) with
-meanings, IPA, ❌/✅/⚠️ mistake blocks, labelled example sentences, a "Natural English Upgrade" table, and a
-tracker. Totals: **4 lessons / 40 expressions / 104 examples / 40 upgrade pairs**.
+A growing set of "Lite" lessons for senior engineers (System design, Code reviews, Production issues, Sprint
+planning, Root cause analysis, …) — **a new day is added regularly**. Each `raw_data/dayN` file teaches 10
+expressions (3 idioms, 3 phrasal verbs, 4 C1/C2 vocabulary words) with meanings, IPA, ❌/✅/⚠️ mistake blocks,
+labelled example sentences, a "Natural English Upgrade" table, and a tracker. The pipeline and the (data-driven)
+tests scale automatically as days are added — no counts are hard-coded.
 
 ## Quick start
 
@@ -61,14 +62,46 @@ Read-only, paginated (page size 20), open (`AllowAny`). Browsable API at `/api/`
   upsert on `day_number`).
 - `manage.py export_docs [--clear] [--from-raw]` — render lessons to `docs/*.md` (DB by default).
 
+## Adding a new day (the daily workflow)
+
+Everything keys off one new source file — the parser, API, docs, and tests all pick it up automatically.
+
+1. **Author** `raw_data/dayN` (e.g. `raw_data/day7`), following the exact template of the existing days
+   (header → idioms → phrasal verbs → C1/C2 vocabulary → Natural English Upgrade → Speaking Practice → Output
+   Correction → Tracker). UTF-8, no trailing newline. Days must stay contiguous (1, 2, 3, …).
+2. **Import** into the DB:
+   ```bash
+   .venv/Scripts/python.exe manage.py import_lessons --clear
+   ```
+3. **Regenerate the docs** (`docs/index.md` + a new `docs/day-N.md`):
+   ```bash
+   .venv/Scripts/python.exe manage.py export_docs --clear
+   ```
+4. **Verify** the build and tests are green:
+   ```bash
+   .venv/Scripts/python.exe -m mkdocs build --strict
+   .venv/Scripts/python.exe manage.py test
+   ```
+5. **Commit & push** the new source + generated pages — the live site redeploys itself:
+   ```bash
+   git add raw_data/dayN docs/day-N.md docs/index.md
+   git commit -m "Add Day N — <topic>"
+   git push origin daily_dose
+   ```
+
+The MkDocs nav is built from the files in `docs/`, so the new page appears with **no `mkdocs.yml` edit**. On
+push to `daily_dose`, GitHub Actions rebuilds and deploys the site to GitHub Pages. `db.sqlite3` is gitignored;
+the committed `docs/*.md` are what the site is built from (no database needed in CI).
+
 ## Tests
 
 ```bash
 .venv/Scripts/python.exe manage.py test
 ```
 
-24 tests spanning the parser, import idempotency, the API surface, the Markdown renderer, and a
-`mkdocs build --strict` smoke check.
+28 tests spanning the parser, import idempotency, the API surface, the Markdown renderer, and a
+`mkdocs build --strict` smoke check. They derive expected counts from `raw_data/`, so a new day never
+breaks them.
 
 ## Layout
 
@@ -76,4 +109,4 @@ Read-only, paginated (page size 20), open (`AllowAny`). Browsable API at `/api/`
 - `BusinessEnglish/services/markdown_renderer.py` — `ParsedLesson` → Material Markdown.
 - `BusinessEnglish/management/commands/` — `import_lessons`, `export_docs`.
 - `BusinessEnglish/{models,serializers,views,urls}.py` — the DB model and read-only API.
-- `raw_data/day1..4` — the authored source lessons. `docs/` — generated MkDocs pages.
+- `raw_data/day1..N` — the authored source lessons. `docs/` — generated MkDocs pages.

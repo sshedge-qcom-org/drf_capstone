@@ -1,0 +1,262 @@
+Day: Day 6
+Mode: Lite
+Focus theme: Discussing technical debt without sounding negative or vague
+Dialogue topic: Technical debt
+Difficulty: Standard C1
+Review items reused: none provided
+Avoiding recent repeats from our chat: previous Day 1–5 items, including system design, code review, production issue, sprint planning, and RCA expressions.
+
+Day 6 — Lite Lesson
+Focus: Technical Debt English for Senior Engineers
+1 — Professional Idioms
+1. Kick the can down the road
+Meaning: Delay dealing with a problem, usually making it worse later.
+IPA: /kɪk ðə kæn daʊn ðə roʊd/
+Formality: Neutral; slightly conversational but common in leadership discussions
+
+Common learner mistake:
+❌ “We are postponing this problem for future.”
+✅ “We’re kicking the can down the road.”
+
+Engineering example:
+“If we keep adding feature-specific patches without addressing the core abstraction, we’re just kicking the can down the road.”
+
+Meeting example:
+“I understand the release pressure, but skipping this cleanup again feels like kicking the can down the road.”
+
+Presentation example:
+“The recommendation is to address the dependency issue now rather than kick the can down the road into the next release cycle.”
+
+2. Pay down technical debt
+Meaning: Reduce accumulated shortcuts, complexity, or maintainability problems.
+IPA: /peɪ daʊn ˈtɛknɪkəl dɛt/
+Formality: Neutral; very common in engineering
+
+Common learner mistake:
+❌ “We need to clear technical debt.”
+✅ “We need to pay down technical debt.”
+
+Engineering example:
+“We should reserve capacity each sprint to pay down technical debt in the configuration layer.”
+
+Meeting example:
+“This isn’t just cleanup; it’s necessary work to pay down technical debt that is slowing feature delivery.”
+
+Presentation example:
+“Over the last quarter, we paid down technical debt by removing legacy code paths and consolidating duplicate services.”
+
+3. Come back to bite us
+Meaning: Cause problems later because it was ignored or handled poorly earlier.
+IPA: /kʌm bæk tə baɪt ʌs/
+Formality: Neutral; conversational but professional
+
+Common learner mistake:
+❌ “This issue will create problem in future.”
+✅ “This could come back to bite us.”
+
+Engineering example:
+“If we don’t validate the migration path now, this could come back to bite us during customer rollout.”
+
+Meeting example:
+“I’m okay with a short-term workaround, but undocumented behavior will come back to bite us.”
+
+Presentation example:
+“The team identified several assumptions that could come back to bite us at scale.”
+
+2 — Phrasal Verbs
+1. Chip away at
+Meaning: Gradually reduce a large problem through steady, repeated effort.
+IPA: /tʃɪp əˈweɪ æt/
+
+Common mistake:
+❌ “We will slowly reduce technical debt little by little.”
+✅ “We’ll chip away at the technical debt over the next few sprints.”
+
+Technical-discussion example:
+“We don’t need a big rewrite; we can chip away at the legacy dependency by replacing one caller at a time.”
+
+Code-review example:
+“This patch is small, but it helps us chip away at the old error-handling pattern.”
+
+Leadership example:
+“We’re planning a sustained effort to chip away at the maintenance burden without blocking feature work.”
+
+2. Phase out
+Meaning: Gradually remove or replace something over time.
+IPA: /feɪz aʊt/
+
+Common mistake:
+❌ “We will remove this API slowly-slowly.”
+✅ “We’ll phase out this API over two releases.”
+
+Technical-discussion example:
+“We should phase out the old client library instead of forcing all teams to migrate at once.”
+
+Code-review example:
+“Can you add a TODO with the plan to phase out this compatibility branch?”
+
+Leadership example:
+“We’ll phase out the legacy service after the top three consumers move to the new interface.”
+
+3. Shore up
+Meaning: Strengthen something weak or risky.
+IPA: /ʃɔːr ʌp/
+
+Common mistake:
+❌ “We need to make this area strong.”
+✅ “We need to shore up this area.”
+
+Technical-discussion example:
+“Before scaling this to more customers, we need to shore up the retry and timeout behavior.”
+
+Code-review example:
+“This change helps shore up validation around malformed input.”
+
+Leadership example:
+“We should shore up the test coverage before committing to the broader rollout.”
+
+3 — C1/C2 Vocabulary
+1. Brittle
+Meaning: Easily broken by small changes; fragile and hard to modify safely.
+IPA: /ˈbrɪtəl/
+
+Synonyms: fragile, delicate, unstable
+Antonyms: robust, resilient, flexible
+Common collocations: brittle code, brittle tests, brittle integration, brittle dependency
+
+Common learner mistake:
+❌ “This code is very breakable.”
+✅ “This code is brittle.”
+
+Software-engineering example:
+“The parser is brittle because small format changes cause unrelated tests to fail.”
+
+Stakeholder example:
+“The current flow works, but it’s brittle, so every new customer-specific requirement increases delivery risk.”
+
+2. Sustainable
+Meaning: Able to continue over time without creating excessive cost, risk, or burnout.
+IPA: /səˈsteɪnəbəl/
+
+Synonyms: maintainable, viable, durable
+Antonyms: unsustainable, fragile, short-lived
+Common collocations: sustainable pace, sustainable architecture, sustainable delivery model, sustainable process
+
+Common learner mistake:
+❌ “This approach is not long-time good.”
+✅ “This approach is not sustainable.”
+
+Software-engineering example:
+“Manually updating these configs for every release is not sustainable.”
+
+Stakeholder example:
+“We can meet the immediate deadline, but we need a more sustainable delivery model for future releases.”
+
+3. Incremental
+Meaning: Done in small, controlled steps rather than all at once.
+IPA: /ˌɪŋkrəˈmɛntəl/
+
+Synonyms: gradual, step-by-step, phased
+Antonyms: big-bang, abrupt, wholesale
+Common collocations: incremental rollout, incremental migration, incremental improvement, incremental refactor
+
+Common learner mistake:
+❌ “We should do this step by steply.”
+✅ “We should take an incremental approach.”
+
+Software-engineering example:
+“An incremental migration is safer because we can validate each service before moving the next one.”
+
+Stakeholder example:
+“We recommend an incremental rollout to reduce risk and keep customer impact low.”
+
+4. Deprecation
+Meaning: The process of marking something as outdated and scheduled for future removal.
+IPA: /ˌdɛprəˈkeɪʃən/
+
+Synonyms: retirement, sunset, phase-out
+Antonyms: introduction, adoption, launch
+Common collocations: deprecation plan, deprecation notice, deprecation timeline, API deprecation
+
+Common learner mistake:
+❌ “We will obsolete this API.”
+✅ “We’ll define a deprecation plan for this API.”
+✅ “We’ll deprecate this API.”
+
+Software-engineering example:
+“We need a clear deprecation timeline before removing the old endpoint.”
+
+Stakeholder example:
+“The deprecation plan gives partner teams enough time to migrate without blocking the release.”
+
+4 — Natural English Upgrade
+Common Indian corporate English	Natural international English	Why it’s better
+“This code is having many issues.”	“This code has several maintainability issues.”	More direct and technical.
+“We should not take this lightly.”	“We shouldn’t underestimate this risk.”	Sounds more senior and precise.
+“This will create problems in future.”	“This could create problems later.”	More natural phrasing; avoids over-formality.
+“We need to do cleanup activity.”	“We need to clean this up.”	Uses the natural verb form.
+“This is not a scalable way of working.”	“This approach won’t scale.”	Shorter and more idiomatic.
+“We are doing temporary solution only.”	“This is only a short-term workaround.”	More native engineering wording.
+“We need to remove old implementation slowly.”	“We need to phase out the old implementation.”	Uses the correct phrasal verb.
+“It is creating maintenance overheads.”	“It’s increasing the maintenance overhead.”	“Overhead” is usually singular in this context.
+“We should discuss on technical debt.”	“We should discuss the technical debt.”	No “on” after “discuss.”
+“This issue may come in later stage.”	“This issue may resurface later.”	More natural and concise.
+6 — Speaking Practice
+Answer these ALOUD. Don’t just read them silently. Your goal is to sound calm, senior, and specific.
+
+Meeting questions
+Your team wants to skip refactoring again to meet a deadline. What do you say?
+Force in: kick the can down the road, sustainable
+
+A teammate says, “Let’s rewrite the whole module.” You prefer a safer approach. How do you respond?
+Force in: incremental, chip away at
+
+A legacy API is still used by multiple teams. How do you propose handling it?
+Force in: phase out, deprecation
+
+Presentation questions
+Explain why technical debt is affecting delivery speed.
+Force in: brittle, pay down technical debt
+
+Present a plan to improve system maintainability over the next quarter.
+Force in: incremental, shore up
+
+Explain why a short-term workaround is acceptable only with follow-up ownership.
+Force in: come back to bite us, sustainable
+
+Leadership-discussion questions
+Your manager asks why the team needs capacity for cleanup. What do you say?
+Force in: pay down technical debt, maintenance overhead
+
+A stakeholder wants faster delivery, but the platform is becoming fragile. How do you explain the risk?
+Force in: brittle, come back to bite us
+
+You need to propose retiring an old component without disrupting partner teams. What’s your plan?
+Force in: deprecation, phase out
+
+9 — Output Correction
+No MY_ANSWERS were provided today.
+
+For next session, write or speak 2 sentences using at least 3 of today’s expressions. For example, use:
+
+kick the can down the road
+pay down technical debt
+brittle
+phase out
+incremental
+I’ll correct them at a C2 workplace-English level and flag anything that sounds too textbook or “Indian corporate English.”
+
+Tomorrow’s preview: Project status updates — focus on giving concise, executive-friendly updates without sounding defensive.
+
+Tracker
+Date	Day	Expression	Type	5-word meaning	Status (new/review)
+2026-08-24	Day 6	kick the can down the road	Idiom	Delay problem to future	new
+2026-08-24	Day 6	pay down technical debt	Idiom	Reduce accumulated engineering debt	new
+2026-08-24	Day 6	come back to bite us	Idiom	Cause problems later unexpectedly	new
+2026-08-24	Day 6	chip away at	Phrasal verb	Reduce gradually over time	new
+2026-08-24	Day 6	phase out	Phrasal verb	Remove gradually over time	new
+2026-08-24	Day 6	shore up	Phrasal verb	Strengthen weak risky area	new
+2026-08-24	Day 6	brittle	Vocabulary	Fragile under small changes	new
+2026-08-24	Day 6	sustainable	Vocabulary	Viable over long term	new
+2026-08-24	Day 6	incremental	Vocabulary	Done in small steps	new
+2026-08-24	Day 6	deprecation	Vocabulary	Planned retirement of old feature	new

@@ -8,7 +8,7 @@ title: Business English for Senior Engineers
 
 A fresh lesson lands every day. Each one is about a 10-minute read and the collection keeps growing — pick up where you left off below.
 
-[:material-arrow-right-circle: Start today's lesson — Day 5: Root cause analysis](day-5.md){ .md-button .md-button--primary }
+[:material-arrow-right-circle: Start today's lesson — Day 6: Technical debt](day-6.md){ .md-button .md-button--primary }
 
 ## Lessons
 
@@ -18,7 +18,8 @@ A fresh lesson lands every day. Each one is about a 10-minute read and the colle
 | **[Day 2](day-2.md)** | Code reviews | Giving clear, diplomatic feedback in code/Gerrit reviews | 2026-08-20 |
 | **[Day 3](day-3.md)** | Production issues | Staying calm, precise, and credible during production issues | 2026-08-21 |
 | **[Day 4](day-4.md)** | Sprint planning | Sounding clear, realistic, and senior during sprint planning | 2026-08-22 |
-| **[Day 5](day-5.md)** <span class="fe-badge fe-badge--latest">Latest</span> | Root cause analysis | Explaining root cause clearly without overclaiming | 2026-08-23 |
+| **[Day 5](day-5.md)** | Root cause analysis | Explaining root cause clearly without overclaiming | 2026-08-23 |
+| **[Day 6](day-6.md)** <span class="fe-badge fe-badge--latest">Latest</span> | Technical debt | Discussing technical debt without sounding negative or vague | 2026-08-24 |
 
 ## How to use
 
