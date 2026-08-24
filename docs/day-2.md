@@ -273,37 +273,50 @@
 
 ## Speaking Practice
 
-Instruction: Answer these ALOUD. Keep each answer to 30–45 seconds. Force the listed expressions into your answer naturally.  
+!!! quote "Practice out loud"
+    Answer these ALOUD. Keep each answer to 30–45 seconds. Force the listed expressions into your answer naturally.
 
-Meeting questions  
-A teammate proposes merging a risky patch late in the release cycle. What do you say?  
-Force: raise a red flag, regression  
+=== "Meeting"
 
-The team keeps changing the API requirements during implementation. How do you respond?  
-Force: a moving target, rationale  
+    > A teammate proposes merging a risky patch late in the release cycle. What do you say?
 
-A bug appears only under rare timing conditions. How would you guide the debugging discussion?  
-Force: get to the bottom of, edge case  
+    :material-target: **Use:** `raise a red flag` · `regression`
 
-Presentation questions  
-Present why your team chose a slightly more verbose implementation.  
-Force: maintainable, rationale  
+    > The team keeps changing the API requirements during implementation. How do you respond?
 
-Explain why you paused a rollout after testing.  
-Force: regression, call out  
+    :material-target: **Use:** `a moving target` · `rationale`
 
-Explain how the team improved code quality before release.  
-Force: clean up, follow through  
+    > A bug appears only under rare timing conditions. How would you guide the debugging discussion?
 
-Leadership-discussion questions  
-Your manager asks why the review is taking longer than expected. What do you say?  
-Force: edge case, maintainable  
+    :material-target: **Use:** `get to the bottom of` · `edge case`
 
-A stakeholder wants a quick workaround. How do you respond professionally?  
-Force: raise a red flag, follow through  
+=== "Presentation"
 
-You need another team to clarify an unstable interface. What do you say?  
-Force: a moving target, call out  
+    > Present why your team chose a slightly more verbose implementation.
+
+    :material-target: **Use:** `maintainable` · `rationale`
+
+    > Explain why you paused a rollout after testing.
+
+    :material-target: **Use:** `regression` · `call out`
+
+    > Explain how the team improved code quality before release.
+
+    :material-target: **Use:** `clean up` · `follow through`
+
+=== "Leadership-discussion"
+
+    > Your manager asks why the review is taking longer than expected. What do you say?
+
+    :material-target: **Use:** `edge case` · `maintainable`
+
+    > A stakeholder wants a quick workaround. How do you respond professionally?
+
+    :material-target: **Use:** `raise a red flag` · `follow through`
+
+    > You need another team to clarify an unstable interface. What do you say?
+
+    :material-target: **Use:** `a moving target` · `call out`
 
 ## Output Correction
 

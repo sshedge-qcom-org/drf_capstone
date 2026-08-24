@@ -274,37 +274,50 @@
 
 ## Speaking Practice
 
-Answer ALOUD. Keep each answer to 30–45 seconds. Force the assigned expressions naturally.  
+!!! quote "Practice out loud"
+    Answer ALOUD. Keep each answer to 30–45 seconds. Force the assigned expressions naturally.
 
-Meeting questions  
-Your manager wants to add two urgent bugs to the sprint. How do you respond?  
-Force: bandwidth, bite off more than we can chew  
+=== "Meeting"
 
-A teammate proposes taking a large refactor along with planned feature work. What do you say?  
-Force: feasible, scope out  
+    > Your manager wants to add two urgent bugs to the sprint. How do you respond?
 
-A dependency from another team may slip. How do you explain the risk?  
-Force: dependency, line up  
+    :material-target: **Use:** `bandwidth` · `bite off more than we can chew`
 
-Presentation questions  
-Present the sprint plan to stakeholders in 60 seconds.  
-Force: commitment, stretch goal  
+    > A teammate proposes taking a large refactor along with planned feature work. What do you say?
 
-Explain why the team reduced scope compared to the original plan.  
-Force: break down, feasible  
+    :material-target: **Use:** `feasible` · `scope out`
 
-Explain how the team will handle support work while delivering sprint goals.  
-Force: keep the plates spinning, bandwidth  
+    > A dependency from another team may slip. How do you explain the risk?
 
-Leadership-discussion questions  
-A director asks why the team cannot commit to everything. Give a senior-level answer.  
-Force: commitment, bite off more than we can chew  
+    :material-target: **Use:** `dependency` · `line up`
 
-Another team has not confirmed their API timeline. How do you communicate the impact?  
-Force: dependency, line up  
+=== "Presentation"
 
-Your EM asks what could be done if one engineer becomes available mid-sprint.  
-Force: stretch goal, scope out  
+    > Present the sprint plan to stakeholders in 60 seconds.
+
+    :material-target: **Use:** `commitment` · `stretch goal`
+
+    > Explain why the team reduced scope compared to the original plan.
+
+    :material-target: **Use:** `break down` · `feasible`
+
+    > Explain how the team will handle support work while delivering sprint goals.
+
+    :material-target: **Use:** `keep the plates spinning` · `bandwidth`
+
+=== "Leadership-discussion"
+
+    > A director asks why the team cannot commit to everything. Give a senior-level answer.
+
+    :material-target: **Use:** `commitment` · `bite off more than we can chew`
+
+    > Another team has not confirmed their API timeline. How do you communicate the impact?
+
+    :material-target: **Use:** `dependency` · `line up`
+
+    > Your EM asks what could be done if one engineer becomes available mid-sprint.
+
+    :material-target: **Use:** `stretch goal` · `scope out`
 
 ## Output Correction
 

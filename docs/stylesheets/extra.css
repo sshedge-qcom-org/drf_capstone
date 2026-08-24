@@ -221,6 +221,15 @@
 .md-typeset h2.fe-sec--phrasal_verb { border-bottom-color: #009688; }
 .md-typeset h2.fe-sec--vocabulary   { border-bottom-color: #f59e0b; }
 
+/* ── Speaking Practice: tint the "Use:" target icon with the accent ──────── */
+.md-typeset .twemoji svg {
+  vertical-align: text-bottom;
+}
+
+.md-typeset p:has(> strong) .twemoji svg {
+  fill: var(--md-accent-fg-color);
+}
+
 /* ── Landing-page hero banner ────────────────────────────────────────────── */
 .md-typeset .fe-hero {
   margin: 0.4em 0 2.2em;

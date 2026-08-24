@@ -277,46 +277,68 @@
 
 ## Speaking Practice
 
-Answer these ALOUD. Don’t just read them silently. Your goal is to make the expressions feel automatic.  
+!!! quote "Practice out loud"
+    Answer these ALOUD. Don’t just read them silently. Your goal is to make the expressions feel automatic.
 
-Meeting questions  
-Design review:  
-“The team wants to hard-code a customer-specific rule to meet a deadline. What would you say?”  
-Force these expressions: paint ourselves into a corner, pragmatic  
+=== "Meeting"
 
-Architecture discussion:  
-“You need the team to choose an initial design even though some details are still open. What would you say?”  
-Force these expressions: put a stake in the ground, not set in stone  
+    **Design review**
 
-Risk discussion:  
-“A proposed solution looks simple, but it ignores failure recovery. What would you say?”  
-Force these expressions: factor in, robust  
+    > The team wants to hard-code a customer-specific rule to meet a deadline. What would you say?
 
-Presentation questions  
-Management update:  
-“Explain why your team chose a slightly slower but safer rollout plan.”  
-Force these expressions: defensible, constraint  
+    :material-target: **Use:** `paint ourselves into a corner` · `pragmatic`
 
-Technical presentation:  
-“Explain why your API proposal may change after performance testing.”  
-Force these expressions: not set in stone, spell out  
+    **Architecture discussion**
 
-Release readiness:  
-“Describe your rollback strategy for a risky deployment.”  
-Force these expressions: roll back, robust  
+    > You need the team to choose an initial design even though some details are still open. What would you say?
 
-Leadership-discussion questions  
-Pushback upward:  
-“A stakeholder wants the fastest possible delivery, but the quality risk is high. What would you say?”  
-Force these expressions: factor in, defensible  
+    :material-target: **Use:** `put a stake in the ground` · `not set in stone`
 
-Cross-team alignment:  
-“Two teams disagree on ownership boundaries. How would you frame the discussion?”  
-Force these expressions: put a stake in the ground, spell out  
+    **Risk discussion**
 
-Strategic design:  
-“Your team is choosing between a quick fix and a scalable design. What would you say?”  
-Force these expressions: paint ourselves into a corner, pragmatic  
+    > A proposed solution looks simple, but it ignores failure recovery. What would you say?
+
+    :material-target: **Use:** `factor in` · `robust`
+
+=== "Presentation"
+
+    **Management update**
+
+    > Explain why your team chose a slightly slower but safer rollout plan.
+
+    :material-target: **Use:** `defensible` · `constraint`
+
+    **Technical presentation**
+
+    > Explain why your API proposal may change after performance testing.
+
+    :material-target: **Use:** `not set in stone` · `spell out`
+
+    **Release readiness**
+
+    > Describe your rollback strategy for a risky deployment.
+
+    :material-target: **Use:** `roll back` · `robust`
+
+=== "Leadership-discussion"
+
+    **Pushback upward**
+
+    > A stakeholder wants the fastest possible delivery, but the quality risk is high. What would you say?
+
+    :material-target: **Use:** `factor in` · `defensible`
+
+    **Cross-team alignment**
+
+    > Two teams disagree on ownership boundaries. How would you frame the discussion?
+
+    :material-target: **Use:** `put a stake in the ground` · `spell out`
+
+    **Strategic design**
+
+    > Your team is choosing between a quick fix and a scalable design. What would you say?
+
+    :material-target: **Use:** `paint ourselves into a corner` · `pragmatic`
 
 ## Output Correction
 

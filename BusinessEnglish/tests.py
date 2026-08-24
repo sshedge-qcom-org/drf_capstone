@@ -198,6 +198,14 @@ class RendererTests(SimpleTestCase):
         markdown = render_lesson(self.lessons[1])
         self.assertIn('=== "Engineering"', markdown)
 
+    def test_speaking_practice_is_structured(self):
+        # Speaking Practice becomes an intro callout + per-category tabs with
+        # scenario blockquotes and target-expression chips (not a flat blob).
+        markdown = render_lesson(self.lessons[1])
+        self.assertIn('!!! quote "Practice out loud"', markdown)
+        self.assertIn('=== "Meeting"', markdown)
+        self.assertIn("**Use:**", markdown)
+
     def test_index_links_every_day(self):
         markdown = render_index(list(self.lessons.values()))
         for day in self.lessons:

@@ -277,46 +277,68 @@
 
 ## Speaking Practice
 
-Answer these ALOUD. Keep each answer to 20–40 seconds. Do not over-explain. Sound like a senior engineer giving a crisp update.  
+!!! quote "Practice out loud"
+    Answer these ALOUD. Keep each answer to 20–40 seconds. Do not over-explain. Sound like a senior engineer giving a crisp update.
 
-Meeting questions  
-Incident triage:  
-“The service is showing elevated latency. What would you say in the first five minutes of the incident call?”  
-Force in: stop the bleeding, mitigation  
+=== "Meeting"
 
-Debugging discussion:  
-“You have three possible causes: network, database, and a recent config change. How would you explain your investigation plan?”  
-Force in: rule out, dig into  
+    **Incident triage**
 
-Release decision:  
-“A deployment is scheduled, but the team is still investigating a production issue. What would you recommend?”  
-Force in: hold off on, the blast radius  
+    > The service is showing elevated latency. What would you say in the first five minutes of the incident call?
 
-Presentation questions  
-Reliability update:  
-“Explain to leadership what happened without sounding defensive.”  
-Force in: degradation, mitigation  
+    :material-target: **Use:** `stop the bleeding` · `mitigation`
 
-Architecture improvement:  
-“Explain how you would redesign the system to handle dependency failures better.”  
-Force in: resilient, under the hood  
+    **Debugging discussion**
 
-Post-incident review:  
-“Summarize what the team learned from the incident.”  
-Force in: intermittent, rule out  
+    > You have three possible causes: network, database, and a recent config change. How would you explain your investigation plan?
 
-Leadership-discussion questions  
-Stakeholder pressure:  
-“A stakeholder asks for a fixed ETA before the root cause is known. What do you say?”  
-Force in: dig into, mitigation  
+    :material-target: **Use:** `rule out` · `dig into`
 
-Risk communication:  
-“Your manager asks whether this can happen again. How do you answer honestly but confidently?”  
-Force in: resilient, the blast radius  
+    **Release decision**
 
-Go/no-go call:  
-“You need to recommend delaying a release. How do you phrase it diplomatically?”  
-Force in: hold off on, degradation  
+    > A deployment is scheduled, but the team is still investigating a production issue. What would you recommend?
+
+    :material-target: **Use:** `hold off on` · `the blast radius`
+
+=== "Presentation"
+
+    **Reliability update**
+
+    > Explain to leadership what happened without sounding defensive.
+
+    :material-target: **Use:** `degradation` · `mitigation`
+
+    **Architecture improvement**
+
+    > Explain how you would redesign the system to handle dependency failures better.
+
+    :material-target: **Use:** `resilient` · `under the hood`
+
+    **Post-incident review**
+
+    > Summarize what the team learned from the incident.
+
+    :material-target: **Use:** `intermittent` · `rule out`
+
+=== "Leadership-discussion"
+
+    **Stakeholder pressure**
+
+    > A stakeholder asks for a fixed ETA before the root cause is known. What do you say?
+
+    :material-target: **Use:** `dig into` · `mitigation`
+
+    **Risk communication**
+
+    > Your manager asks whether this can happen again. How do you answer honestly but confidently?
+
+    :material-target: **Use:** `resilient` · `the blast radius`
+
+    **Go/no-go call**
+
+    > You need to recommend delaying a release. How do you phrase it diplomatically?
+
+    :material-target: **Use:** `hold off on` · `degradation`
 
 ## Output Correction
 

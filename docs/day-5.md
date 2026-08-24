@@ -273,46 +273,68 @@
 
 ## Speaking Practice
 
-Answer ALOUD. Keep each answer to 30–45 seconds. Force the listed expressions into your response.  
+!!! quote "Practice out loud"
+    Answer ALOUD. Keep each answer to 30–45 seconds. Force the listed expressions into your response.
 
-Meeting questions  
-Incident triage:  
-“The team has several theories about a timeout issue. How would you guide the discussion?”  
-Force: zero in on, correlate  
+=== "Meeting"
 
-Root cause review:  
-“You have strong evidence, but not full proof yet. How would you explain that carefully?”  
-Force: the smoking gun, intermittent  
+    **Incident triage**
 
-Action-item closure:  
-“The fix is deployed, but QA and release teams still need confirmation. What do you say?”  
-Force: close the loop, mitigation  
+    > The team has several theories about a timeout issue. How would you guide the discussion?
 
-Presentation questions  
-Incident summary:  
-“Present the root cause of a production issue to senior managers.”  
-Force: connect the dots, regression  
+    :material-target: **Use:** `zero in on` · `correlate`
 
-Technical timeline:  
-“Explain how the team moved from symptoms to likely cause.”  
-Force: trace back, correlate  
+    **Root cause review**
 
-Prevention plan:  
-“Explain how you’ll prevent recurrence.”  
-Force: tighten up, mitigation  
+    > You have strong evidence, but not full proof yet. How would you explain that carefully?
 
-Leadership-discussion questions  
-Risk communication:  
-“A stakeholder asks whether the issue is fully fixed. Give a confident but careful answer.”  
-Force: mitigation, root cause optional, close the loop  
+    :material-target: **Use:** `the smoking gun` · `intermittent`
 
-Escalation update:  
-“Your manager asks what the team knows so far.”  
-Force: zero in on, intermittent  
+    **Action-item closure**
 
-Quality improvement:  
-“Explain why the team needs time to improve tests after the incident.”  
-Force: regression, tighten up  
+    > The fix is deployed, but QA and release teams still need confirmation. What do you say?
+
+    :material-target: **Use:** `close the loop` · `mitigation`
+
+=== "Presentation"
+
+    **Incident summary**
+
+    > Present the root cause of a production issue to senior managers.
+
+    :material-target: **Use:** `connect the dots` · `regression`
+
+    **Technical timeline**
+
+    > Explain how the team moved from symptoms to likely cause.
+
+    :material-target: **Use:** `trace back` · `correlate`
+
+    **Prevention plan**
+
+    > Explain how you’ll prevent recurrence.
+
+    :material-target: **Use:** `tighten up` · `mitigation`
+
+=== "Leadership-discussion"
+
+    **Risk communication**
+
+    > A stakeholder asks whether the issue is fully fixed. Give a confident but careful answer.
+
+    :material-target: **Use:** `mitigation` · `root cause optional` · `close the loop`
+
+    **Escalation update**
+
+    > Your manager asks what the team knows so far.
+
+    :material-target: **Use:** `zero in on` · `intermittent`
+
+    **Quality improvement**
+
+    > Explain why the team needs time to improve tests after the incident.
+
+    :material-target: **Use:** `regression` · `tighten up`
 
 ## Output Correction
 

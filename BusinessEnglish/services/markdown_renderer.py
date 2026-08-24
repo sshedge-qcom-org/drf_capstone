@@ -79,6 +79,110 @@ def _render_expression(expr: ParsedExpression) -> list[str]:
     return out
 
 
+def _cat_label(name: str) -> str:
+    """Shorten a category header ("Meeting questions" → "Meeting") for a tab."""
+    stripped = name.strip()
+    low = stripped.lower()
+    for suffix in (" questions", " question"):
+        if low.endswith(suffix):
+            return stripped[: -len(suffix)].strip()
+    return stripped
+
+
+def _parse_speaking_practice(text: str):
+    """Split the free-text Speaking Practice into (intro, grouped prompts).
+
+    Each prompt block ends in a ``Force …:`` line; the lines before it are the
+    scenario, optionally preceded by a ``Label:`` line, optionally preceded by a
+    category header (only on the first prompt of each category). Lenient by
+    design so it survives the per-day format drift (labels/quotes present on
+    some days, absent on others; ``Force these expressions:`` vs ``Force:``).
+    """
+    blocks: list[list[str]] = []
+    current: list[str] = []
+    for raw in text.split("\n"):
+        line = raw.strip()
+        if line:
+            current.append(line)
+        elif current:
+            blocks.append(current)
+            current = []
+    if current:
+        blocks.append(current)
+
+    intro: list[str] = []
+    prompts = []  # (category, label, scenario, forced)
+    category = None
+    for block in blocks:
+        force_idx = next(
+            (i for i, ln in enumerate(block) if ln.lower().startswith("force")),
+            None,
+        )
+        if force_idx is None:
+            joined = " ".join(block)
+            if joined.lower().startswith("instruction:"):
+                joined = joined.split(":", 1)[1].strip()
+            intro.append(joined)
+            continue
+        _, _, rest = block[force_idx].partition(":")
+        forced = [item.strip() for item in rest.split(",") if item.strip()]
+        head = block[:force_idx]
+        scenario = head[-1].strip().strip("“”\"") if head else ""
+        head = head[:-1]
+        label = ""
+        if head and head[-1].endswith(":"):
+            label = head[-1][:-1].strip()
+            head = head[:-1]
+        if head:
+            category = head[-1].strip()
+        prompts.append((category, label, scenario, forced))
+
+    groups = []  # (category, [(label, scenario, forced), …])
+    for cat, label, scenario, forced in prompts:
+        if not groups or groups[-1][0] != cat:
+            groups.append((cat, []))
+        groups[-1][1].append((label, scenario, forced))
+    return intro, groups
+
+
+def _render_prompt(label, scenario, forced, indent=""):
+    out = []
+    if label:
+        out += [f"{indent}**{label}**", ""]
+    if scenario:
+        out += [f"{indent}> {scenario}", ""]
+    if forced:
+        chips = " · ".join(f"`{expr}`" for expr in forced)
+        out += [f"{indent}:material-target: **Use:** {chips}", ""]
+    return out
+
+
+def _render_speaking_practice(text: str) -> list[str]:
+    intro, groups = _parse_speaking_practice(text)
+    if not groups:  # unrecognised shape — fall back to plain rendering
+        return [_preserve_breaks(text), ""]
+
+    out = []
+    if intro:
+        out.append('!!! quote "Practice out loud"')
+        out += [f"    {line}" for line in intro]
+        out.append("")
+
+    use_tabs = sum(1 for cat, _ in groups if cat) > 1
+    if use_tabs:
+        for cat, items in groups:
+            out += [f'=== "{_cat_label(cat) if cat else "Practice"}"', ""]
+            for label, scenario, forced in items:
+                out += _render_prompt(label, scenario, forced, indent="    ")
+    else:
+        for cat, items in groups:
+            if cat:
+                out += [f"**{_cat_label(cat)}**", ""]
+            for label, scenario, forced in items:
+                out += _render_prompt(label, scenario, forced)
+    return out
+
+
 def render_lesson(lesson: ParsedLesson) -> str:
     """Render one lesson to a full Markdown page."""
     lines = [f"# Day {lesson.day_number} — {lesson.dialogue_topic}", ""]
@@ -118,7 +222,8 @@ def render_lesson(lesson: ParsedLesson) -> str:
         lines.append("")
 
     if lesson.speaking_practice:
-        lines += ["## Speaking Practice", "", _preserve_breaks(lesson.speaking_practice), ""]
+        lines += ["## Speaking Practice", ""]
+        lines += _render_speaking_practice(lesson.speaking_practice)
     if lesson.output_correction:
         lines += ["## Output Correction", "", _preserve_breaks(lesson.output_correction), ""]
 
