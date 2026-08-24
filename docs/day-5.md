@@ -338,12 +338,11 @@
 
 ## Output Correction
 
-You didn’t provide MY_ANSWERS today.  
+!!! example "Your turn"
+    For next session, write or speak 2 sentences using at least 3 of today’s expressions. For example, use:
+    intermittent, trace back, close the loop, mitigation, the smoking gun.
 
-For next session, write or speak 2 sentences using at least 3 of today’s expressions. For example, use:  
-intermittent, trace back, close the loop, mitigation, the smoking gun.  
-
-I’ll correct them at a C2 level for tone, naturalness, and senior-engineer phrasing.  
+    I’ll correct them at a C2 level for tone, naturalness, and senior-engineer phrasing.
 
 !!! tip "Tomorrow's preview"
     Technical debt — how to frame engineering debt as risk, leverage, and long-term delivery health without sounding negative.
@@ -352,13 +351,13 @@ I’ll correct them at a C2 level for tone, naturalness, and senior-engineer phr
 
 | Expression | Type | 5-word meaning | Status |
 | --- | --- | --- | --- |
-| Connect the dots | Idiom | Link evidence into full picture | new |
-| The smoking gun | Idiom | Clear evidence of real cause | new |
-| Close the loop | Idiom | Confirm outcome and next steps | new |
-| Zero in on | Phrasal verb | Focus on likely cause | new |
-| Trace back | Phrasal verb | Follow evidence to origin | new |
-| Tighten up | Phrasal verb | Make more reliable or precise | new |
-| Intermittent | Vocabulary | Happening occasionally, not constantly | new |
-| Correlate | Vocabulary | Show relationship between events | new |
-| Mitigation | Vocabulary | Action reducing risk or impact | new |
-| Regression | Vocabulary | New bug in working behavior | new |
+| Connect the dots | <span class="fe-badge fe-badge--idiom">Idiom</span> | Link evidence into full picture | <span class="fe-badge fe-badge--new">New</span> |
+| The smoking gun | <span class="fe-badge fe-badge--idiom">Idiom</span> | Clear evidence of real cause | <span class="fe-badge fe-badge--new">New</span> |
+| Close the loop | <span class="fe-badge fe-badge--idiom">Idiom</span> | Confirm outcome and next steps | <span class="fe-badge fe-badge--new">New</span> |
+| Zero in on | <span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span> | Focus on likely cause | <span class="fe-badge fe-badge--new">New</span> |
+| Trace back | <span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span> | Follow evidence to origin | <span class="fe-badge fe-badge--new">New</span> |
+| Tighten up | <span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span> | Make more reliable or precise | <span class="fe-badge fe-badge--new">New</span> |
+| Intermittent | <span class="fe-badge fe-badge--vocabulary">Vocabulary</span> | Happening occasionally, not constantly | <span class="fe-badge fe-badge--new">New</span> |
+| Correlate | <span class="fe-badge fe-badge--vocabulary">Vocabulary</span> | Show relationship between events | <span class="fe-badge fe-badge--new">New</span> |
+| Mitigation | <span class="fe-badge fe-badge--vocabulary">Vocabulary</span> | Action reducing risk or impact | <span class="fe-badge fe-badge--new">New</span> |
+| Regression | <span class="fe-badge fe-badge--vocabulary">Vocabulary</span> | New bug in working behavior | <span class="fe-badge fe-badge--new">New</span> |

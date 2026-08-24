@@ -321,13 +321,13 @@
 
 ## Output Correction
 
-No answers were provided today.  
+!!! example "Your turn"
+    For next session, write or speak 2 short sentences using today’s expressions. For example:
 
-For next session, write or speak 2 short sentences using today’s expressions. For example:  
+    - Use feasible + bandwidth in one sentence.
+    - Use scope out + stretch goal in one sentence.
 
-Use feasible + bandwidth in one sentence.  
-Use scope out + stretch goal in one sentence.  
-I’ll correct them for C2-level tone, naturalness, and leadership-style phrasing.  
+    I’ll correct them for C2-level tone, naturalness, and leadership-style phrasing.
 
 !!! tip "Tomorrow's preview"
     Root cause analysis — focus on explaining uncertainty clearly without sounding vague.
@@ -336,13 +336,13 @@ I’ll correct them for C2-level tone, naturalness, and leadership-style phrasin
 
 | Expression | Type | 5-word meaning | Status |
 | --- | --- | --- | --- |
-| Bite off more than we can chew | Idiom | take on too much work | new |
-| Keep the plates spinning | Idiom | manage many things simultaneously | new |
-| A stretch goal | Idiom | ambitious optional extra target | new |
-| Scope out | Phrasal verb | define work and boundaries | new |
-| Break down | Phrasal verb | split into smaller pieces | new |
-| Line up | Phrasal verb | arrange dependencies or people | new |
-| Feasible | Vocabulary | realistic and possible to do | new |
-| Bandwidth | Vocabulary | available time and capacity | new |
-| Dependency | Vocabulary | required input or prerequisite | new |
-| Commitment | Vocabulary | agreed delivery responsibility | new |
+| Bite off more than we can chew | <span class="fe-badge fe-badge--idiom">Idiom</span> | take on too much work | <span class="fe-badge fe-badge--new">New</span> |
+| Keep the plates spinning | <span class="fe-badge fe-badge--idiom">Idiom</span> | manage many things simultaneously | <span class="fe-badge fe-badge--new">New</span> |
+| A stretch goal | <span class="fe-badge fe-badge--idiom">Idiom</span> | ambitious optional extra target | <span class="fe-badge fe-badge--new">New</span> |
+| Scope out | <span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span> | define work and boundaries | <span class="fe-badge fe-badge--new">New</span> |
+| Break down | <span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span> | split into smaller pieces | <span class="fe-badge fe-badge--new">New</span> |
+| Line up | <span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span> | arrange dependencies or people | <span class="fe-badge fe-badge--new">New</span> |
+| Feasible | <span class="fe-badge fe-badge--vocabulary">Vocabulary</span> | realistic and possible to do | <span class="fe-badge fe-badge--new">New</span> |
+| Bandwidth | <span class="fe-badge fe-badge--vocabulary">Vocabulary</span> | available time and capacity | <span class="fe-badge fe-badge--new">New</span> |
+| Dependency | <span class="fe-badge fe-badge--vocabulary">Vocabulary</span> | required input or prerequisite | <span class="fe-badge fe-badge--new">New</span> |
+| Commitment | <span class="fe-badge fe-badge--vocabulary">Vocabulary</span> | agreed delivery responsibility | <span class="fe-badge fe-badge--new">New</span> |

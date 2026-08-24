@@ -183,6 +183,64 @@ def _render_speaking_practice(text: str) -> list[str]:
     return out
 
 
+def _pill(cls_suffix: str, label: str) -> str:
+    """A badge pill safe to drop inside a Markdown table cell (inline HTML)."""
+    return f'<span class="fe-badge fe-badge--{cls_suffix}">{label}</span>'
+
+
+def _render_output_correction(text: str) -> list[str]:
+    """Render the free-text Output Correction as a 'Your turn' callout.
+
+    Task prompts ("Use X and Y …") and fill-in templates become bullets; short
+    label lines ("Example prompts:") are emphasised; everything else stays as
+    prose. The leading "no answers were provided" boilerplate (an authoring
+    artifact referencing the MY_ANSWERS placeholder) is dropped.
+    """
+    raw_lines = text.split("\n")
+    idx = 0
+    while idx < len(raw_lines):
+        stripped = raw_lines[idx].strip()
+        if not stripped:
+            idx += 1
+            continue
+        low = stripped.lower()
+        if "my_answers" in low or ("provide" in low and (low[:4] == "no a"
+                                   or "didn" in low)):
+            idx += 1
+            continue
+        break
+    raw_lines = raw_lines[idx:]
+
+    body: list[str] = []
+    prev = None  # "bullet" | "text" | None
+    for raw in raw_lines:
+        line = raw.strip()
+        if not line:
+            body.append("")
+            prev = None
+            continue
+        if line.startswith(("Use ", "“", '"')):
+            kind, rendered = "bullet", f"- {line}"
+        elif line.endswith(":") and len(line) <= 30:
+            kind, rendered = "text", f"**{line}**"
+        else:
+            kind, rendered = "text", line
+        if prev is not None and prev != kind:
+            body.append("")
+        body.append(rendered)
+        prev = kind
+
+    while body and body[0] == "":
+        body.pop(0)
+    while body and body[-1] == "":
+        body.pop()
+
+    out = ['!!! example "Your turn"']
+    out += [f"    {ln}" if ln else "" for ln in body]
+    out.append("")
+    return out
+
+
 def render_lesson(lesson: ParsedLesson) -> str:
     """Render one lesson to a full Markdown page."""
     lines = [f"# Day {lesson.day_number} — {lesson.dialogue_topic}", ""]
@@ -225,7 +283,8 @@ def render_lesson(lesson: ParsedLesson) -> str:
         lines += ["## Speaking Practice", ""]
         lines += _render_speaking_practice(lesson.speaking_practice)
     if lesson.output_correction:
-        lines += ["## Output Correction", "", _preserve_breaks(lesson.output_correction), ""]
+        lines += ["## Output Correction", ""]
+        lines += _render_output_correction(lesson.output_correction)
 
     if lesson.tomorrow_preview:
         lines += ['!!! tip "Tomorrow\'s preview"', _indent(lesson.tomorrow_preview), ""]
@@ -237,8 +296,9 @@ def render_lesson(lesson: ParsedLesson) -> str:
             "| --- | --- | --- | --- |",
         ]
         lines += [
-            f"| {_cell(e.name)} | {_TYPE_LABEL.get(e.kind, e.kind)} | "
-            f"{_cell(e.five_word_meaning)} | {e.status} |"
+            f"| {_cell(e.name)} | {_pill(e.kind, _TYPE_LABEL.get(e.kind, e.kind))} | "
+            f"{_cell(e.five_word_meaning)} | "
+            f"{_pill(e.status, e.status.title()) if e.status else ''} |"
             for e in lesson.expressions
         ]
         lines.append("")

@@ -320,27 +320,27 @@
 
 ## Output Correction
 
-No MY_ANSWERS were provided today.  
+!!! example "Your turn"
+    For next session, write or speak 2 sentences using at least 4 of today’s expressions. Example topics:
 
-For next session, write or speak 2 sentences using at least 4 of today’s expressions. Example topics:  
+    A Gerrit review where you disagree with the implementation.
+    A design discussion where requirements keep changing.
 
-A Gerrit review where you disagree with the implementation.  
-A design discussion where requirements keep changing.  
-Use any of these: raise a red flag, get to the bottom of, a moving target, call out, clean up, follow through, rationale, regression, maintainable, edge case.  
+    - Use any of these: raise a red flag, get to the bottom of, a moving target, call out, clean up, follow through, rationale, regression, maintainable, edge case.
 
-I’ll correct them at C2 level next time.  
+    I’ll correct them at C2 level next time.
 
 ## Tracker
 
 | Expression | Type | 5-word meaning | Status |
 | --- | --- | --- | --- |
-| Raise a red flag | Idiom | Point out serious potential risk | new |
-| Get to the bottom of something | Idiom | Find the real underlying cause | new |
-| A moving target | Idiom | Something keeps changing over time | new |
-| Call out | Phrasal verb | Explicitly mention important concern | new |
-| Clean up | Phrasal verb | Improve clarity and remove mess | new |
-| Follow through | Phrasal verb | Complete promised actions properly | new |
-| Rationale | Vocabulary | Reasoning behind a decision | new |
-| Regression | Vocabulary | New bug from a change | new |
-| Maintainable | Vocabulary | Easy to change over time | new |
-| Edge case | Vocabulary | Rare scenario needing handling | new |
+| Raise a red flag | <span class="fe-badge fe-badge--idiom">Idiom</span> | Point out serious potential risk | <span class="fe-badge fe-badge--new">New</span> |
+| Get to the bottom of something | <span class="fe-badge fe-badge--idiom">Idiom</span> | Find the real underlying cause | <span class="fe-badge fe-badge--new">New</span> |
+| A moving target | <span class="fe-badge fe-badge--idiom">Idiom</span> | Something keeps changing over time | <span class="fe-badge fe-badge--new">New</span> |
+| Call out | <span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span> | Explicitly mention important concern | <span class="fe-badge fe-badge--new">New</span> |
+| Clean up | <span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span> | Improve clarity and remove mess | <span class="fe-badge fe-badge--new">New</span> |
+| Follow through | <span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span> | Complete promised actions properly | <span class="fe-badge fe-badge--new">New</span> |
+| Rationale | <span class="fe-badge fe-badge--vocabulary">Vocabulary</span> | Reasoning behind a decision | <span class="fe-badge fe-badge--new">New</span> |
+| Regression | <span class="fe-badge fe-badge--vocabulary">Vocabulary</span> | New bug from a change | <span class="fe-badge fe-badge--new">New</span> |
+| Maintainable | <span class="fe-badge fe-badge--vocabulary">Vocabulary</span> | Easy to change over time | <span class="fe-badge fe-badge--new">New</span> |
+| Edge case | <span class="fe-badge fe-badge--vocabulary">Vocabulary</span> | Rare scenario needing handling | <span class="fe-badge fe-badge--new">New</span> |

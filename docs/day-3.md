@@ -342,17 +342,17 @@
 
 ## Output Correction
 
-No MY_ANSWERS were provided.  
+!!! example "Your turn"
+    For next session, write or speak 2 sentences using today’s expressions. Try these patterns:
 
-For next session, write or speak 2 sentences using today’s expressions. Try these patterns:  
+    - Use stop the bleeding + mitigation in an incident update.
+    - Use hold off on + blast radius in a release-risk discussion.
 
-Use stop the bleeding + mitigation in an incident update.  
-Use hold off on + blast radius in a release-risk discussion.  
-Example structure:  
+    **Example structure:**
 
-“For now, I’d recommend we ___ because . Once we , we can ___.”  
+    - “For now, I’d recommend we ___ because . Once we , we can ___.”
 
-Tomorrow, I’ll correct your sentences at a C2 level for tone, register, concision, and naturalness.  
+    Tomorrow, I’ll correct your sentences at a C2 level for tone, register, concision, and naturalness.
 
 !!! tip "Tomorrow's preview"
     Next topic: Sprint planning — focus on negotiating scope and timelines without sounding negative.
@@ -361,13 +361,13 @@ Tomorrow, I’ll correct your sentences at a C2 level for tone, register, concis
 
 | Expression | Type | 5-word meaning | Status |
 | --- | --- | --- | --- |
-| Stop the bleeding | Idiom | Limit damage before full fix | new |
-| Under the hood | Idiom | Inside the implementation details | new |
-| The blast radius | Idiom | Scope of failure impact | new |
-| Rule out | Phrasal verb | Eliminate a possible cause | new |
-| Dig into | Phrasal verb | Investigate something in detail | new |
-| Hold off on | Phrasal verb | Delay until more clarity | new |
-| Intermittent | Vocabulary | Irregular and not continuous | new |
-| Mitigation | Vocabulary | Action that reduces impact | new |
-| Degradation | Vocabulary | Drop in system quality | new |
-| Resilient | Vocabulary | Recovers well from failure | new |
+| Stop the bleeding | <span class="fe-badge fe-badge--idiom">Idiom</span> | Limit damage before full fix | <span class="fe-badge fe-badge--new">New</span> |
+| Under the hood | <span class="fe-badge fe-badge--idiom">Idiom</span> | Inside the implementation details | <span class="fe-badge fe-badge--new">New</span> |
+| The blast radius | <span class="fe-badge fe-badge--idiom">Idiom</span> | Scope of failure impact | <span class="fe-badge fe-badge--new">New</span> |
+| Rule out | <span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span> | Eliminate a possible cause | <span class="fe-badge fe-badge--new">New</span> |
+| Dig into | <span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span> | Investigate something in detail | <span class="fe-badge fe-badge--new">New</span> |
+| Hold off on | <span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span> | Delay until more clarity | <span class="fe-badge fe-badge--new">New</span> |
+| Intermittent | <span class="fe-badge fe-badge--vocabulary">Vocabulary</span> | Irregular and not continuous | <span class="fe-badge fe-badge--new">New</span> |
+| Mitigation | <span class="fe-badge fe-badge--vocabulary">Vocabulary</span> | Action that reduces impact | <span class="fe-badge fe-badge--new">New</span> |
+| Degradation | <span class="fe-badge fe-badge--vocabulary">Vocabulary</span> | Drop in system quality | <span class="fe-badge fe-badge--new">New</span> |
+| Resilient | <span class="fe-badge fe-badge--vocabulary">Vocabulary</span> | Recovers well from failure | <span class="fe-badge fe-badge--new">New</span> |

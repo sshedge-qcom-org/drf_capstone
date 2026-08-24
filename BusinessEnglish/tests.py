@@ -206,6 +206,18 @@ class RendererTests(SimpleTestCase):
         self.assertIn('=== "Meeting"', markdown)
         self.assertIn("**Use:**", markdown)
 
+    def test_output_correction_is_a_callout_without_boilerplate(self):
+        # Output Correction renders as a callout; the internal "MY_ANSWERS"
+        # boilerplate line is dropped.
+        markdown = render_lesson(self.lessons[1])
+        self.assertIn('!!! example "Your turn"', markdown)
+        self.assertNotIn("MY_ANSWERS", markdown)
+
+    def test_tracker_status_uses_pills(self):
+        # The Tracker status column renders as a badge pill, not bare text.
+        markdown = render_lesson(self.lessons[1])
+        self.assertRegex(markdown, r'fe-badge fe-badge--(new|review)">(New|Review)</span> \|')
+
     def test_index_links_every_day(self):
         markdown = render_index(list(self.lessons.values()))
         for day in self.lessons:

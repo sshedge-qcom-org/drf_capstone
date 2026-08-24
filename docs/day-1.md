@@ -342,13 +342,13 @@
 
 ## Output Correction
 
-No MY_ANSWERS were provided.  
+!!! example "Your turn"
+    For next session, write or speak 2 sentences using today’s expressions. Example prompts:
 
-For next session, write or speak 2 sentences using today’s expressions. Example prompts:  
+    - Use paint ourselves into a corner and constraint in one sentence.
+    - Use factor in and defensible in one sentence.
 
-Use paint ourselves into a corner and constraint in one sentence.  
-Use factor in and defensible in one sentence.  
-I’ll correct them for C2-level tone, naturalness, and leadership polish.  
+    I’ll correct them for C2-level tone, naturalness, and leadership polish.
 
 !!! tip "Tomorrow's preview"
     Next topic: Code reviews — focus on giving firm but respectful feedback without sounding blunt or defensive.
@@ -357,13 +357,13 @@ I’ll correct them for C2-level tone, naturalness, and leadership polish.
 
 | Expression | Type | 5-word meaning | Status |
 | --- | --- | --- | --- |
-| Paint ourselves into a corner | Idiom | limit our future options badly | new |
-| Put a stake in the ground | Idiom | make initial clear proposal now | new |
-| Not set in stone | Idiom | still changeable, not final yet | new |
-| Factor in | Phrasal verb | include in decision or estimate | new |
-| Spell out | Phrasal verb | explain clearly and explicitly | new |
-| Roll back | Phrasal verb | revert to previous working state | new |
-| Constraint | Vocabulary | limitation shaping possible choices | new |
-| Robust | Vocabulary | reliable under difficult conditions | new |
-| Pragmatic | Vocabulary | practical rather than overly idealistic | new |
-| Defensible | Vocabulary | justifiable with solid reasoning | new |
+| Paint ourselves into a corner | <span class="fe-badge fe-badge--idiom">Idiom</span> | limit our future options badly | <span class="fe-badge fe-badge--new">New</span> |
+| Put a stake in the ground | <span class="fe-badge fe-badge--idiom">Idiom</span> | make initial clear proposal now | <span class="fe-badge fe-badge--new">New</span> |
+| Not set in stone | <span class="fe-badge fe-badge--idiom">Idiom</span> | still changeable, not final yet | <span class="fe-badge fe-badge--new">New</span> |
+| Factor in | <span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span> | include in decision or estimate | <span class="fe-badge fe-badge--new">New</span> |
+| Spell out | <span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span> | explain clearly and explicitly | <span class="fe-badge fe-badge--new">New</span> |
+| Roll back | <span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span> | revert to previous working state | <span class="fe-badge fe-badge--new">New</span> |
+| Constraint | <span class="fe-badge fe-badge--vocabulary">Vocabulary</span> | limitation shaping possible choices | <span class="fe-badge fe-badge--new">New</span> |
+| Robust | <span class="fe-badge fe-badge--vocabulary">Vocabulary</span> | reliable under difficult conditions | <span class="fe-badge fe-badge--new">New</span> |
+| Pragmatic | <span class="fe-badge fe-badge--vocabulary">Vocabulary</span> | practical rather than overly idealistic | <span class="fe-badge fe-badge--new">New</span> |
+| Defensible | <span class="fe-badge fe-badge--vocabulary">Vocabulary</span> | justifiable with solid reasoning | <span class="fe-badge fe-badge--new">New</span> |
