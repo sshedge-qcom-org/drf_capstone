@@ -1,0 +1,108 @@
+/* fantasticEnglish — custom Material theme polish, tuned to the lesson layout.
+   The generated pages use: h1 (day), h2 (section), h3 ("N. expression"), bullet
+   lists for meaning/IPA/synonyms, admonitions for mistakes, and tables for the
+   upgrade + tracker sections. */
+
+:root {
+  --md-text-font: "Inter";
+  --md-code-font: "JetBrains Mono";
+  /* A warmer, calmer indigo/violet accent than the stock palette. */
+  --fe-accent: #5b6cff;
+}
+
+/* ── Reading comfort ─────────────────────────────────────────────────────── */
+.md-typeset {
+  font-size: 0.82rem;
+  line-height: 1.75;
+  letter-spacing: 0.1px;
+}
+
+.md-typeset h1 {
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.4em;
+}
+
+/* The intro "Focus:" line rendered as *emphasis* right under the title. */
+.md-typeset h1 + p em {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--md-primary-fg-color);
+}
+
+/* ── Section headings (## Professional Idioms, …) ────────────────────────── */
+.md-typeset h2 {
+  font-weight: 700;
+  margin-top: 2.2em;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid var(--md-default-fg-color--lightest);
+}
+
+/* ── Expression cards (### 1. Paint ourselves into a corner) ─────────────── */
+.md-typeset h3 {
+  font-weight: 700;
+  margin-top: 1.6em;
+  padding: 0.55em 0.85em;
+  border-left: 4px solid var(--md-primary-fg-color);
+  border-radius: 6px;
+  background: var(--md-default-fg-color--lightest);
+}
+
+/* ── Inline IPA / code pills ─────────────────────────────────────────────── */
+.md-typeset code {
+  border-radius: 6px;
+  padding: 0.1em 0.42em;
+  font-size: 0.85em;
+}
+
+/* ── Example labels (*Engineering:* …) get a subtle highlight ────────────── */
+.md-typeset em {
+  color: var(--md-primary-fg-color);
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* "Examples" mini-heading (a bold paragraph before the list). */
+.md-typeset p > strong:only-child {
+  display: inline-block;
+  margin-top: 0.4em;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* ── Admonitions: a touch more padding + rounder corners ─────────────────── */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 8px;
+  border-width: 0 0 0 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* ── Tables (Natural English Upgrade, Tracker) ───────────────────────────── */
+.md-typeset table:not([class]) {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  font-size: 0.78rem;
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  font-weight: 700;
+}
+
+.md-typeset table:not([class]) tr:nth-child(even) {
+  background: var(--md-default-fg-color--lightest);
+}
+
+.md-typeset table:not([class]) tr:hover {
+  background: var(--md-accent-fg-color--transparent);
+}
+
+/* ── Landing page table links a little bolder ────────────────────────────── */
+.md-typeset table a {
+  font-weight: 600;
+}
