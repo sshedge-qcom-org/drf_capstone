@@ -25,9 +25,14 @@
 
 **Examples**
 
-- *Engineering:* If we take the refactor, migration, and performance work in the same sprint, we may bite off more than we can chew.
-- *Meeting:* I’d rather commit to fewer items and deliver them well than bite off more than we can chew.
-- *Presentation:* We reduced the sprint scope because the initial plan would have had us biting off more than we could chew.
+=== "Engineering"
+    If we take the refactor, migration, and performance work in the same sprint, we may bite off more than we can chew.
+
+=== "Meeting"
+    I’d rather commit to fewer items and deliver them well than bite off more than we can chew.
+
+=== "Presentation"
+    We reduced the sprint scope because the initial plan would have had us biting off more than we could chew.
 
 ### 2. Keep the plates spinning
 
@@ -45,9 +50,14 @@
 
 **Examples**
 
-- *Engineering:* We still need to keep the plates spinning on bug fixes, reviews, and release support during the sprint.
-- *Meeting:* The challenge is not just delivering the feature; it’s keeping the plates spinning across support and integration work.
-- *Presentation:* The team kept the plates spinning by splitting ownership across feature delivery, release readiness, and customer escalations.
+=== "Engineering"
+    We still need to keep the plates spinning on bug fixes, reviews, and release support during the sprint.
+
+=== "Meeting"
+    The challenge is not just delivering the feature; it’s keeping the plates spinning across support and integration work.
+
+=== "Presentation"
+    The team kept the plates spinning by splitting ownership across feature delivery, release readiness, and customer escalations.
 
 ### 3. A stretch goal
 
@@ -65,9 +75,14 @@
 
 **Examples**
 
-- *Engineering:* Improving the dashboard latency can be a stretch goal, but the API migration should be the main sprint commitment.
-- *Meeting:* Let’s mark the test-suite cleanup as a stretch goal, not part of the baseline commitment.
-- *Presentation:* Our committed deliverable is the rollout framework; automated rollback is a stretch goal for this sprint.
+=== "Engineering"
+    Improving the dashboard latency can be a stretch goal, but the API migration should be the main sprint commitment.
+
+=== "Meeting"
+    Let’s mark the test-suite cleanup as a stretch goal, not part of the baseline commitment.
+
+=== "Presentation"
+    Our committed deliverable is the rollout framework; automated rollback is a stretch goal for this sprint.
 
 ## Phrasal Verbs
 
@@ -86,9 +101,14 @@
 
 **Examples**
 
-- *Technical-discussion:* Before we assign this, let’s scope out whether it touches only the client layer or the backend contract as well.
-- *Code-review:* This patch is getting large. Can we scope out a smaller first change and move the cleanup to a follow-up?
-- *Leadership:* We should scope out the integration work before committing to the release date.
+=== "Technical-discussion"
+    Before we assign this, let’s scope out whether it touches only the client layer or the backend contract as well.
+
+=== "Code-review"
+    This patch is getting large. Can we scope out a smaller first change and move the cleanup to a follow-up?
+
+=== "Leadership"
+    We should scope out the integration work before committing to the release date.
 
 ### 2. Break down
 
@@ -105,9 +125,14 @@
 
 **Examples**
 
-- *Technical-discussion:* Let’s break down the migration into schema changes, service changes, tests, and rollout.
-- *Code-review:* This change would be easier to review if we broke it down into separate patches.
-- *Leadership:* We can make the plan more credible by breaking down the work into clear milestones.
+=== "Technical-discussion"
+    Let’s break down the migration into schema changes, service changes, tests, and rollout.
+
+=== "Code-review"
+    This change would be easier to review if we broke it down into separate patches.
+
+=== "Leadership"
+    We can make the plan more credible by breaking down the work into clear milestones.
 
 ### 3. Line up
 
@@ -124,9 +149,14 @@
 
 **Examples**
 
-- *Technical-discussion:* We need to line up the API contract review before the client implementation starts.
-- *Code-review:* Can you line up reviewers from both the platform and tools teams?
-- *Leadership:* I’ll line up the release manager and QA owner so we don’t lose time during sign-off.
+=== "Technical-discussion"
+    We need to line up the API contract review before the client implementation starts.
+
+=== "Code-review"
+    Can you line up reviewers from both the platform and tools teams?
+
+=== "Leadership"
+    I’ll line up the release manager and QA owner so we don’t lose time during sign-off.
 
 ## C1/C2 Vocabulary
 
@@ -148,8 +178,11 @@
 
 **Examples**
 
-- *Software-engineering:* A full rewrite is not feasible this quarter, but isolating the risky module is.
-- *Stakeholder:* The feature is technically feasible, but the current deadline leaves very little room for validation.
+=== "Software-engineering"
+    A full rewrite is not feasible this quarter, but isolating the risky module is.
+
+=== "Stakeholder"
+    The feature is technically feasible, but the current deadline leaves very little room for validation.
 
 ### 2. Bandwidth
 
@@ -169,8 +202,11 @@
 
 **Examples**
 
-- *Software-engineering:* We have limited bandwidth this sprint because two engineers are tied up with release support.
-- *Stakeholder:* We can take this request, but we’ll need to free up bandwidth by deprioritizing another item.
+=== "Software-engineering"
+    We have limited bandwidth this sprint because two engineers are tied up with release support.
+
+=== "Stakeholder"
+    We can take this request, but we’ll need to free up bandwidth by deprioritizing another item.
 
 ### 3. Dependency
 
@@ -190,8 +226,11 @@
 
 **Examples**
 
-- *Software-engineering:* The backend API is a hard dependency for the client-side rollout.
-- *Stakeholder:* Our main delivery risk is an external dependency on the security review.
+=== "Software-engineering"
+    The backend API is a hard dependency for the client-side rollout.
+
+=== "Stakeholder"
+    Our main delivery risk is an external dependency on the security review.
 
 ### 4. Commitment
 
@@ -212,8 +251,11 @@
 
 **Examples**
 
-- *Software-engineering:* Let’s keep the sprint commitment focused on the migration path and treat dashboard cleanup separately.
-- *Stakeholder:* I’m comfortable making a commitment once we confirm the integration dependency.
+=== "Software-engineering"
+    Let’s keep the sprint commitment focused on the migration path and treat dashboard cleanup separately.
+
+=== "Stakeholder"
+    I’m comfortable making a commitment once we confirm the integration dependency.
 
 ## Natural English Upgrade
 

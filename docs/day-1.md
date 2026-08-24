@@ -25,9 +25,14 @@
 
 **Examples**
 
-- *Engineering:* If we hard-code the tenant model now, we may paint ourselves into a corner when enterprise customers ask for custom isolation.
-- *Meeting:* I’m fine with the short-term fix, but let’s make sure we don’t paint ourselves into a corner architecturally.
-- *Presentation:* We avoided a single-region assumption because it would have painted us into a corner for global rollout.
+=== "Engineering"
+    If we hard-code the tenant model now, we may paint ourselves into a corner when enterprise customers ask for custom isolation.
+
+=== "Meeting"
+    I’m fine with the short-term fix, but let’s make sure we don’t paint ourselves into a corner architecturally.
+
+=== "Presentation"
+    We avoided a single-region assumption because it would have painted us into a corner for global rollout.
 
 ### 2. Put a stake in the ground
 
@@ -45,9 +50,14 @@
 
 **Examples**
 
-- *Engineering:* To unblock the design review, I’ll put a stake in the ground: we should start with async replication and revisit sync guarantees later.
-- *Meeting:* We don’t need the perfect answer today. Let’s put a stake in the ground and validate it with data.
-- *Presentation:* Our initial architecture puts a stake in the ground around service ownership and failure isolation.
+=== "Engineering"
+    To unblock the design review, I’ll put a stake in the ground: we should start with async replication and revisit sync guarantees later.
+
+=== "Meeting"
+    We don’t need the perfect answer today. Let’s put a stake in the ground and validate it with data.
+
+=== "Presentation"
+    Our initial architecture puts a stake in the ground around service ownership and failure isolation.
 
 ### 3. Not set in stone
 
@@ -65,9 +75,14 @@
 
 **Examples**
 
-- *Engineering:* The API shape is not set in stone, but the ownership boundaries should be stable.
-- *Meeting:* The timeline is not set in stone, but we need a realistic estimate before committing externally.
-- *Presentation:* These numbers are not set in stone; they’re based on early load-test results.
+=== "Engineering"
+    The API shape is not set in stone, but the ownership boundaries should be stable.
+
+=== "Meeting"
+    The timeline is not set in stone, but we need a realistic estimate before committing externally.
+
+=== "Presentation"
+    These numbers are not set in stone; they’re based on early load-test results.
 
 ## Phrasal Verbs
 
@@ -86,9 +101,14 @@
 
 **Examples**
 
-- *Technical-discussion:* We need to factor in retry storms when estimating peak load.
-- *Code-review:* This looks correct, but can we factor in the null-response case before merging?
-- *Leadership:* When we discuss the deadline, we should factor in testing, rollout, and support readiness.
+=== "Technical-discussion"
+    We need to factor in retry storms when estimating peak load.
+
+=== "Code-review"
+    This looks correct, but can we factor in the null-response case before merging?
+
+=== "Leadership"
+    When we discuss the deadline, we should factor in testing, rollout, and support readiness.
 
 ### 2. Spell out
 
@@ -105,9 +125,14 @@
 
 **Examples**
 
-- *Technical-discussion:* Can you spell out what happens if the primary region becomes unavailable?
-- *Code-review:* Please spell out the assumption in a comment so future maintainers don’t misread this.
-- *Leadership:* We should spell out the risk clearly instead of saying the plan is ‘mostly fine.’
+=== "Technical-discussion"
+    Can you spell out what happens if the primary region becomes unavailable?
+
+=== "Code-review"
+    Please spell out the assumption in a comment so future maintainers don’t misread this.
+
+=== "Leadership"
+    We should spell out the risk clearly instead of saying the plan is ‘mostly fine.’
 
 ### 3. Roll back
 
@@ -128,9 +153,14 @@
 
 **Examples**
 
-- *Technical-discussion:* If the error rate crosses the threshold, we’ll roll back automatically.
-- *Code-review:* Can we make this easier to roll back if the new parser behaves differently in production?
-- *Leadership:* We have a controlled rollout plan and a clear path to roll back if customer impact appears.
+=== "Technical-discussion"
+    If the error rate crosses the threshold, we’ll roll back automatically.
+
+=== "Code-review"
+    Can we make this easier to roll back if the new parser behaves differently in production?
+
+=== "Leadership"
+    We have a controlled rollout plan and a clear path to roll back if customer impact appears.
 
 ## C1/C2 Vocabulary
 
@@ -152,8 +182,11 @@
 
 **Examples**
 
-- *Software-engineering:* The main constraint is that the service must respond within 50 milliseconds under peak load.
-- *Stakeholder:* Given the timeline constraint, we can deliver the core workflow first and defer advanced reporting.
+=== "Software-engineering"
+    The main constraint is that the service must respond within 50 milliseconds under peak load.
+
+=== "Stakeholder"
+    Given the timeline constraint, we can deliver the core workflow first and defer advanced reporting.
 
 ### 2. Robust
 
@@ -173,8 +206,11 @@
 
 **Examples**
 
-- *Software-engineering:* The parser needs to be robust against malformed input, not just valid test data.
-- *Stakeholder:* This approach gives us a more robust rollout because we can isolate failures by region.
+=== "Software-engineering"
+    The parser needs to be robust against malformed input, not just valid test data.
+
+=== "Stakeholder"
+    This approach gives us a more robust rollout because we can isolate failures by region.
 
 ### 3. Pragmatic
 
@@ -194,8 +230,11 @@
 
 **Examples**
 
-- *Software-engineering:* A fully generic framework would be elegant, but a pragmatic implementation is better for this release.
-- *Stakeholder:* We’re taking a pragmatic approach: reduce the highest-risk failures first, then improve automation.
+=== "Software-engineering"
+    A fully generic framework would be elegant, but a pragmatic implementation is better for this release.
+
+=== "Stakeholder"
+    We’re taking a pragmatic approach: reduce the highest-risk failures first, then improve automation.
 
 ### 4. Defensible
 
@@ -215,8 +254,11 @@
 
 **Examples**
 
-- *Software-engineering:* Choosing Postgres here is defensible because the access pattern is relational and the team already has operational experience.
-- *Stakeholder:* The revised timeline is defensible because it includes integration testing and staged rollout.
+=== "Software-engineering"
+    Choosing Postgres here is defensible because the access pattern is relational and the team already has operational experience.
+
+=== "Stakeholder"
+    The revised timeline is defensible because it includes integration testing and staged rollout.
 
 ## Natural English Upgrade
 

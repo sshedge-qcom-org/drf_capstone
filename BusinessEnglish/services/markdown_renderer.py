@@ -74,8 +74,8 @@ def _render_expression(expr: ParsedExpression) -> list[str]:
 
     if expr.examples:
         out += ["**Examples**", ""]
-        out += [f"- *{ex.label}:* {ex.text}" for ex in expr.examples]
-        out.append("")
+        for ex in expr.examples:
+            out += [f'=== "{ex.label}"', f"    {ex.text}", ""]
     return out
 
 

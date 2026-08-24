@@ -25,9 +25,14 @@
 
 **Examples**
 
-- *Engineering:* Once we connected the dots between the config change and the latency spike, the pattern became clear.
-- *Meeting:* We don’t have the full answer yet, but we’re starting to connect the dots.
-- *Presentation:* The incident timeline helped us connect the dots between increased retries and database saturation.
+=== "Engineering"
+    Once we connected the dots between the config change and the latency spike, the pattern became clear.
+
+=== "Meeting"
+    We don’t have the full answer yet, but we’re starting to connect the dots.
+
+=== "Presentation"
+    The incident timeline helped us connect the dots between increased retries and database saturation.
 
 ### 2. The smoking gun
 
@@ -45,9 +50,14 @@
 
 **Examples**
 
-- *Engineering:* The error spike immediately after the feature flag change was the smoking gun.
-- *Meeting:* We should be careful — this is strong evidence, but I’m not ready to call it the smoking gun yet.
-- *Presentation:* The heap dump gave us the smoking gun: leaked references from the session cache.
+=== "Engineering"
+    The error spike immediately after the feature flag change was the smoking gun.
+
+=== "Meeting"
+    We should be careful — this is strong evidence, but I’m not ready to call it the smoking gun yet.
+
+=== "Presentation"
+    The heap dump gave us the smoking gun: leaked references from the session cache.
 
 ### 3. Close the loop
 
@@ -65,9 +75,14 @@
 
 **Examples**
 
-- *Engineering:* After we validate the patch in staging, I’ll close the loop with QA.
-- *Meeting:* Before we end, let’s close the loop on action items and owners.
-- *Presentation:* We closed the loop by documenting the root cause, mitigation, and prevention plan.
+=== "Engineering"
+    After we validate the patch in staging, I’ll close the loop with QA.
+
+=== "Meeting"
+    Before we end, let’s close the loop on action items and owners.
+
+=== "Presentation"
+    We closed the loop by documenting the root cause, mitigation, and prevention plan.
 
 ## Phrasal Verbs
 
@@ -86,9 +101,14 @@
 
 **Examples**
 
-- *Technical-discussion:* We’re zeroing in on the connection pool because the failures align with pool exhaustion.
-- *Code-review:* This test helps us zero in on the race condition instead of debugging the whole pipeline.
-- *Leadership:* We’ve zeroed in on two likely causes and should have a confirmed root cause today.
+=== "Technical-discussion"
+    We’re zeroing in on the connection pool because the failures align with pool exhaustion.
+
+=== "Code-review"
+    This test helps us zero in on the race condition instead of debugging the whole pipeline.
+
+=== "Leadership"
+    We’ve zeroed in on two likely causes and should have a confirmed root cause today.
 
 ### 2. Trace back
 
@@ -105,9 +125,14 @@
 
 **Examples**
 
-- *Technical-discussion:* We traced the latency spike back to a change in the serialization path.
-- *Code-review:* Can you trace back why this exception is swallowed instead of propagated?
-- *Leadership:* We traced the issue back to a deployment configuration mismatch, not a capacity problem.
+=== "Technical-discussion"
+    We traced the latency spike back to a change in the serialization path.
+
+=== "Code-review"
+    Can you trace back why this exception is swallowed instead of propagated?
+
+=== "Leadership"
+    We traced the issue back to a deployment configuration mismatch, not a capacity problem.
 
 ### 3. Tighten up
 
@@ -124,9 +149,14 @@
 
 **Examples**
 
-- *Technical-discussion:* We should tighten up validation so invalid payloads fail earlier.
-- *Code-review:* Please tighten up the error handling before this lands.
-- *Leadership:* We’re going to tighten up the rollout checklist to prevent the same failure mode.
+=== "Technical-discussion"
+    We should tighten up validation so invalid payloads fail earlier.
+
+=== "Code-review"
+    Please tighten up the error handling before this lands.
+
+=== "Leadership"
+    We’re going to tighten up the rollout checklist to prevent the same failure mode.
 
 ## C1/C2 Vocabulary
 
@@ -148,8 +178,11 @@
 
 **Examples**
 
-- *Software-engineering:* The failure is intermittent, so we need more traces before changing the retry logic.
-- *Stakeholder:* We’re investigating an intermittent timeout that affects a small percentage of requests.
+=== "Software-engineering"
+    The failure is intermittent, so we need more traces before changing the retry logic.
+
+=== "Stakeholder"
+    We’re investigating an intermittent timeout that affects a small percentage of requests.
 
 ### 2. Correlate
 
@@ -169,8 +202,11 @@
 
 **Examples**
 
-- *Software-engineering:* The latency increase seems to correlate with the new cache invalidation logic.
-- *Stakeholder:* We’re checking whether the customer impact correlates with a specific release window.
+=== "Software-engineering"
+    The latency increase seems to correlate with the new cache invalidation logic.
+
+=== "Stakeholder"
+    We’re checking whether the customer impact correlates with a specific release window.
 
 ### 3. Mitigation
 
@@ -190,8 +226,11 @@
 
 **Examples**
 
-- *Software-engineering:* The immediate mitigation is to lower the retry count while we fix the underlying bug.
-- *Stakeholder:* We’ve deployed a mitigation to reduce user impact while the permanent fix is being validated.
+=== "Software-engineering"
+    The immediate mitigation is to lower the retry count while we fix the underlying bug.
+
+=== "Stakeholder"
+    We’ve deployed a mitigation to reduce user impact while the permanent fix is being validated.
 
 ### 4. Regression
 
@@ -211,8 +250,11 @@
 
 **Examples**
 
-- *Software-engineering:* The latest patch introduced a regression in the timeout handling path.
-- *Stakeholder:* We found a regression during validation, so we’re holding the rollout until the fix is verified.
+=== "Software-engineering"
+    The latest patch introduced a regression in the timeout handling path.
+
+=== "Stakeholder"
+    We found a regression during validation, so we’re holding the rollout until the fix is verified.
 
 ## Natural English Upgrade
 

@@ -25,9 +25,14 @@
 
 **Examples**
 
-- *Engineering:* This shared mutable state raises a red flag because it can behave unpredictably under concurrency.
-- *Meeting:* I don’t want to block the change unnecessarily, but I do want to raise a red flag on the retry behavior.
-- *Presentation:* One issue that raised a red flag during testing was the spike in memory usage under sustained load.
+=== "Engineering"
+    This shared mutable state raises a red flag because it can behave unpredictably under concurrency.
+
+=== "Meeting"
+    I don’t want to block the change unnecessarily, but I do want to raise a red flag on the retry behavior.
+
+=== "Presentation"
+    One issue that raised a red flag during testing was the spike in memory usage under sustained load.
 
 ### 2. Get to the bottom of something
 
@@ -45,9 +50,14 @@
 
 **Examples**
 
-- *Engineering:* Before we change the scheduler logic, let’s get to the bottom of why the timeout only appears on large payloads.
-- *Meeting:* We shouldn’t guess here. Let’s get to the bottom of the failure pattern using logs and traces.
-- *Presentation:* The team got to the bottom of the issue by correlating deployment timing with request latency.
+=== "Engineering"
+    Before we change the scheduler logic, let’s get to the bottom of why the timeout only appears on large payloads.
+
+=== "Meeting"
+    We shouldn’t guess here. Let’s get to the bottom of the failure pattern using logs and traces.
+
+=== "Presentation"
+    The team got to the bottom of the issue by correlating deployment timing with request latency.
 
 ### 3. A moving target
 
@@ -65,9 +75,14 @@
 
 **Examples**
 
-- *Engineering:* The API contract has become a moving target, so it’s risky to build the client integration this sprint.
-- *Meeting:* If the acceptance criteria remain a moving target, we’ll keep reworking the same patch.
-- *Presentation:* To reduce churn, we stabilized the interface first because the requirements had become a moving target.
+=== "Engineering"
+    The API contract has become a moving target, so it’s risky to build the client integration this sprint.
+
+=== "Meeting"
+    If the acceptance criteria remain a moving target, we’ll keep reworking the same patch.
+
+=== "Presentation"
+    To reduce churn, we stabilized the interface first because the requirements had become a moving target.
 
 ## Phrasal Verbs
 
@@ -86,9 +101,14 @@
 
 **Examples**
 
-- *Technical-discussion:* I want to call out that this design assumes the cache is always warm.
-- *Code-review:* Can you call out this ownership assumption in the commit message?
-- *Leadership:* We should call out the dependency on the platform team before committing to the date.
+=== "Technical-discussion"
+    I want to call out that this design assumes the cache is always warm.
+
+=== "Code-review"
+    Can you call out this ownership assumption in the commit message?
+
+=== "Leadership"
+    We should call out the dependency on the platform team before committing to the date.
 
 ### 2. Clean up
 
@@ -105,9 +125,14 @@
 
 **Examples**
 
-- *Technical-discussion:* We should clean up the boundary between validation and business logic.
-- *Code-review:* Could you clean up the duplicated null checks before landing this?
-- *Leadership:* We need time next sprint to clean up the migration scripts before handing this over.
+=== "Technical-discussion"
+    We should clean up the boundary between validation and business logic.
+
+=== "Code-review"
+    Could you clean up the duplicated null checks before landing this?
+
+=== "Leadership"
+    We need time next sprint to clean up the migration scripts before handing this over.
 
 ### 3. Follow through
 
@@ -124,9 +149,14 @@
 
 **Examples**
 
-- *Technical-discussion:* If we agree to add metrics, we need to follow through with dashboards and alerts.
-- *Code-review:* Thanks for addressing the main issue. Please follow through on the test coverage comment as well.
-- *Leadership:* We need owners who can follow through across design, implementation, rollout, and support.
+=== "Technical-discussion"
+    If we agree to add metrics, we need to follow through with dashboards and alerts.
+
+=== "Code-review"
+    Thanks for addressing the main issue. Please follow through on the test coverage comment as well.
+
+=== "Leadership"
+    We need owners who can follow through across design, implementation, rollout, and support.
 
 ## C1/C2 Vocabulary
 
@@ -148,8 +178,11 @@
 
 **Examples**
 
-- *Software-engineering:* The implementation is fine, but the rationale for choosing polling over events should be documented.
-- *Stakeholder:* The rationale is that this approach reduces operational risk without delaying the release.
+=== "Software-engineering"
+    The implementation is fine, but the rationale for choosing polling over events should be documented.
+
+=== "Stakeholder"
+    The rationale is that this approach reduces operational risk without delaying the release.
 
 ### 2. Regression
 
@@ -169,8 +202,11 @@
 
 **Examples**
 
-- *Software-engineering:* The patch fixes the crash but introduces a regression in the reconnect flow.
-- *Stakeholder:* We delayed the rollout because we found a regression in a high-traffic path.
+=== "Software-engineering"
+    The patch fixes the crash but introduces a regression in the reconnect flow.
+
+=== "Stakeholder"
+    We delayed the rollout because we found a regression in a high-traffic path.
 
 ### 3. Maintainable
 
@@ -190,8 +226,11 @@
 
 **Examples**
 
-- *Software-engineering:* This version is shorter, but the explicit version is more maintainable for future owners.
-- *Stakeholder:* We’re taking an extra day to make the solution maintainable, not just functional.
+=== "Software-engineering"
+    This version is shorter, but the explicit version is more maintainable for future owners.
+
+=== "Stakeholder"
+    We’re taking an extra day to make the solution maintainable, not just functional.
 
 ### 4. Edge case
 
@@ -211,8 +250,11 @@
 
 **Examples**
 
-- *Software-engineering:* The parser works for normal input, but it misses an edge case where the payload is empty.
-- *Stakeholder:* The issue affects only an edge case, but it’s still important because it can block enterprise customers.
+=== "Software-engineering"
+    The parser works for normal input, but it misses an edge case where the payload is empty.
+
+=== "Stakeholder"
+    The issue affects only an edge case, but it’s still important because it can block enterprise customers.
 
 ## Natural English Upgrade
 

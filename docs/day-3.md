@@ -25,9 +25,14 @@
 
 **Examples**
 
-- *Engineering:* Before we analyze the root cause, let’s stop the bleeding by disabling the failing rollout flag.
-- *Meeting:* We can discuss the long-term fix later. Right now, the priority is to stop the bleeding.
-- *Presentation:* Our first action was to stop the bleeding by routing traffic away from the unstable region.
+=== "Engineering"
+    Before we analyze the root cause, let’s stop the bleeding by disabling the failing rollout flag.
+
+=== "Meeting"
+    We can discuss the long-term fix later. Right now, the priority is to stop the bleeding.
+
+=== "Presentation"
+    Our first action was to stop the bleeding by routing traffic away from the unstable region.
 
 ### 2. Under the hood
 
@@ -45,9 +50,14 @@
 
 **Examples**
 
-- *Engineering:* Under the hood, the client is opening multiple connections per request, which explains the spike.
-- *Meeting:* The UI looks fine, but under the hood the request path is hitting a deprecated service.
-- *Presentation:* Under the hood, we replaced synchronous writes with buffered writes to reduce latency.
+=== "Engineering"
+    Under the hood, the client is opening multiple connections per request, which explains the spike.
+
+=== "Meeting"
+    The UI looks fine, but under the hood the request path is hitting a deprecated service.
+
+=== "Presentation"
+    Under the hood, we replaced synchronous writes with buffered writes to reduce latency.
 
 ### 3. The blast radius
 
@@ -65,9 +75,14 @@
 
 **Examples**
 
-- *Engineering:* We should split this deployment by region to reduce the blast radius.
-- *Meeting:* Before we proceed, let’s understand the blast radius if this config is wrong.
-- *Presentation:* We reduced the blast radius by isolating the new scheduler behind a per-tenant feature flag.
+=== "Engineering"
+    We should split this deployment by region to reduce the blast radius.
+
+=== "Meeting"
+    Before we proceed, let’s understand the blast radius if this config is wrong.
+
+=== "Presentation"
+    We reduced the blast radius by isolating the new scheduler behind a per-tenant feature flag.
 
 ## Phrasal Verbs
 
@@ -86,9 +101,14 @@
 
 **Examples**
 
-- *Technical-discussion:* We checked packet loss and latency, so we can rule out the network path for now.
-- *Code-review:* This test helps rule out regressions in the retry logic.
-- *Leadership:* We’ve ruled out infrastructure capacity, so the remaining risk is application-level behavior.
+=== "Technical-discussion"
+    We checked packet loss and latency, so we can rule out the network path for now.
+
+=== "Code-review"
+    This test helps rule out regressions in the retry logic.
+
+=== "Leadership"
+    We’ve ruled out infrastructure capacity, so the remaining risk is application-level behavior.
 
 ### 2. Dig into
 
@@ -109,9 +129,14 @@
 
 **Examples**
 
-- *Technical-discussion:* I’ll dig into the trace spans and check where the extra 300 milliseconds are coming from.
-- *Code-review:* Can you dig into why this branch bypasses the existing timeout handling?
-- *Leadership:* We’re digging into the failure pattern now and should have a clearer update in 30 minutes.
+=== "Technical-discussion"
+    I’ll dig into the trace spans and check where the extra 300 milliseconds are coming from.
+
+=== "Code-review"
+    Can you dig into why this branch bypasses the existing timeout handling?
+
+=== "Leadership"
+    We’re digging into the failure pattern now and should have a clearer update in 30 minutes.
 
 ### 3. Hold off on
 
@@ -128,9 +153,14 @@
 
 **Examples**
 
-- *Technical-discussion:* Let’s hold off on restarting the service until we capture the heap dump.
-- *Code-review:* I’d hold off on merging this until we add coverage for the failure path.
-- *Leadership:* We should hold off on the external commitment until we know whether this affects all regions.
+=== "Technical-discussion"
+    Let’s hold off on restarting the service until we capture the heap dump.
+
+=== "Code-review"
+    I’d hold off on merging this until we add coverage for the failure path.
+
+=== "Leadership"
+    We should hold off on the external commitment until we know whether this affects all regions.
 
 ## C1/C2 Vocabulary
 
@@ -152,8 +182,11 @@
 
 **Examples**
 
-- *Software-engineering:* The hardest part is that the timeout is intermittent and only appears under mixed traffic.
-- *Stakeholder:* We’re treating this as high priority because the issue is intermittent, which makes it harder to detect and reproduce.
+=== "Software-engineering"
+    The hardest part is that the timeout is intermittent and only appears under mixed traffic.
+
+=== "Stakeholder"
+    We’re treating this as high priority because the issue is intermittent, which makes it harder to detect and reproduce.
 
 ### 2. Mitigation
 
@@ -173,8 +206,11 @@
 
 **Examples**
 
-- *Software-engineering:* The immediate mitigation is to reduce batch size while we investigate the queue buildup.
-- *Stakeholder:* We have a mitigation in place, but the permanent fix still needs validation.
+=== "Software-engineering"
+    The immediate mitigation is to reduce batch size while we investigate the queue buildup.
+
+=== "Stakeholder"
+    We have a mitigation in place, but the permanent fix still needs validation.
 
 ### 3. Degradation
 
@@ -194,8 +230,11 @@
 
 **Examples**
 
-- *Software-engineering:* The new cache invalidation path caused a noticeable degradation in read latency.
-- *Stakeholder:* Users may see some degradation during peak traffic, but the service remains available.
+=== "Software-engineering"
+    The new cache invalidation path caused a noticeable degradation in read latency.
+
+=== "Stakeholder"
+    Users may see some degradation during peak traffic, but the service remains available.
 
 ### 4. Resilient
 
@@ -215,8 +254,11 @@
 
 **Examples**
 
-- *Software-engineering:* We need a more resilient retry strategy so one slow dependency doesn’t overload the entire pipeline.
-- *Stakeholder:* This work makes the platform more resilient during dependency failures and traffic spikes.
+=== "Software-engineering"
+    We need a more resilient retry strategy so one slow dependency doesn’t overload the entire pipeline.
+
+=== "Stakeholder"
+    This work makes the platform more resilient during dependency failures and traffic spikes.
 
 ## Natural English Upgrade
 

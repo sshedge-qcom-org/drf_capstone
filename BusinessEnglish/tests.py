@@ -193,6 +193,11 @@ class RendererTests(SimpleTestCase):
         # day1 "Roll back" carries a ⚠️ note.
         self.assertIn('!!! warning "Note"', render_lesson(self.lessons[1]))
 
+    def test_examples_render_as_content_tabs(self):
+        # Example sentences become pymdownx tabbed blocks keyed by their label.
+        markdown = render_lesson(self.lessons[1])
+        self.assertIn('=== "Engineering"', markdown)
+
     def test_index_links_every_day(self):
         markdown = render_index(list(self.lessons.values()))
         for day in self.lessons:
