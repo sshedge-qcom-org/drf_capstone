@@ -101,7 +101,7 @@ def render_lesson(lesson: ParsedLesson) -> str:
         exprs = [e for e in lesson.expressions if e.kind == kind]
         if not exprs:
             continue
-        lines += [f"## {title}", ""]
+        lines += [f"## {title} {{ .fe-sec--{kind} }}", ""]
         for expr in exprs:
             lines += _render_expression(expr)
 
@@ -148,6 +148,16 @@ def _day_icon(day_number: int) -> str:
     return ":material-book-open-variant:"
 
 
+_LEGEND = (
+    '<p class="fe-legend"><strong>Legend:</strong> '
+    '<span class="fe-badge fe-badge--idiom">Idiom</span>'
+    '<span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span>'
+    '<span class="fe-badge fe-badge--vocabulary">Vocabulary</span>'
+    '<span class="fe-badge fe-badge--new">New</span>'
+    '<span class="fe-badge fe-badge--review">Review</span></p>'
+)
+
+
 def render_index(lessons: list[ParsedLesson]) -> str:
     """Render the docs landing page as a grid of clickable day cards."""
     lines = [
@@ -158,17 +168,36 @@ def render_index(lessons: list[ParsedLesson]) -> str:
         "shared parser, the same source that powers the REST API.", "",
         "**A fresh lesson lands every day** — each one is about a 10-minute read, "
         "and the collection keeps growing. Pick up where you left off below.", "",
+    ]
+
+    if lessons:
+        latest = lessons[-1]
+        lines += [
+            f"[:material-arrow-right-circle: Today's lesson — Day "
+            f"{latest.day_number}: {latest.dialogue_topic}]"
+            f"(day-{latest.day_number}.md)"
+            "{ .md-button .md-button--primary }",
+            "",
+        ]
+
+    lines += [
         '!!! tip "How to use this site"',
         "    Read each expression **aloud**, lean on the ✅ corrections over the "
         "❌ mistakes, and reuse the labelled example sentences as your own "
         "templates. Practice the Speaking Practice prompts without reading them.",
         "",
+        _LEGEND, "",
         '<div class="grid cards" markdown>', "",
     ]
+
+    latest_day = lessons[-1].day_number if lessons else None
     for lesson in lessons:
-        date_suffix = (
-            f"  ·  :material-calendar-month: {lesson.date}" if lesson.date else ""
-        )
+        meta = [":material-book-open-page-variant: "
+                f"**{len(lesson.expressions)} expressions**"]
+        if lesson.date:
+            meta.append(f":material-calendar-month: {lesson.date}")
+        if lesson.day_number == latest_day:
+            meta.append('<span class="fe-badge fe-badge--latest">Latest</span>')
         lines += [
             f"-   {_day_icon(lesson.day_number)}{{ .lg .middle }} "
             f"**[Day {lesson.day_number} — {lesson.dialogue_topic}]"
@@ -178,8 +207,7 @@ def render_index(lessons: list[ParsedLesson]) -> str:
             "",
             f"    {lesson.focus_theme}",
             "",
-            f"    :material-book-open-page-variant: "
-            f"**{len(lesson.expressions)} expressions**{date_suffix}",
+            "    " + "  ·  ".join(meta),
             "",
         ]
     lines += ["</div>", ""]

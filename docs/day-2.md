@@ -7,7 +7,7 @@
 
 *Code Review English for Senior Engineers*
 
-## Professional Idioms
+## Professional Idioms { .fe-sec--idiom }
 
 ### 1. Raise a red flag
 
@@ -84,7 +84,7 @@
 === "Presentation"
     To reduce churn, we stabilized the interface first because the requirements had become a moving target.
 
-## Phrasal Verbs
+## Phrasal Verbs { .fe-sec--phrasal_verb }
 
 ### 1. Call out
 
@@ -158,7 +158,7 @@
 === "Leadership"
     We need owners who can follow through across design, implementation, rollout, and support.
 
-## C1/C2 Vocabulary
+## C1/C2 Vocabulary { .fe-sec--vocabulary }
 
 ### 1. Rationale
 

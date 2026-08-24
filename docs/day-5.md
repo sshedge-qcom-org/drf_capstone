@@ -7,7 +7,7 @@
 
 *Root Cause Analysis English for Senior Engineers*
 
-## Professional Idioms
+## Professional Idioms { .fe-sec--idiom }
 
 ### 1. Connect the dots
 
@@ -84,7 +84,7 @@
 === "Presentation"
     We closed the loop by documenting the root cause, mitigation, and prevention plan.
 
-## Phrasal Verbs
+## Phrasal Verbs { .fe-sec--phrasal_verb }
 
 ### 1. Zero in on
 
@@ -158,7 +158,7 @@
 === "Leadership"
     We’re going to tighten up the rollout checklist to prevent the same failure mode.
 
-## C1/C2 Vocabulary
+## C1/C2 Vocabulary { .fe-sec--vocabulary }
 
 ### 1. Intermittent
 

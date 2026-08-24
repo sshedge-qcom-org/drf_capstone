@@ -188,9 +188,35 @@
 .md-typeset .fe-badge--new         { background: rgba(16, 185, 129, 0.16); color: #047857; }
 .md-typeset .fe-badge--review      { background: rgba(100, 116, 139, 0.16); color: #475569; }
 
+.md-typeset .fe-badge--latest {
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
 /* Dark scheme: keep the pills readable with lighter text. */
 [data-md-color-scheme="slate"] .md-typeset .fe-badge--idiom       { color: #a5b0ff; }
 [data-md-color-scheme="slate"] .md-typeset .fe-badge--phrasal_verb { color: #4db6ac; }
 [data-md-color-scheme="slate"] .md-typeset .fe-badge--vocabulary  { color: #fbbf24; }
 [data-md-color-scheme="slate"] .md-typeset .fe-badge--new         { color: #34d399; }
 [data-md-color-scheme="slate"] .md-typeset .fe-badge--review      { color: #94a3b8; }
+
+/* ── Landing-page legend (a key for the badge colours) ───────────────────── */
+.md-typeset .fe-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.6em 0.9em;
+  border-radius: 8px;
+  background: var(--md-default-fg-color--lightest);
+  font-size: 0.75rem;
+}
+
+.md-typeset .fe-legend strong {
+  margin-right: 0.2em;
+}
+
+/* ── Section headings tinted to match their expression kind ──────────────── */
+.md-typeset h2.fe-sec--idiom        { border-bottom-color: #5b6cff; }
+.md-typeset h2.fe-sec--phrasal_verb { border-bottom-color: #009688; }
+.md-typeset h2.fe-sec--vocabulary   { border-bottom-color: #f59e0b; }

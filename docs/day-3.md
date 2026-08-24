@@ -7,7 +7,7 @@
 
 *Production Issue English for Senior Engineers*
 
-## Professional Idioms
+## Professional Idioms { .fe-sec--idiom }
 
 ### 1. Stop the bleeding
 
@@ -84,7 +84,7 @@
 === "Presentation"
     We reduced the blast radius by isolating the new scheduler behind a per-tenant feature flag.
 
-## Phrasal Verbs
+## Phrasal Verbs { .fe-sec--phrasal_verb }
 
 ### 1. Rule out
 
@@ -162,7 +162,7 @@
 === "Leadership"
     We should hold off on the external commitment until we know whether this affects all regions.
 
-## C1/C2 Vocabulary
+## C1/C2 Vocabulary { .fe-sec--vocabulary }
 
 ### 1. Intermittent
 

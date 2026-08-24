@@ -7,7 +7,7 @@
 
 *Sprint Planning English for Senior Engineers*
 
-## Professional Idioms
+## Professional Idioms { .fe-sec--idiom }
 
 ### 1. Bite off more than we can chew
 
@@ -84,7 +84,7 @@
 === "Presentation"
     Our committed deliverable is the rollout framework; automated rollback is a stretch goal for this sprint.
 
-## Phrasal Verbs
+## Phrasal Verbs { .fe-sec--phrasal_verb }
 
 ### 1. Scope out
 
@@ -158,7 +158,7 @@
 === "Leadership"
     I’ll line up the release manager and QA owner so we don’t lose time during sign-off.
 
-## C1/C2 Vocabulary
+## C1/C2 Vocabulary { .fe-sec--vocabulary }
 
 ### 1. Feasible
 

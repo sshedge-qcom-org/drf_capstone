@@ -7,7 +7,7 @@
 
 *System Design English for Senior Engineers*
 
-## Professional Idioms
+## Professional Idioms { .fe-sec--idiom }
 
 ### 1. Paint ourselves into a corner
 
@@ -84,7 +84,7 @@
 === "Presentation"
     These numbers are not set in stone; they’re based on early load-test results.
 
-## Phrasal Verbs
+## Phrasal Verbs { .fe-sec--phrasal_verb }
 
 ### 1. Factor in
 
@@ -162,7 +162,7 @@
 === "Leadership"
     We have a controlled rollout plan and a clear path to roll back if customer impact appears.
 
-## C1/C2 Vocabulary
+## C1/C2 Vocabulary { .fe-sec--vocabulary }
 
 ### 1. Constraint
 

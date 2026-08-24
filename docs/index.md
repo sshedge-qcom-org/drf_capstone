@@ -4,8 +4,12 @@ A daily Business-English lesson corpus — professional idioms, phrasal verbs, a
 
 **A fresh lesson lands every day** — each one is about a 10-minute read, and the collection keeps growing. Pick up where you left off below.
 
+[:material-arrow-right-circle: Today's lesson — Day 5: Root cause analysis](day-5.md){ .md-button .md-button--primary }
+
 !!! tip "How to use this site"
     Read each expression **aloud**, lean on the ✅ corrections over the ❌ mistakes, and reuse the labelled example sentences as your own templates. Practice the Speaking Practice prompts without reading them.
+
+<p class="fe-legend"><strong>Legend:</strong> <span class="fe-badge fe-badge--idiom">Idiom</span><span class="fe-badge fe-badge--phrasal_verb">Phrasal verb</span><span class="fe-badge fe-badge--vocabulary">Vocabulary</span><span class="fe-badge fe-badge--new">New</span><span class="fe-badge fe-badge--review">Review</span></p>
 
 <div class="grid cards" markdown>
 
@@ -47,7 +51,7 @@ A daily Business-English lesson corpus — professional idioms, phrasal verbs, a
 
     Explaining root cause clearly without overclaiming
 
-    :material-book-open-page-variant: **10 expressions**  ·  :material-calendar-month: 2026-08-23
+    :material-book-open-page-variant: **10 expressions**  ·  :material-calendar-month: 2026-08-23  ·  <span class="fe-badge fe-badge--latest">Latest</span>
 
 </div>
 
