@@ -1,0 +1,31 @@
+name: Tests
+
+# Run the Django test suite (parser → import → API → renderer → mkdocs build)
+# on every push and pull request, so the pipeline is guarded — not just the
+# docs deploy.
+
+on:
+  push:
+    branches: [daily_dose, main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Django system checks
+        run: python manage.py check
+
+      - name: Run tests
+        run: python manage.py test --verbosity 2
