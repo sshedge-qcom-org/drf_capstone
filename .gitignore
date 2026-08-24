@@ -1,3 +1,10 @@
 .idea/
 .venv/
 __pycache__/
+*.pyc
+
+# Django dev database (regenerated from raw_data via import_lessons)
+db.sqlite3
+
+# MkDocs build output (docs/ sources are committed; site/ is generated)
+/site/
