@@ -1,12 +1,53 @@
 # Business English for Senior Engineers
 
-A daily Business-English lesson corpus — professional idioms, phrasal verbs, and C1/C2 vocabulary for system design, code reviews, production issues, and sprint planning. Rendered from `raw_data/` via the shared parser, the same source that powers the REST API.
+A daily Business-English lesson corpus — professional idioms, phrasal verbs, and C1/C2 vocabulary for system design, code reviews, production issues, sprint planning, and root cause analysis. Rendered from `raw_data/` via the shared parser, the same source that powers the REST API.
 
-| Day | Topic | Focus theme | Date |
-| --- | --- | --- | --- |
-| [Day 1](day-1.md) | System design | Sounding natural and confident in system design discussions | 2026-08-19 |
-| [Day 2](day-2.md) | Code reviews | Giving clear, diplomatic feedback in code/Gerrit reviews | 2026-08-20 |
-| [Day 3](day-3.md) | Production issues | Staying calm, precise, and credible during production issues | 2026-08-21 |
-| [Day 4](day-4.md) | Sprint planning | Sounding clear, realistic, and senior during sprint planning | 2026-08-22 |
-| [Day 5](day-5.md) | Root cause analysis | Explaining root cause clearly without overclaiming | 2026-08-23 |
+**5 lessons · 50 expressions** — each day takes about 10 minutes.
+
+!!! tip "How to use this site"
+    Read each expression **aloud**, lean on the ✅ corrections over the ❌ mistakes, and reuse the labelled example sentences as your own templates. Practice the Speaking Practice prompts without reading them.
+
+<div class="grid cards" markdown>
+
+-   :material-numeric-1-circle:{ .lg .middle } **[Day 1 — System design](day-1.md)**
+
+    ---
+
+    Sounding natural and confident in system design discussions
+
+    :material-book-open-page-variant: **10 expressions**  ·  :material-calendar-month: 2026-08-19
+
+-   :material-numeric-2-circle:{ .lg .middle } **[Day 2 — Code reviews](day-2.md)**
+
+    ---
+
+    Giving clear, diplomatic feedback in code/Gerrit reviews
+
+    :material-book-open-page-variant: **10 expressions**  ·  :material-calendar-month: 2026-08-20
+
+-   :material-numeric-3-circle:{ .lg .middle } **[Day 3 — Production issues](day-3.md)**
+
+    ---
+
+    Staying calm, precise, and credible during production issues
+
+    :material-book-open-page-variant: **10 expressions**  ·  :material-calendar-month: 2026-08-21
+
+-   :material-numeric-4-circle:{ .lg .middle } **[Day 4 — Sprint planning](day-4.md)**
+
+    ---
+
+    Sounding clear, realistic, and senior during sprint planning
+
+    :material-book-open-page-variant: **10 expressions**  ·  :material-calendar-month: 2026-08-22
+
+-   :material-numeric-5-circle:{ .lg .middle } **[Day 5 — Root cause analysis](day-5.md)**
+
+    ---
+
+    Explaining root cause clearly without overclaiming
+
+    :material-book-open-page-variant: **10 expressions**  ·  :material-calendar-month: 2026-08-23
+
+</div>
 

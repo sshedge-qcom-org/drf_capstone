@@ -127,22 +127,48 @@ def render_lesson(lesson: ParsedLesson) -> str:
     return "\n".join(lines).rstrip() + "\n"
 
 
+def _day_icon(day_number: int) -> str:
+    """A numbered circle icon for days 1–9, with a book fallback beyond that."""
+    if 1 <= day_number <= 9:
+        return f":material-numeric-{day_number}-circle:"
+    return ":material-book-open-variant:"
+
+
 def render_index(lessons: list[ParsedLesson]) -> str:
-    """Render the docs landing page with a table linking to each day."""
+    """Render the docs landing page as a grid of clickable day cards."""
+    total_expressions = sum(len(lesson.expressions) for lesson in lessons)
     lines = [
         "# Business English for Senior Engineers", "",
         "A daily Business-English lesson corpus — professional idioms, phrasal "
         "verbs, and C1/C2 vocabulary for system design, code reviews, production "
-        "issues, and sprint planning. Rendered from `raw_data/` via the shared "
-        "parser, the same source that powers the REST API.", "",
-        "| Day | Topic | Focus theme | Date |",
-        "| --- | --- | --- | --- |",
+        "issues, sprint planning, and root cause analysis. Rendered from "
+        "`raw_data/` via the shared parser, the same source that powers the REST "
+        "API.", "",
+        f"**{len(lessons)} lessons · {total_expressions} expressions** — "
+        "each day takes about 10 minutes.", "",
+        '!!! tip "How to use this site"',
+        "    Read each expression **aloud**, lean on the ✅ corrections over the "
+        "❌ mistakes, and reuse the labelled example sentences as your own "
+        "templates. Practice the Speaking Practice prompts without reading them.",
+        "",
+        '<div class="grid cards" markdown>', "",
     ]
     for lesson in lessons:
-        lines.append(
-            f"| [Day {lesson.day_number}](day-{lesson.day_number}.md) "
-            f"| {_cell(lesson.dialogue_topic)} | {_cell(lesson.focus_theme)} "
-            f"| {lesson.date or ''} |"
+        date_suffix = (
+            f"  ·  :material-calendar-month: {lesson.date}" if lesson.date else ""
         )
-    lines.append("")
+        lines += [
+            f"-   {_day_icon(lesson.day_number)}{{ .lg .middle }} "
+            f"**[Day {lesson.day_number} — {lesson.dialogue_topic}]"
+            f"(day-{lesson.day_number}.md)**",
+            "",
+            "    ---",
+            "",
+            f"    {lesson.focus_theme}",
+            "",
+            f"    :material-book-open-page-variant: "
+            f"**{len(lesson.expressions)} expressions**{date_suffix}",
+            "",
+        ]
+    lines += ["</div>", ""]
     return "\n".join(lines) + "\n"
