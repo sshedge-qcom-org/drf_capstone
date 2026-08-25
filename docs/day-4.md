@@ -14,8 +14,7 @@
 - **IPA:** `/baɪt ɔːf mɔːr ðən wi kən tʃuː/`
 - **Formality:** Neutral
 
-!!! failure "Avoid"
-    We should not take more tasks than capacity.
+!!! failure "Avoid: We should not take more tasks than capacity."
 
 !!! success "Say instead"
     - We shouldn’t bite off more than we can chew.
@@ -39,8 +38,7 @@
 - **IPA:** `/kiːp ðə pleɪts ˈspɪnɪŋ/`
 - **Formality:** Neutral
 
-!!! failure "Avoid"
-    We have to manage many works in parallel.
+!!! failure "Avoid: We have to manage many works in parallel."
 
 !!! success "Say instead"
     - We need to keep the plates spinning while we finish the migration.
@@ -64,8 +62,7 @@
 - **IPA:** `/ə stretʃ ɡoʊl/`
 - **Formality:** Neutral
 
-!!! failure "Avoid"
-    This is extra target if time permits.
+!!! failure "Avoid: This is extra target if time permits."
 
 !!! success "Say instead"
     - This is a stretch goal if we finish the committed work early.
@@ -90,8 +87,7 @@
 - **Meaning:** Define the size, boundaries, and work involved in a task.
 - **IPA:** `/skoʊp aʊt/`
 
-!!! failure "Avoid"
-    We need to scope the effort clearly out.
+!!! failure "Avoid: We need to scope the effort clearly out."
 
 !!! success "Say instead"
     - We need to scope out the effort clearly.
@@ -114,8 +110,7 @@
 - **Meaning:** Split a large task into smaller, manageable pieces.
 - **IPA:** `/breɪk daʊn/`
 
-!!! failure "Avoid"
-    Please divide the task into small-small items.
+!!! failure "Avoid: Please divide the task into small-small items."
 
 !!! success "Say instead"
     - Please break down the task into smaller items.
@@ -138,8 +133,7 @@
 - **Meaning:** Arrange or coordinate people, dependencies, approvals, or resources.
 - **IPA:** `/laɪn ʌp/`
 
-!!! failure "Avoid"
-    We need to align all dependencies ready.
+!!! failure "Avoid: We need to align all dependencies ready."
 
 !!! success "Say instead"
     - We need to line up the dependencies.
@@ -167,8 +161,7 @@
 - **Antonyms:** unrealistic, impractical, unworkable
 - **Collocations:** feasible plan, feasible timeline, technically feasible, commercially feasible
 
-!!! failure "Avoid"
-    This timeline is possible to achieve or not?
+!!! failure "Avoid: This timeline is possible to achieve or not?"
 
 !!! success "Say instead"
     - Is this timeline feasible?
@@ -191,8 +184,7 @@
 - **Antonyms:** overload, constraint, saturation
 - **Collocations:** team bandwidth, engineering bandwidth, limited bandwidth, free up bandwidth
 
-!!! failure "Avoid"
-    We don’t have resource to take this.
+!!! failure "Avoid: We don’t have resource to take this."
 
 !!! success "Say instead"
     - We don’t have enough bandwidth to take this on right now.
@@ -215,8 +207,7 @@
 - **Antonyms:** independence, self-contained work
 - **Collocations:** external dependency, hard dependency, cross-team dependency, dependency risk
 
-!!! failure "Avoid"
-    This task is depending on QA team.
+!!! failure "Avoid: This task is depending on QA team."
 
 !!! success "Say instead"
     - This task has a dependency on QA sign-off.
@@ -239,8 +230,7 @@
 - **Antonyms:** option, aspiration, tentative plan
 - **Collocations:** sprint commitment, delivery commitment, customer commitment, realistic commitment
 
-!!! failure "Avoid"
-    We can give commitment for all these tasks.
+!!! failure "Avoid: We can give commitment for all these tasks."
 
 !!! success "Say instead"
     - We can commit to these tasks.

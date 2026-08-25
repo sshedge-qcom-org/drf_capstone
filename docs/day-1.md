@@ -14,8 +14,7 @@
 - **IPA:** `/peɪnt aʊərˈsɛlvz ˈɪntu ə ˈkɔːrnər/`
 - **Formality:** Neutral
 
-!!! failure "Avoid"
-    This design may block us in future.
+!!! failure "Avoid: This design may block us in future."
 
 !!! success "Say instead"
     - This design may paint us into a corner later.
@@ -39,8 +38,7 @@
 - **IPA:** `/pʊt ə steɪk ɪn ðə ɡraʊnd/`
 - **Formality:** Neutral
 
-!!! failure "Avoid"
-    Let us freeze one proposal for discussion.
+!!! failure "Avoid: Let us freeze one proposal for discussion."
 
 !!! success "Say instead"
     - Let’s put a stake in the ground and iterate from there.
@@ -64,8 +62,7 @@
 - **IPA:** `/nɑːt sɛt ɪn stoʊn/`
 - **Formality:** Neutral
 
-!!! failure "Avoid"
-    This is not freezed yet.
+!!! failure "Avoid: This is not freezed yet."
 
 !!! success "Say instead"
     - This is not set in stone yet.
@@ -90,8 +87,7 @@
 - **Meaning:** Include something as part of your thinking, estimate, or decision.
 - **IPA:** `/ˈfæktər ɪn/`
 
-!!! failure "Avoid"
-    We should consider about migration cost.
+!!! failure "Avoid: We should consider about migration cost."
 
 !!! success "Say instead"
     - We should factor in the migration cost.
@@ -114,8 +110,7 @@
 - **Meaning:** Explain clearly and explicitly.
 - **IPA:** `/spɛl aʊt/`
 
-!!! failure "Avoid"
-    Please explain in more detailly.
+!!! failure "Avoid: Please explain in more detailly."
 
 !!! success "Say instead"
     - Can you spell out the failure scenario?
@@ -138,8 +133,7 @@
 - **Meaning:** Revert to an earlier version or previous state.
 - **IPA:** `/roʊl bæk/`
 
-!!! failure "Avoid"
-    We will revert back the deployment.
+!!! failure "Avoid: We will revert back the deployment."
 
 !!! success "Say instead"
     - We will roll back the deployment.
@@ -171,8 +165,7 @@
 - **Antonyms:** freedom, flexibility, openness
 - **Collocations:** technical constraint, design constraint, resource constraint, latency constraint
 
-!!! failure "Avoid"
-    We have one limitation that latency should be low.
+!!! failure "Avoid: We have one limitation that latency should be low."
 
 !!! success "Say instead"
     - We have a latency constraint.
@@ -195,8 +188,7 @@
 - **Antonyms:** fragile, brittle, unreliable
 - **Collocations:** robust design, robust implementation, robust error handling, robust validation
 
-!!! failure "Avoid"
-    We need a strong error handling.
+!!! failure "Avoid: We need a strong error handling."
 
 !!! success "Say instead"
     - We need robust error handling.
@@ -219,8 +211,7 @@
 - **Antonyms:** idealistic, theoretical, impractical
 - **Collocations:** pragmatic approach, pragmatic solution, pragmatic compromise, pragmatic decision
 
-!!! failure "Avoid"
-    We need a practical way only.
+!!! failure "Avoid: We need a practical way only."
 
 !!! success "Say instead"
     - We need a pragmatic approach.
@@ -243,8 +234,7 @@
 - **Antonyms:** weak, unjustified, arbitrary
 - **Collocations:** defensible decision, defensible estimate, defensible architecture, defensible position
 
-!!! failure "Avoid"
-    This decision can be defended by us.
+!!! failure "Avoid: This decision can be defended by us."
 
 !!! success "Say instead"
     - This is a defensible decision.

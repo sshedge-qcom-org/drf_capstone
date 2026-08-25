@@ -14,8 +14,7 @@
 - **IPA:** `/reɪz ə red flæɡ/`
 - **Formality:** Neutral
 
-!!! failure "Avoid"
-    I have one doubt on this implementation.
+!!! failure "Avoid: I have one doubt on this implementation."
 
 !!! success "Say instead"
     - I want to raise a red flag about this implementation.
@@ -39,8 +38,7 @@
 - **IPA:** `/ɡet tə ðə ˈbɑːtəm əv ˈsʌmθɪŋ/`
 - **Formality:** Neutral
 
-!!! failure "Avoid"
-    We need to find the root exactly.
+!!! failure "Avoid: We need to find the root exactly."
 
 !!! success "Say instead"
     - We need to get to the bottom of why this regression happens.
@@ -64,8 +62,7 @@
 - **IPA:** `/ə ˈmuːvɪŋ ˈtɑːrɡɪt/`
 - **Formality:** Neutral
 
-!!! failure "Avoid"
-    The requirement is changing again and again.
+!!! failure "Avoid: The requirement is changing again and again."
 
 !!! success "Say instead"
     - The requirement is becoming a moving target.
@@ -90,8 +87,7 @@
 - **Meaning:** Explicitly mention something important, often a concern, assumption, or risk.
 - **IPA:** `/kɔːl aʊt/`
 
-!!! failure "Avoid"
-    I want to highlight out one issue.
+!!! failure "Avoid: I want to highlight out one issue."
 
 !!! success "Say instead"
     - I want to call out one issue.
@@ -114,8 +110,7 @@
 - **Meaning:** Improve clarity, remove unnecessary code, or make something easier to maintain.
 - **IPA:** `/kliːn ʌp/`
 
-!!! failure "Avoid"
-    Please make the code cleanly.
+!!! failure "Avoid: Please make the code cleanly."
 
 !!! success "Say instead"
     - Please clean up this error-handling path.
@@ -138,8 +133,7 @@
 - **Meaning:** Complete something properly after starting or promising it.
 - **IPA:** `/ˈfɑːloʊ θruː/`
 
-!!! failure "Avoid"
-    Please do the remaining follow-up completely.
+!!! failure "Avoid: Please do the remaining follow-up completely."
 
 !!! success "Say instead"
     - Please follow through on the remaining review comments.
@@ -167,8 +161,7 @@
 - **Antonyms:** guess, impulse, assumption
 - **Collocations:** design rationale, technical rationale, clear rationale, document the rationale
 
-!!! failure "Avoid"
-    Please mention the logic why you did this.
+!!! failure "Avoid: Please mention the logic why you did this."
 
 !!! success "Say instead"
     - Please document the rationale for this approach.
@@ -191,8 +184,7 @@
 - **Antonyms:** fix, improvement, stabilization
 - **Collocations:** performance regression, functional regression, regression test, regression risk
 
-!!! failure "Avoid"
-    This change created one issue again.
+!!! failure "Avoid: This change created one issue again."
 
 !!! success "Say instead"
     - This change introduced a regression.
@@ -215,8 +207,7 @@
 - **Antonyms:** brittle, messy, hard-coded, fragile
 - **Collocations:** maintainable code, maintainable design, maintainable architecture, more maintainable approach
 
-!!! failure "Avoid"
-    This code is not looking good for future.
+!!! failure "Avoid: This code is not looking good for future."
 
 !!! success "Say instead"
     - This code may not be maintainable long term.
@@ -239,8 +230,7 @@
 - **Antonyms:** common case, typical path, happy path
 - **Collocations:** handle an edge case, miss an edge case, edge-case behavior, edge-case coverage
 
-!!! failure "Avoid"
-    This is a corner scenario which can come sometimes.
+!!! failure "Avoid: This is a corner scenario which can come sometimes."
 
 !!! success "Say instead"
     - This is an edge case we still need to handle.

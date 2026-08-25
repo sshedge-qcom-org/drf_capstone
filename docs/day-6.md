@@ -14,8 +14,7 @@
 - **IPA:** `/kɪk ðə kæn daʊn ðə roʊd/`
 - **Formality:** Neutral; slightly conversational but common in leadership discussions
 
-!!! failure "Avoid"
-    We are postponing this problem for future.
+!!! failure "Avoid: We are postponing this problem for future."
 
 !!! success "Say instead"
     - We’re kicking the can down the road.
@@ -39,8 +38,7 @@
 - **IPA:** `/peɪ daʊn ˈtɛknɪkəl dɛt/`
 - **Formality:** Neutral; very common in engineering
 
-!!! failure "Avoid"
-    We need to clear technical debt.
+!!! failure "Avoid: We need to clear technical debt."
 
 !!! success "Say instead"
     - We need to pay down technical debt.
@@ -64,8 +62,7 @@
 - **IPA:** `/kʌm bæk tə baɪt ʌs/`
 - **Formality:** Neutral; conversational but professional
 
-!!! failure "Avoid"
-    This issue will create problem in future.
+!!! failure "Avoid: This issue will create problem in future."
 
 !!! success "Say instead"
     - This could come back to bite us.
@@ -90,8 +87,7 @@
 - **Meaning:** Gradually reduce a large problem through steady, repeated effort.
 - **IPA:** `/tʃɪp əˈweɪ æt/`
 
-!!! failure "Avoid"
-    We will slowly reduce technical debt little by little.
+!!! failure "Avoid: We will slowly reduce technical debt little by little."
 
 !!! success "Say instead"
     - We’ll chip away at the technical debt over the next few sprints.
@@ -114,8 +110,7 @@
 - **Meaning:** Gradually remove or replace something over time.
 - **IPA:** `/feɪz aʊt/`
 
-!!! failure "Avoid"
-    We will remove this API slowly-slowly.
+!!! failure "Avoid: We will remove this API slowly-slowly."
 
 !!! success "Say instead"
     - We’ll phase out this API over two releases.
@@ -138,8 +133,7 @@
 - **Meaning:** Strengthen something weak or risky.
 - **IPA:** `/ʃɔːr ʌp/`
 
-!!! failure "Avoid"
-    We need to make this area strong.
+!!! failure "Avoid: We need to make this area strong."
 
 !!! success "Say instead"
     - We need to shore up this area.
@@ -167,8 +161,7 @@
 - **Antonyms:** robust, resilient, flexible
 - **Collocations:** brittle code, brittle tests, brittle integration, brittle dependency
 
-!!! failure "Avoid"
-    This code is very breakable.
+!!! failure "Avoid: This code is very breakable."
 
 !!! success "Say instead"
     - This code is brittle.
@@ -191,8 +184,7 @@
 - **Antonyms:** unsustainable, fragile, short-lived
 - **Collocations:** sustainable pace, sustainable architecture, sustainable delivery model, sustainable process
 
-!!! failure "Avoid"
-    This approach is not long-time good.
+!!! failure "Avoid: This approach is not long-time good."
 
 !!! success "Say instead"
     - This approach is not sustainable.
@@ -215,8 +207,7 @@
 - **Antonyms:** big-bang, abrupt, wholesale
 - **Collocations:** incremental rollout, incremental migration, incremental improvement, incremental refactor
 
-!!! failure "Avoid"
-    We should do this step by steply.
+!!! failure "Avoid: We should do this step by steply."
 
 !!! success "Say instead"
     - We should take an incremental approach.
@@ -239,8 +230,7 @@
 - **Antonyms:** introduction, adoption, launch
 - **Collocations:** deprecation plan, deprecation notice, deprecation timeline, API deprecation
 
-!!! failure "Avoid"
-    We will obsolete this API.
+!!! failure "Avoid: We will obsolete this API."
 
 !!! success "Say instead"
     - We’ll define a deprecation plan for this API.

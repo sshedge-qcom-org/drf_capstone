@@ -14,8 +14,7 @@
 - **IPA:** `/kəˈnekt ðə dɑːts/`
 - **Formality:** Neutral
 
-!!! failure "Avoid"
-    We need to connect all observations and conclude.
+!!! failure "Avoid: We need to connect all observations and conclude."
 
 !!! success "Say instead"
     - We need to connect the dots across logs, metrics, and deployment history.
@@ -39,8 +38,7 @@
 - **IPA:** `/ðə ˈsmoʊkɪŋ ɡʌn/`
 - **Formality:** Neutral; slightly vivid, common in incident reviews
 
-!!! failure "Avoid"
-    This is the final proof for issue.
+!!! failure "Avoid: This is the final proof for issue."
 
 !!! success "Say instead"
     - This looks like the smoking gun.
@@ -64,8 +62,7 @@
 - **IPA:** `/kloʊz ðə luːp/`
 - **Formality:** Neutral
 
-!!! failure "Avoid"
-    Let us close this pending communication.
+!!! failure "Avoid: Let us close this pending communication."
 
 !!! success "Say instead"
     - Let’s close the loop with the release team after we confirm the fix.
@@ -90,8 +87,7 @@
 - **Meaning:** Focus closely on the most likely cause or area.
 - **IPA:** `/ˈzɪroʊ ɪn ɑːn/`
 
-!!! failure "Avoid"
-    We are focusing into the retry module.
+!!! failure "Avoid: We are focusing into the retry module."
 
 !!! success "Say instead"
     - We’re zeroing in on the retry module.
@@ -114,8 +110,7 @@
 - **Meaning:** Follow evidence backward to find where something started.
 - **IPA:** `/treɪs bæk/`
 
-!!! failure "Avoid"
-    We traced till the original commit.
+!!! failure "Avoid: We traced till the original commit."
 
 !!! success "Say instead"
     - We traced it back to the original commit.
@@ -138,8 +133,7 @@
 - **Meaning:** Make something more precise, reliable, or controlled.
 - **IPA:** `/ˈtaɪtən ʌp/`
 
-!!! failure "Avoid"
-    We need to make monitoring more strict.
+!!! failure "Avoid: We need to make monitoring more strict."
 
 !!! success "Say instead"
     - We need to tighten up monitoring around this path.
@@ -167,8 +161,7 @@
 - **Antonyms:** continuous, constant, persistent
 - **Collocations:** intermittent failure, intermittent timeout, intermittent issue
 
-!!! failure "Avoid"
-    The issue is coming sometimes.
+!!! failure "Avoid: The issue is coming sometimes."
 
 !!! success "Say instead"
     - It’s an intermittent issue.
@@ -191,8 +184,7 @@
 - **Antonyms:** disconnect, separate, decouple
 - **Collocations:** correlate with metrics, correlate events, correlate failures
 
-!!! failure "Avoid"
-    The errors are matching with deployment.
+!!! failure "Avoid: The errors are matching with deployment."
 
 !!! success "Say instead"
     - The errors correlate with the deployment.
@@ -215,8 +207,7 @@
 - **Antonyms:** escalation, exposure, aggravation
 - **Collocations:** short-term mitigation, mitigation plan, mitigation strategy
 
-!!! failure "Avoid"
-    We have done one workaround solution.
+!!! failure "Avoid: We have done one workaround solution."
 
 !!! success "Say instead"
     - We have a short-term mitigation in place.
@@ -239,8 +230,7 @@
 - **Antonyms:** improvement, fix, enhancement
 - **Collocations:** regression test, performance regression, functional regression
 
-!!! failure "Avoid"
-    The old issue came again newly.
+!!! failure "Avoid: The old issue came again newly."
 
 !!! success "Say instead"
     - This looks like a regression.

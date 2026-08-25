@@ -29,6 +29,11 @@ def _indent(text: str) -> str:
     return "\n".join(("    " + line) if line.strip() else "" for line in text.split("\n"))
 
 
+def _title_safe(text: str) -> str:
+    """Collapse to a single line and neutralise quotes for an admonition title."""
+    return " ".join(text.split()).replace('"', "'")
+
+
 def _preserve_breaks(text: str) -> str:
     """Keep single line breaks (Markdown hard breaks) while allowing paragraphs."""
     return "\n".join((line + "  ") if line.strip() else "" for line in text.split("\n"))
@@ -64,7 +69,9 @@ def _render_expression(expr: ParsedExpression) -> list[str]:
     out.append("")
 
     if expr.mistake_wrong:
-        out += ['!!! failure "Avoid"', _indent(expr.mistake_wrong), ""]
+        # Fold the (single-sentence) mistake into the callout title so it stays
+        # on one line instead of a title row + a body row.
+        out += [f'!!! failure "Avoid: {_title_safe(expr.mistake_wrong)}"', ""]
     if expr.mistake_right:
         out.append('!!! success "Say instead"')
         out.append(_indent("\n".join(f"- {right}" for right in expr.mistake_right)))

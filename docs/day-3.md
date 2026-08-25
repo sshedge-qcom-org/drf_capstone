@@ -14,8 +14,7 @@
 - **IPA:** `/stɑːp ðə ˈbliːdɪŋ/`
 - **Formality:** Neutral; common in incident discussions
 
-!!! failure "Avoid"
-    First we should stop the issue impact.
+!!! failure "Avoid: First we should stop the issue impact."
 
 !!! success "Say instead"
     - First, we need to stop the bleeding.
@@ -39,8 +38,7 @@
 - **IPA:** `/ˈʌndər ðə hʊd/`
 - **Formality:** Neutral
 
-!!! failure "Avoid"
-    Internally inside the code, it is doing retries.
+!!! failure "Avoid: Internally inside the code, it is doing retries."
 
 !!! success "Say instead"
     - Under the hood, it’s retrying aggressively.
@@ -64,8 +62,7 @@
 - **IPA:** `/ðə blæst ˈreɪdiəs/`
 - **Formality:** Neutral; very common in reliability and systems discussions
 
-!!! failure "Avoid"
-    The impact area is very big.
+!!! failure "Avoid: The impact area is very big."
 
 !!! success "Say instead"
     - The blast radius is too large.
@@ -90,8 +87,7 @@
 - **Meaning:** Eliminate a possible cause after checking evidence.
 - **IPA:** `/ruːl aʊt/`
 
-!!! failure "Avoid"
-    We can remove network from suspect list.
+!!! failure "Avoid: We can remove network from suspect list."
 
 !!! success "Say instead"
     - We can rule out the network as the cause.
@@ -114,8 +110,7 @@
 - **Meaning:** Investigate something in detail.
 - **IPA:** `/dɪɡ ˈɪntuː/`
 
-!!! failure "Avoid"
-    I will deep dive on the logs.
+!!! failure "Avoid: I will deep dive on the logs."
 
 !!! success "Say instead"
     - I’ll dig into the logs.
@@ -142,8 +137,7 @@
 - **Meaning:** Delay or pause an action until there is more clarity.
 - **IPA:** `/hoʊld ɔːf ɑːn/`
 
-!!! failure "Avoid"
-    Let us wait the deployment.
+!!! failure "Avoid: Let us wait the deployment."
 
 !!! success "Say instead"
     - Let’s hold off on the deployment.
@@ -171,8 +165,7 @@
 - **Antonyms:** constant, continuous, persistent
 - **Collocations:** intermittent failure, intermittent timeout, intermittent connectivity issue
 
-!!! failure "Avoid"
-    The issue is coming sometimes.
+!!! failure "Avoid: The issue is coming sometimes."
 
 !!! success "Say instead"
     - It’s an intermittent issue.
@@ -195,8 +188,7 @@
 - **Antonyms:** root fix, full resolution, permanent solution
 - **Collocations:** short-term mitigation, mitigation plan, mitigation strategy, immediate mitigation
 
-!!! failure "Avoid"
-    We applied one workaround solution for now.
+!!! failure "Avoid: We applied one workaround solution for now."
 
 !!! success "Say instead"
     - We applied a short-term mitigation.
@@ -219,8 +211,7 @@
 - **Antonyms:** improvement, recovery, stabilization
 - **Collocations:** performance degradation, service degradation, user-visible degradation
 
-!!! failure "Avoid"
-    There is performance down.
+!!! failure "Avoid: There is performance down."
 
 !!! success "Say instead"
     - We’re seeing performance degradation.
@@ -243,8 +234,7 @@
 - **Antonyms:** fragile, brittle, failure-prone
 - **Collocations:** resilient architecture, resilient system, resilient service, resilient design
 
-!!! failure "Avoid"
-    The system should be strong for failures.
+!!! failure "Avoid: The system should be strong for failures."
 
 !!! success "Say instead"
     - The system should be more resilient to failures.

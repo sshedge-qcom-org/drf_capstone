@@ -23,10 +23,11 @@
   margin-bottom: 0.4em;
 }
 
-/* The intro "Focus:" line rendered as *emphasis* right under the title. */
+/* The intro "Focus:" line rendered as *emphasis* right under the title.
+   Coloured but NOT bold (overrides the generic bold-em rule below). */
 .md-typeset h1 + p em {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--md-primary-fg-color);
 }
 
@@ -36,7 +37,7 @@
   margin-bottom: 1.4em;
   color: var(--md-default-fg-color--light);
   font-size: 0.72rem;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.6px;
   text-transform: uppercase;
 }
@@ -46,7 +47,7 @@
   font-weight: 700;
   margin-top: 1.9em;
   padding-bottom: 0.3em;
-  border-bottom: 2px solid var(--md-default-fg-color--lightest);
+  border-bottom: 2px solid var(--md-default-fg-color);
 }
 
 /* ── Tighter vertical rhythm (less dead space between blocks) ─────────────── */
@@ -83,15 +84,13 @@
   margin-block: 0.8em;
 }
 
-/* ── Expression cards (### 1. Paint ourselves into a corner) ─────────────── */
+/* ── Expression headings (### 1. Paint ourselves into a corner) ──────────── */
 .md-typeset h3 {
   font-weight: 700;
   margin-top: 1.15em;
   margin-bottom: 0.5em;
-  padding: 0.5em 0.8em;
+  padding: 0.1em 0 0.1em 0.7em;
   border-left: 4px solid var(--md-primary-fg-color);
-  border-radius: 6px;
-  background: var(--md-default-fg-color--lightest);
 }
 
 /* ── Inline IPA / code pills ─────────────────────────────────────────────── */
@@ -153,16 +152,6 @@
   font-weight: 600;
 }
 
-/* ── Expression cards lift a touch on hover ──────────────────────────────── */
-.md-typeset h3 {
-  transition: box-shadow 120ms ease, transform 120ms ease;
-}
-
-.md-typeset h3:hover {
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-  transform: translateX(2px);
-}
-
 /* ── Kind / status badges under each expression heading ──────────────────── */
 .md-typeset p:has(> .fe-badges) {
   margin: -0.3em 0 0.9em;
@@ -183,6 +172,7 @@
   text-transform: uppercase;
   letter-spacing: 0.6px;
   line-height: 1.75;
+  white-space: nowrap;
 }
 
 .md-typeset .fe-badge--idiom       { background: rgba(91, 108, 255, 0.14); color: #4453d6; }
@@ -203,11 +193,6 @@
 [data-md-color-scheme="slate"] .md-typeset .fe-badge--new         { color: #34d399; }
 [data-md-color-scheme="slate"] .md-typeset .fe-badge--review      { color: #94a3b8; }
 
-/* ── Section headings tinted to match their expression kind ──────────────── */
-.md-typeset h2.fe-sec--idiom        { border-bottom-color: #5b6cff; }
-.md-typeset h2.fe-sec--phrasal_verb { border-bottom-color: #009688; }
-.md-typeset h2.fe-sec--vocabulary   { border-bottom-color: #f59e0b; }
-
 /* ── Speaking Practice: tint the "Use:" target icon with the accent ──────── */
 .md-typeset .twemoji svg {
   vertical-align: text-bottom;
@@ -215,6 +200,22 @@
 
 .md-typeset p:has(> strong) .twemoji svg {
   fill: var(--md-accent-fg-color);
+}
+
+/* ── Speaking Practice "quote" callout: accent colour instead of grey ─────── */
+.md-typeset .admonition.quote,
+.md-typeset details.quote {
+  border-left-color: var(--fe-accent);
+}
+
+.md-typeset .quote > .admonition-title,
+.md-typeset .quote > summary {
+  background-color: rgba(91, 108, 255, 0.12);
+}
+
+.md-typeset .quote > .admonition-title::before,
+.md-typeset .quote > summary::before {
+  background-color: var(--fe-accent);
 }
 
 /* ── Landing page: a calmer, roomier intro above the lessons table ───────── */
@@ -227,6 +228,12 @@
 /* The single call-to-action button gets a little breathing room. */
 .md-typeset h1 ~ p > .md-button:first-child {
   margin-top: 0.4em;
+}
+
+/* ── Footer: match the header (primary) colour instead of the default grey ── */
+.md-footer,
+.md-footer-meta {
+  background-color: var(--md-primary-fg-color);
 }
 
 /* ── Global polish ───────────────────────────────────────────────────────── */
