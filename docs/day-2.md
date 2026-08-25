@@ -237,15 +237,15 @@
 
 | Common Indian corporate English | Natural international English | Why it's better |
 | --- | --- | --- |
-| I have one doubt in this code. | I have a question about this code.” / “I have a concern here. | “Doubt” often sounds like mistrust in US/UK workplace English. |
-| Please do the needful. | Could you take care of this?” / “Could you handle this? | More natural, direct, and modern. |
+| I have one doubt in this code. | I have a question about this code. / I have a concern here. | “Doubt” often sounds like mistrust in US/UK workplace English. |
+| Please do the needful. | Could you take care of this? / Could you handle this? | More natural, direct, and modern. |
 | Kindly check and confirm. | Could you review this and confirm? | Less stiff; clearer action. |
-| This logic is not proper. | This logic looks fragile.” / “This may not handle all cases. | More precise and less vague. |
+| This logic is not proper. | This logic looks fragile. / This may not handle all cases. | More precise and less vague. |
 | Please revert on this comment. | Please respond to this comment. | “Revert” does not mean “reply” in standard workplace English. |
-| I will update the same. | I’ll update it.” / “I’ll update the patch. | “The same” sounds old-fashioned and unnatural. |
+| I will update the same. | I’ll update it. / I’ll update the patch. | “The same” sounds old-fashioned and unnatural. |
 | Can you explain me this? | Can you explain this to me? | Correct verb pattern: explain something to someone. |
-| This issue is coming intermittently. | This issue happens intermittently.” / “We’re seeing this intermittently. | More natural technical phrasing. |
-| I am having a blocker. | I’m blocked on this.” / “This is blocking me. | More idiomatic for engineering status updates. |
+| This issue is coming intermittently. | This issue happens intermittently. / We’re seeing this intermittently. | More natural technical phrasing. |
+| I am having a blocker. | I’m blocked on this. / This is blocking me. | More idiomatic for engineering status updates. |
 | The code is working fine. | The code works for the main path, but we should verify edge cases. | More senior-sounding and less overconfident. |
 
 ## Speaking Practice

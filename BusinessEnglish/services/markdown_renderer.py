@@ -35,11 +35,33 @@ def _title_safe(text: str) -> str:
 
 
 def _unquote(text: str) -> str:
-    """Strip a single pair of surrounding quotes (straight or curly)."""
+    """Strip a single pair of surrounding quotes (straight or curly).
+
+    Only strips when the quote wraps the *whole* value — a string that merely
+    starts and ends with a quote (e.g. ``"a" and "b"``) is left untouched.
+    """
     text = text.strip()
     for lq, rq in (('"', '"'), ("“", "”"), ("'", "'"), ("‘", "’")):
         if len(text) >= 2 and text.startswith(lq) and text.endswith(rq):
-            return text[len(lq):-len(rq)].strip()
+            inner = text[len(lq):-len(rq)]
+            if lq not in inner and rq not in inner:
+                return inner.strip()
+    return text
+
+
+def _clean_upgrade(text: str) -> str:
+    """De-quote an Upgrade-table cell.
+
+    Handles a single wrapped phrase (``"…"`` → ``…``) and also quoted
+    alternatives separated by ``/`` (``"A." / "B."`` → ``A. / B.``), while
+    leaving unquoted cells (and stray slashes like ``A/B``) untouched.
+    """
+    text = text.strip()
+    stripped = _unquote(text)
+    if stripped != text:
+        return stripped
+    if "/" in text and any(q in text for q in '"“”‘’\''):
+        return " / ".join(_unquote(part.strip()) for part in text.split("/"))
     return text
 
 
@@ -293,7 +315,7 @@ def render_lesson(lesson: ParsedLesson) -> str:
             "| --- | --- | --- |",
         ]
         lines += [
-            f"| {_cell(_unquote(u.original))} | {_cell(_unquote(u.improved))} | "
+            f"| {_cell(_clean_upgrade(u.original))} | {_cell(_clean_upgrade(u.improved))} | "
             f"{_cell(u.reason)} |"
             for u in lesson.upgrades
         ]

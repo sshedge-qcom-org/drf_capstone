@@ -213,6 +213,14 @@ class RendererTests(SimpleTestCase):
         self.assertIn('!!! example "Your turn"', markdown)
         self.assertNotIn("MY_ANSWERS", markdown)
 
+    def test_upgrade_cells_are_unquoted(self):
+        # Upgrade cells lose their wrapping quotes — both single phrases and
+        # quoted alternatives separated by "/" — with no half-stripped quotes.
+        markdown = render_lesson(self.lessons[2])
+        self.assertIn(
+            "I have a question about this code. / I have a concern here.", markdown)
+        self.assertNotIn("code.” / “I have", markdown)
+
     def test_tracker_status_uses_pills(self):
         # The Tracker status column renders as a badge pill, not bare text.
         markdown = render_lesson(self.lessons[1])

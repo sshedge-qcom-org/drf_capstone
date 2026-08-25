@@ -201,7 +201,7 @@
 [data-md-color-scheme="slate"] .md-typeset .fe-badge--new         { color: #34d399; }
 [data-md-color-scheme="slate"] .md-typeset .fe-badge--review      { color: #94a3b8; }
 
-/* ── Speaking Practice: tint the "Use:" target icon with the accent ──────── */
+/* ── Speaking Practice: tint the "Use:" target icon pink ─────────────────── */
 .md-typeset .twemoji svg {
   vertical-align: text-bottom;
 }
