@@ -16,8 +16,7 @@
 
 !!! failure "Avoid: We are postponing this problem for future."
 
-!!! success "Say instead"
-    - We’re kicking the can down the road.
+!!! success "Say instead: We’re kicking the can down the road."
 
 **Examples**
 
@@ -40,8 +39,7 @@
 
 !!! failure "Avoid: We need to clear technical debt."
 
-!!! success "Say instead"
-    - We need to pay down technical debt.
+!!! success "Say instead: We need to pay down technical debt."
 
 **Examples**
 
@@ -64,8 +62,7 @@
 
 !!! failure "Avoid: This issue will create problem in future."
 
-!!! success "Say instead"
-    - This could come back to bite us.
+!!! success "Say instead: This could come back to bite us."
 
 **Examples**
 
@@ -89,8 +86,7 @@
 
 !!! failure "Avoid: We will slowly reduce technical debt little by little."
 
-!!! success "Say instead"
-    - We’ll chip away at the technical debt over the next few sprints.
+!!! success "Say instead: We’ll chip away at the technical debt over the next few sprints."
 
 **Examples**
 
@@ -112,8 +108,7 @@
 
 !!! failure "Avoid: We will remove this API slowly-slowly."
 
-!!! success "Say instead"
-    - We’ll phase out this API over two releases.
+!!! success "Say instead: We’ll phase out this API over two releases."
 
 **Examples**
 
@@ -135,8 +130,7 @@
 
 !!! failure "Avoid: We need to make this area strong."
 
-!!! success "Say instead"
-    - We need to shore up this area.
+!!! success "Say instead: We need to shore up this area."
 
 **Examples**
 
@@ -163,8 +157,7 @@
 
 !!! failure "Avoid: This code is very breakable."
 
-!!! success "Say instead"
-    - This code is brittle.
+!!! success "Say instead: This code is brittle."
 
 **Examples**
 
@@ -186,8 +179,7 @@
 
 !!! failure "Avoid: This approach is not long-time good."
 
-!!! success "Say instead"
-    - This approach is not sustainable.
+!!! success "Say instead: This approach is not sustainable."
 
 **Examples**
 
@@ -209,8 +201,7 @@
 
 !!! failure "Avoid: We should do this step by steply."
 
-!!! success "Say instead"
-    - We should take an incremental approach.
+!!! success "Say instead: We should take an incremental approach."
 
 **Examples**
 
@@ -248,16 +239,16 @@
 
 | Common Indian corporate English | Natural international English | Why it's better |
 | --- | --- | --- |
-| “This code is having many issues.” | “This code has several maintainability issues.” | More direct and technical. |
-| “We should not take this lightly.” | “We shouldn’t underestimate this risk.” | Sounds more senior and precise. |
-| “This will create problems in future.” | “This could create problems later.” | More natural phrasing; avoids over-formality. |
-| “We need to do cleanup activity.” | “We need to clean this up.” | Uses the natural verb form. |
-| “This is not a scalable way of working.” | “This approach won’t scale.” | Shorter and more idiomatic. |
-| “We are doing temporary solution only.” | “This is only a short-term workaround.” | More native engineering wording. |
-| “We need to remove old implementation slowly.” | “We need to phase out the old implementation.” | Uses the correct phrasal verb. |
-| “It is creating maintenance overheads.” | “It’s increasing the maintenance overhead.” | “Overhead” is usually singular in this context. |
-| “We should discuss on technical debt.” | “We should discuss the technical debt.” | No “on” after “discuss.” |
-| “This issue may come in later stage.” | “This issue may resurface later.” | More natural and concise. |
+| This code is having many issues. | This code has several maintainability issues. | More direct and technical. |
+| We should not take this lightly. | We shouldn’t underestimate this risk. | Sounds more senior and precise. |
+| This will create problems in future. | This could create problems later. | More natural phrasing; avoids over-formality. |
+| We need to do cleanup activity. | We need to clean this up. | Uses the natural verb form. |
+| This is not a scalable way of working. | This approach won’t scale. | Shorter and more idiomatic. |
+| We are doing temporary solution only. | This is only a short-term workaround. | More native engineering wording. |
+| We need to remove old implementation slowly. | We need to phase out the old implementation. | Uses the correct phrasal verb. |
+| It is creating maintenance overheads. | It’s increasing the maintenance overhead. | “Overhead” is usually singular in this context. |
+| We should discuss on technical debt. | We should discuss the technical debt. | No “on” after “discuss.” |
+| This issue may come in later stage. | This issue may resurface later. | More natural and concise. |
 
 ## Speaking Practice
 

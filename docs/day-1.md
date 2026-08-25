@@ -16,8 +16,7 @@
 
 !!! failure "Avoid: This design may block us in future."
 
-!!! success "Say instead"
-    - This design may paint us into a corner later.
+!!! success "Say instead: This design may paint us into a corner later."
 
 **Examples**
 
@@ -40,8 +39,7 @@
 
 !!! failure "Avoid: Let us freeze one proposal for discussion."
 
-!!! success "Say instead"
-    - Let’s put a stake in the ground and iterate from there.
+!!! success "Say instead: Let’s put a stake in the ground and iterate from there."
 
 **Examples**
 
@@ -64,8 +62,7 @@
 
 !!! failure "Avoid: This is not freezed yet."
 
-!!! success "Say instead"
-    - This is not set in stone yet.
+!!! success "Say instead: This is not set in stone yet."
 
 **Examples**
 
@@ -89,8 +86,7 @@
 
 !!! failure "Avoid: We should consider about migration cost."
 
-!!! success "Say instead"
-    - We should factor in the migration cost.
+!!! success "Say instead: We should factor in the migration cost."
 
 **Examples**
 
@@ -112,8 +108,7 @@
 
 !!! failure "Avoid: Please explain in more detailly."
 
-!!! success "Say instead"
-    - Can you spell out the failure scenario?
+!!! success "Say instead: Can you spell out the failure scenario?"
 
 **Examples**
 
@@ -167,8 +162,7 @@
 
 !!! failure "Avoid: We have one limitation that latency should be low."
 
-!!! success "Say instead"
-    - We have a latency constraint.
+!!! success "Say instead: We have a latency constraint."
 
 **Examples**
 
@@ -190,8 +184,7 @@
 
 !!! failure "Avoid: We need a strong error handling."
 
-!!! success "Say instead"
-    - We need robust error handling.
+!!! success "Say instead: We need robust error handling."
 
 **Examples**
 
@@ -213,8 +206,7 @@
 
 !!! failure "Avoid: We need a practical way only."
 
-!!! success "Say instead"
-    - We need a pragmatic approach.
+!!! success "Say instead: We need a pragmatic approach."
 
 **Examples**
 
@@ -236,8 +228,7 @@
 
 !!! failure "Avoid: This decision can be defended by us."
 
-!!! success "Say instead"
-    - This is a defensible decision.
+!!! success "Say instead: This is a defensible decision."
 
 **Examples**
 
@@ -251,16 +242,16 @@
 
 | Common Indian corporate English | Natural international English | Why it's better |
 | --- | --- | --- |
-| “This is not freezed yet.” | “This is not set in stone yet.” | “Freezed” is incorrect; this sounds natural in meetings. |
-| “Please explain in detailly.” | “Can you spell out the details?” | “Detailly” is not natural English. |
-| “We need to consider about latency.” | “We need to factor in latency.” | “Consider about” is incorrect; “factor in” is concise. |
-| “We will revert back the deployment.” | “We’ll roll back the deployment.” | Avoids the redundant phrase “revert back.” |
-| “This design will block us in future.” | “This design may paint us into a corner later.” | More idiomatic and executive-level. |
-| “Let us freeze one proposal.” | “Let’s put a stake in the ground.” | Sounds collaborative, not rigid. |
-| “We need strong error handling.” | “We need robust error handling.” | More precise technical vocabulary. |
-| “Due to timeline limitation…” | “Given the timeline constraint…” | More natural and professional. |
-| “This is a practical solution.” | “This is a pragmatic solution.” | More senior-level wording. |
-| “This decision has justification.” | “This is a defensible decision.” | Cleaner, more natural phrasing. |
+| This is not freezed yet. | This is not set in stone yet. | “Freezed” is incorrect; this sounds natural in meetings. |
+| Please explain in detailly. | Can you spell out the details? | “Detailly” is not natural English. |
+| We need to consider about latency. | We need to factor in latency. | “Consider about” is incorrect; “factor in” is concise. |
+| We will revert back the deployment. | We’ll roll back the deployment. | Avoids the redundant phrase “revert back.” |
+| This design will block us in future. | This design may paint us into a corner later. | More idiomatic and executive-level. |
+| Let us freeze one proposal. | Let’s put a stake in the ground. | Sounds collaborative, not rigid. |
+| We need strong error handling. | We need robust error handling. | More precise technical vocabulary. |
+| Due to timeline limitation… | Given the timeline constraint… | More natural and professional. |
+| This is a practical solution. | This is a pragmatic solution. | More senior-level wording. |
+| This decision has justification. | This is a defensible decision. | Cleaner, more natural phrasing. |
 
 ## Speaking Practice
 

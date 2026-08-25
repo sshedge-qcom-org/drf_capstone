@@ -8,6 +8,8 @@
   --md-code-font: "IBM Plex Mono";
   /* A warmer, calmer indigo/violet accent than the stock palette. */
   --fe-accent: #5b6cff;
+  /* Speaking Practice gets its own pink identity. */
+  --fe-pink: #e91e63;
 }
 
 /* ── Reading comfort ─────────────────────────────────────────────────────── */
@@ -205,23 +207,23 @@
 }
 
 .md-typeset p:has(> strong) .twemoji svg {
-  fill: var(--md-accent-fg-color);
+  fill: var(--fe-pink);
 }
 
-/* ── Speaking Practice "quote" callout: accent colour instead of grey ─────── */
+/* ── Speaking Practice "quote" callout: pink instead of grey ──────────────── */
 .md-typeset .admonition.quote,
 .md-typeset details.quote {
-  border-left-color: var(--fe-accent);
+  border-left-color: var(--fe-pink);
 }
 
 .md-typeset .quote > .admonition-title,
 .md-typeset .quote > summary {
-  background-color: rgba(91, 108, 255, 0.12);
+  background-color: rgba(233, 30, 99, 0.12);
 }
 
 .md-typeset .quote > .admonition-title::before,
 .md-typeset .quote > summary::before {
-  background-color: var(--fe-accent);
+  background-color: var(--fe-pink);
 }
 
 /* ── Landing page: a calmer, roomier intro above the lessons table ───────── */

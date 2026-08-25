@@ -16,8 +16,7 @@
 
 !!! failure "Avoid: We should not take more tasks than capacity."
 
-!!! success "Say instead"
-    - We shouldn’t bite off more than we can chew.
+!!! success "Say instead: We shouldn’t bite off more than we can chew."
 
 **Examples**
 
@@ -40,8 +39,7 @@
 
 !!! failure "Avoid: We have to manage many works in parallel."
 
-!!! success "Say instead"
-    - We need to keep the plates spinning while we finish the migration.
+!!! success "Say instead: We need to keep the plates spinning while we finish the migration."
 
 **Examples**
 
@@ -64,8 +62,7 @@
 
 !!! failure "Avoid: This is extra target if time permits."
 
-!!! success "Say instead"
-    - This is a stretch goal if we finish the committed work early.
+!!! success "Say instead: This is a stretch goal if we finish the committed work early."
 
 **Examples**
 
@@ -89,8 +86,7 @@
 
 !!! failure "Avoid: We need to scope the effort clearly out."
 
-!!! success "Say instead"
-    - We need to scope out the effort clearly.
+!!! success "Say instead: We need to scope out the effort clearly."
 
 **Examples**
 
@@ -112,8 +108,7 @@
 
 !!! failure "Avoid: Please divide the task into small-small items."
 
-!!! success "Say instead"
-    - Please break down the task into smaller items.
+!!! success "Say instead: Please break down the task into smaller items."
 
 **Examples**
 
@@ -135,8 +130,7 @@
 
 !!! failure "Avoid: We need to align all dependencies ready."
 
-!!! success "Say instead"
-    - We need to line up the dependencies.
+!!! success "Say instead: We need to line up the dependencies."
 
 **Examples**
 
@@ -163,8 +157,7 @@
 
 !!! failure "Avoid: This timeline is possible to achieve or not?"
 
-!!! success "Say instead"
-    - Is this timeline feasible?
+!!! success "Say instead: Is this timeline feasible?"
 
 **Examples**
 
@@ -186,8 +179,7 @@
 
 !!! failure "Avoid: We don’t have resource to take this."
 
-!!! success "Say instead"
-    - We don’t have enough bandwidth to take this on right now.
+!!! success "Say instead: We don’t have enough bandwidth to take this on right now."
 
 **Examples**
 
@@ -209,8 +201,7 @@
 
 !!! failure "Avoid: This task is depending on QA team."
 
-!!! success "Say instead"
-    - This task has a dependency on QA sign-off.
+!!! success "Say instead: This task has a dependency on QA sign-off."
 
 **Examples**
 
@@ -248,16 +239,16 @@
 
 | Common Indian corporate English | Natural international English | Why it's better |
 | --- | --- | --- |
-| “We can take this in current sprint only if bandwidth is there.” | “We can take this in the current sprint only if we have the bandwidth.” | More natural article use and phrasing. |
-| “This task is having dependency on platform team.” | “This task has a dependency on the platform team.” | Avoids unnatural “is having.” |
-| “Can we club these two tasks?” | “Can we combine these two tasks?” | “Combine” is more widely understood internationally. |
-| “Let us not overcommit the sprint.” | “Let’s avoid overcommitting this sprint.” | More natural and concise. |
-| “This is not possible in this much timeline.” | “This isn’t feasible within this timeline.” | More senior and precise. |
-| “Please split into small-small tasks.” | “Please break this down into smaller tasks.” | Natural workplace phrasing. |
-| “We will try to complete if time permits.” | “We can treat it as a stretch goal.” | Clearer planning language. |
-| “Any dependency is there from QA side?” | “Do we have any QA dependencies?” | Direct and natural. |
-| “We should plan properly before starting implementation.” | “We should scope this out before implementation.” | More specific and engineering-native. |
-| “I have no capacity for this activity.” | “I don’t have the bandwidth for this right now.” | Professional and less abrupt. |
+| We can take this in current sprint only if bandwidth is there. | We can take this in the current sprint only if we have the bandwidth. | More natural article use and phrasing. |
+| This task is having dependency on platform team. | This task has a dependency on the platform team. | Avoids unnatural “is having.” |
+| Can we club these two tasks? | Can we combine these two tasks? | “Combine” is more widely understood internationally. |
+| Let us not overcommit the sprint. | Let’s avoid overcommitting this sprint. | More natural and concise. |
+| This is not possible in this much timeline. | This isn’t feasible within this timeline. | More senior and precise. |
+| Please split into small-small tasks. | Please break this down into smaller tasks. | Natural workplace phrasing. |
+| We will try to complete if time permits. | We can treat it as a stretch goal. | Clearer planning language. |
+| Any dependency is there from QA side? | Do we have any QA dependencies? | Direct and natural. |
+| We should plan properly before starting implementation. | We should scope this out before implementation. | More specific and engineering-native. |
+| I have no capacity for this activity. | I don’t have the bandwidth for this right now. | Professional and less abrupt. |
 
 ## Speaking Practice
 

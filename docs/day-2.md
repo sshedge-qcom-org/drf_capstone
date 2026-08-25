@@ -16,8 +16,7 @@
 
 !!! failure "Avoid: I have one doubt on this implementation."
 
-!!! success "Say instead"
-    - I want to raise a red flag about this implementation.
+!!! success "Say instead: I want to raise a red flag about this implementation."
 
 **Examples**
 
@@ -40,8 +39,7 @@
 
 !!! failure "Avoid: We need to find the root exactly."
 
-!!! success "Say instead"
-    - We need to get to the bottom of why this regression happens.
+!!! success "Say instead: We need to get to the bottom of why this regression happens."
 
 **Examples**
 
@@ -64,8 +62,7 @@
 
 !!! failure "Avoid: The requirement is changing again and again."
 
-!!! success "Say instead"
-    - The requirement is becoming a moving target.
+!!! success "Say instead: The requirement is becoming a moving target."
 
 **Examples**
 
@@ -89,8 +86,7 @@
 
 !!! failure "Avoid: I want to highlight out one issue."
 
-!!! success "Say instead"
-    - I want to call out one issue.
+!!! success "Say instead: I want to call out one issue."
 
 **Examples**
 
@@ -112,8 +108,7 @@
 
 !!! failure "Avoid: Please make the code cleanly."
 
-!!! success "Say instead"
-    - Please clean up this error-handling path.
+!!! success "Say instead: Please clean up this error-handling path."
 
 **Examples**
 
@@ -135,8 +130,7 @@
 
 !!! failure "Avoid: Please do the remaining follow-up completely."
 
-!!! success "Say instead"
-    - Please follow through on the remaining review comments.
+!!! success "Say instead: Please follow through on the remaining review comments."
 
 **Examples**
 
@@ -163,8 +157,7 @@
 
 !!! failure "Avoid: Please mention the logic why you did this."
 
-!!! success "Say instead"
-    - Please document the rationale for this approach.
+!!! success "Say instead: Please document the rationale for this approach."
 
 **Examples**
 
@@ -186,8 +179,7 @@
 
 !!! failure "Avoid: This change created one issue again."
 
-!!! success "Say instead"
-    - This change introduced a regression.
+!!! success "Say instead: This change introduced a regression."
 
 **Examples**
 
@@ -209,8 +201,7 @@
 
 !!! failure "Avoid: This code is not looking good for future."
 
-!!! success "Say instead"
-    - This code may not be maintainable long term.
+!!! success "Say instead: This code may not be maintainable long term."
 
 **Examples**
 
@@ -232,8 +223,7 @@
 
 !!! failure "Avoid: This is a corner scenario which can come sometimes."
 
-!!! success "Say instead"
-    - This is an edge case we still need to handle.
+!!! success "Say instead: This is an edge case we still need to handle."
 
 **Examples**
 
@@ -247,16 +237,16 @@
 
 | Common Indian corporate English | Natural international English | Why it's better |
 | --- | --- | --- |
-| “I have one doubt in this code.” | “I have a question about this code.” / “I have a concern here.” | “Doubt” often sounds like mistrust in US/UK workplace English. |
-| “Please do the needful.” | “Could you take care of this?” / “Could you handle this?” | More natural, direct, and modern. |
-| “Kindly check and confirm.” | “Could you review this and confirm?” | Less stiff; clearer action. |
-| “This logic is not proper.” | “This logic looks fragile.” / “This may not handle all cases.” | More precise and less vague. |
-| “Please revert on this comment.” | “Please respond to this comment.” | “Revert” does not mean “reply” in standard workplace English. |
-| “I will update the same.” | “I’ll update it.” / “I’ll update the patch.” | “The same” sounds old-fashioned and unnatural. |
-| “Can you explain me this?” | “Can you explain this to me?” | Correct verb pattern: explain something to someone. |
-| “This issue is coming intermittently.” | “This issue happens intermittently.” / “We’re seeing this intermittently.” | More natural technical phrasing. |
-| “I am having a blocker.” | “I’m blocked on this.” / “This is blocking me.” | More idiomatic for engineering status updates. |
-| “The code is working fine.” | “The code works for the main path, but we should verify edge cases.” | More senior-sounding and less overconfident. |
+| I have one doubt in this code. | I have a question about this code.” / “I have a concern here. | “Doubt” often sounds like mistrust in US/UK workplace English. |
+| Please do the needful. | Could you take care of this?” / “Could you handle this? | More natural, direct, and modern. |
+| Kindly check and confirm. | Could you review this and confirm? | Less stiff; clearer action. |
+| This logic is not proper. | This logic looks fragile.” / “This may not handle all cases. | More precise and less vague. |
+| Please revert on this comment. | Please respond to this comment. | “Revert” does not mean “reply” in standard workplace English. |
+| I will update the same. | I’ll update it.” / “I’ll update the patch. | “The same” sounds old-fashioned and unnatural. |
+| Can you explain me this? | Can you explain this to me? | Correct verb pattern: explain something to someone. |
+| This issue is coming intermittently. | This issue happens intermittently.” / “We’re seeing this intermittently. | More natural technical phrasing. |
+| I am having a blocker. | I’m blocked on this.” / “This is blocking me. | More idiomatic for engineering status updates. |
+| The code is working fine. | The code works for the main path, but we should verify edge cases. | More senior-sounding and less overconfident. |
 
 ## Speaking Practice
 

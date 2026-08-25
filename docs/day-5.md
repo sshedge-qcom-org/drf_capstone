@@ -16,8 +16,7 @@
 
 !!! failure "Avoid: We need to connect all observations and conclude."
 
-!!! success "Say instead"
-    - We need to connect the dots across logs, metrics, and deployment history.
+!!! success "Say instead: We need to connect the dots across logs, metrics, and deployment history."
 
 **Examples**
 
@@ -40,8 +39,7 @@
 
 !!! failure "Avoid: This is the final proof for issue."
 
-!!! success "Say instead"
-    - This looks like the smoking gun.
+!!! success "Say instead: This looks like the smoking gun."
 
 **Examples**
 
@@ -64,8 +62,7 @@
 
 !!! failure "Avoid: Let us close this pending communication."
 
-!!! success "Say instead"
-    - Let’s close the loop with the release team after we confirm the fix.
+!!! success "Say instead: Let’s close the loop with the release team after we confirm the fix."
 
 **Examples**
 
@@ -89,8 +86,7 @@
 
 !!! failure "Avoid: We are focusing into the retry module."
 
-!!! success "Say instead"
-    - We’re zeroing in on the retry module.
+!!! success "Say instead: We’re zeroing in on the retry module."
 
 **Examples**
 
@@ -112,8 +108,7 @@
 
 !!! failure "Avoid: We traced till the original commit."
 
-!!! success "Say instead"
-    - We traced it back to the original commit.
+!!! success "Say instead: We traced it back to the original commit."
 
 **Examples**
 
@@ -135,8 +130,7 @@
 
 !!! failure "Avoid: We need to make monitoring more strict."
 
-!!! success "Say instead"
-    - We need to tighten up monitoring around this path.
+!!! success "Say instead: We need to tighten up monitoring around this path."
 
 **Examples**
 
@@ -163,8 +157,7 @@
 
 !!! failure "Avoid: The issue is coming sometimes."
 
-!!! success "Say instead"
-    - It’s an intermittent issue.
+!!! success "Say instead: It’s an intermittent issue."
 
 **Examples**
 
@@ -186,8 +179,7 @@
 
 !!! failure "Avoid: The errors are matching with deployment."
 
-!!! success "Say instead"
-    - The errors correlate with the deployment.
+!!! success "Say instead: The errors correlate with the deployment."
 
 **Examples**
 
@@ -209,8 +201,7 @@
 
 !!! failure "Avoid: We have done one workaround solution."
 
-!!! success "Say instead"
-    - We have a short-term mitigation in place.
+!!! success "Say instead: We have a short-term mitigation in place."
 
 **Examples**
 
@@ -232,8 +223,7 @@
 
 !!! failure "Avoid: The old issue came again newly."
 
-!!! success "Say instead"
-    - This looks like a regression.
+!!! success "Say instead: This looks like a regression."
 
 **Examples**
 

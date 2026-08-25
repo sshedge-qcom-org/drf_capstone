@@ -16,8 +16,7 @@
 
 !!! failure "Avoid: First we should stop the issue impact."
 
-!!! success "Say instead"
-    - First, we need to stop the bleeding.
+!!! success "Say instead: First, we need to stop the bleeding."
 
 **Examples**
 
@@ -40,8 +39,7 @@
 
 !!! failure "Avoid: Internally inside the code, it is doing retries."
 
-!!! success "Say instead"
-    - Under the hood, it’s retrying aggressively.
+!!! success "Say instead: Under the hood, it’s retrying aggressively."
 
 **Examples**
 
@@ -64,8 +62,7 @@
 
 !!! failure "Avoid: The impact area is very big."
 
-!!! success "Say instead"
-    - The blast radius is too large.
+!!! success "Say instead: The blast radius is too large."
 
 **Examples**
 
@@ -89,8 +86,7 @@
 
 !!! failure "Avoid: We can remove network from suspect list."
 
-!!! success "Say instead"
-    - We can rule out the network as the cause.
+!!! success "Say instead: We can rule out the network as the cause."
 
 **Examples**
 
@@ -139,8 +135,7 @@
 
 !!! failure "Avoid: Let us wait the deployment."
 
-!!! success "Say instead"
-    - Let’s hold off on the deployment.
+!!! success "Say instead: Let’s hold off on the deployment."
 
 **Examples**
 
@@ -167,8 +162,7 @@
 
 !!! failure "Avoid: The issue is coming sometimes."
 
-!!! success "Say instead"
-    - It’s an intermittent issue.
+!!! success "Say instead: It’s an intermittent issue."
 
 **Examples**
 
@@ -190,8 +184,7 @@
 
 !!! failure "Avoid: We applied one workaround solution for now."
 
-!!! success "Say instead"
-    - We applied a short-term mitigation.
+!!! success "Say instead: We applied a short-term mitigation."
 
 **Examples**
 
@@ -213,8 +206,7 @@
 
 !!! failure "Avoid: There is performance down."
 
-!!! success "Say instead"
-    - We’re seeing performance degradation.
+!!! success "Say instead: We’re seeing performance degradation."
 
 **Examples**
 
@@ -236,8 +228,7 @@
 
 !!! failure "Avoid: The system should be strong for failures."
 
-!!! success "Say instead"
-    - The system should be more resilient to failures.
+!!! success "Say instead: The system should be more resilient to failures."
 
 **Examples**
 
@@ -251,16 +242,16 @@
 
 | Common Indian corporate English | Natural international English | Why it's better |
 | --- | --- | --- |
-| “The issue is coming sometimes.” | “The issue is intermittent.” | More precise and professional. |
-| “We are checking on priority.” | “We’re treating this as high priority.” | Sounds natural and ownership-driven. |
-| “Please do the needful.” | “Could you take the next step on this?” | Clearer and less old-fashioned. |
-| “The server is not responding properly.” | “The service is returning elevated errors.” | More specific and incident-ready. |
-| “We will update once we get the root cause.” | “We’ll share an update once we understand the root cause.” | More polished and less abrupt. |
-| “There is slowness in the system.” | “We’re seeing increased latency.” | Uses engineering-specific language. |
-| “We have taken one workaround.” | “We’ve applied a temporary mitigation.” | More credible in incident communication. |
-| “Kindly wait for some time.” | “Please give us a little time to investigate.” | More natural and respectful. |
-| “This issue is happening from yesterday.” | “This issue has been happening since yesterday.” | Correct tense and phrasing. |
-| “We reverted back the change.” | “We reverted the change.” | Avoids redundant “back.” |
+| The issue is coming sometimes. | The issue is intermittent. | More precise and professional. |
+| We are checking on priority. | We’re treating this as high priority. | Sounds natural and ownership-driven. |
+| Please do the needful. | Could you take the next step on this? | Clearer and less old-fashioned. |
+| The server is not responding properly. | The service is returning elevated errors. | More specific and incident-ready. |
+| We will update once we get the root cause. | We’ll share an update once we understand the root cause. | More polished and less abrupt. |
+| There is slowness in the system. | We’re seeing increased latency. | Uses engineering-specific language. |
+| We have taken one workaround. | We’ve applied a temporary mitigation. | More credible in incident communication. |
+| Kindly wait for some time. | Please give us a little time to investigate. | More natural and respectful. |
+| This issue is happening from yesterday. | This issue has been happening since yesterday. | Correct tense and phrasing. |
+| We reverted back the change. | We reverted the change. | Avoids redundant “back.” |
 
 ## Speaking Practice
 

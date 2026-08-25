@@ -34,6 +34,15 @@ def _title_safe(text: str) -> str:
     return " ".join(text.split()).replace('"', "'")
 
 
+def _unquote(text: str) -> str:
+    """Strip a single pair of surrounding quotes (straight or curly)."""
+    text = text.strip()
+    for lq, rq in (('"', '"'), ("“", "”"), ("'", "'"), ("‘", "’")):
+        if len(text) >= 2 and text.startswith(lq) and text.endswith(rq):
+            return text[len(lq):-len(rq)].strip()
+    return text
+
+
 def _preserve_breaks(text: str) -> str:
     """Keep single line breaks (Markdown hard breaks) while allowing paragraphs."""
     return "\n".join((line + "  ") if line.strip() else "" for line in text.split("\n"))
@@ -73,9 +82,14 @@ def _render_expression(expr: ParsedExpression) -> list[str]:
         # on one line instead of a title row + a body row.
         out += [f'!!! failure "Avoid: {_title_safe(expr.mistake_wrong)}"', ""]
     if expr.mistake_right:
-        out.append('!!! success "Say instead"')
-        out.append(_indent("\n".join(f"- {right}" for right in expr.mistake_right)))
-        out.append("")
+        # A single correction folds into the callout title (one line); multiple
+        # corrections stay as a bulleted body.
+        if len(expr.mistake_right) == 1:
+            out += [f'!!! success "Say instead: {_title_safe(expr.mistake_right[0])}"', ""]
+        else:
+            out.append('!!! success "Say instead"')
+            out.append(_indent("\n".join(f"- {right}" for right in expr.mistake_right)))
+            out.append("")
     if expr.mistake_note:
         out += ['!!! warning "Note"', _indent(expr.mistake_note), ""]
 
@@ -279,7 +293,8 @@ def render_lesson(lesson: ParsedLesson) -> str:
             "| --- | --- | --- |",
         ]
         lines += [
-            f"| {_cell(u.original)} | {_cell(u.improved)} | {_cell(u.reason)} |"
+            f"| {_cell(_unquote(u.original))} | {_cell(_unquote(u.improved))} | "
+            f"{_cell(u.reason)} |"
             for u in lesson.upgrades
         ]
         lines.append("")

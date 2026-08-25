@@ -185,7 +185,7 @@ class RendererTests(SimpleTestCase):
 
     def test_admonitions_and_tables_present(self):
         markdown = render_lesson(self.lessons[1])
-        for marker in ('!!! failure "Avoid:', '!!! success "Say instead"',
+        for marker in ('!!! failure "Avoid:', '!!! success "Say instead',
                        "## Natural English Upgrade", "## Tracker", "| --- | --- |"):
             self.assertIn(marker, markdown)
 
