@@ -8,7 +8,7 @@ title: Business English for Senior Engineers
 
 A fresh lesson lands every day. Each one is about a 10-minute read and the collection keeps growing — pick up where you left off below.
 
-[:material-arrow-right-circle: Start today's lesson — Day 7: Project status](day-7.md){ .md-button .md-button--primary }
+[:material-arrow-right-circle: Start today's lesson — Day 8: Leadership discussion](day-8.md){ .md-button .md-button--primary }
 
 ## Lessons
 
@@ -20,7 +20,8 @@ A fresh lesson lands every day. Each one is about a 10-minute read and the colle
 | **[Day 4](day-4.md)** | Sprint planning | Sounding clear, realistic, and senior during sprint planning | 2026-08-22 |
 | **[Day 5](day-5.md)** | Root cause analysis | Explaining root cause clearly without overclaiming | 2026-08-23 |
 | **[Day 6](day-6.md)** | Technical debt | Discussing technical debt without sounding negative or vague | 2026-08-24 |
-| **[Day 7](day-7.md)** <span class="fe-badge fe-badge--latest">Latest</span> | Project status | Giving project status updates with senior-level clarity | 2026-08-26 |
+| **[Day 7](day-7.md)** | Project status | Giving project status updates with senior-level clarity | 2026-08-26 |
+| **[Day 8](day-8.md)** <span class="fe-badge fe-badge--latest">Latest</span> | Leadership discussion | Sounding strategic, calm, and credible in leadership discussions | 2026-08-27 |
 
 ## How to use
 
