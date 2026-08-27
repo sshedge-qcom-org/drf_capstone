@@ -1,0 +1,258 @@
+Day: Day 7
+Mode: Lite
+Focus theme: Giving project status updates with senior-level clarity
+Dialogue topic: Project status
+Difficulty: Standard C1
+Review items reused: none provided
+Avoiding recent repeats from our chat: prior Day 1–6 expressions, including system design, code review, production issue, sprint planning, RCA, and technical debt items.
+
+Day 7 — Lite Lesson
+Focus: Project Status English for Senior Engineers
+1 — Professional Idioms
+1. On track
+Meaning: Progressing as planned; no major concern.
+IPA: /ɑːn træk/
+Formality: Neutral
+
+Common learner mistake:
+❌ “The task is going as per plan.”
+✅ “The work is on track.”
+
+Engineering example:
+“The API migration is on track; we’ve completed the client changes and started integration testing.”
+
+Meeting example:
+“We’re on track for the milestone, but the validation window is still tight.”
+
+Presentation example:
+“The rollout remains on track, with the remaining work focused on test coverage and release readiness.”
+
+2. Hit a snag
+Meaning: Encounter an unexpected problem or delay.
+IPA: /hɪt ə snæɡ/
+Formality: Neutral; slightly conversational
+
+Common learner mistake:
+❌ “We faced one small issue in implementation.”
+✅ “We hit a snag during integration.”
+
+Engineering example:
+“We hit a snag with backward compatibility because one downstream client still depends on the old payload format.”
+
+Meeting example:
+“We hit a snag in staging, but we have a workaround and don’t expect it to affect the release date.”
+
+Presentation example:
+“The team hit a snag during device-level validation, but the issue is now isolated to one configuration.”
+
+3. In the weeds
+Meaning: Too focused on low-level details when a higher-level view is needed.
+IPA: /ɪn ðə wiːdz/
+Formality: Casual to Neutral
+
+Common learner mistake:
+❌ “We are going too much into technical depth.”
+✅ “We’re getting in the weeds.”
+
+Engineering example:
+“We can discuss buffer sizes separately; for this review, I don’t want us to get in the weeds.”
+
+Meeting example:
+“We’re getting in the weeds here. The key question is whether the risk changes the release plan.”
+
+Presentation example:
+“I’ll avoid getting in the weeds and focus on the milestone status, risks, and decisions needed.”
+
+2 — Phrasal Verbs
+1. Line up
+Meaning: Arrange, coordinate, or align people, dependencies, resources, or work.
+IPA: /laɪn ʌp/
+
+Common mistake:
+❌ “We need to align all things before release.”
+✅ “We need to line up the dependencies before release.”
+
+Technical-discussion example:
+“We need to line up the schema change, client update, and rollout flag before enabling this by default.”
+
+Code-review example:
+“This patch should line up with the existing error-handling pattern in the service layer.”
+
+Leadership example:
+“I’ll line up the validation support with QA so the team isn’t blocked next week.”
+
+2. Firm up
+Meaning: Make something clearer, more definite, or more reliable.
+IPA: /fɜːrm ʌp/
+
+Common mistake:
+❌ “We need to make the plan more concrete.”
+✅ “We need to firm up the plan.”
+
+Technical-discussion example:
+“Let’s firm up the migration sequence before we share the timeline externally.”
+
+Code-review example:
+“Can we firm up the test expectations so the next reviewer can understand the intended behavior?”
+
+Leadership example:
+“We’ll firm up the delivery date after we complete integration testing.”
+
+3. Fall behind
+Meaning: Become delayed compared with the planned schedule or expected pace.
+IPA: /fɔːl bɪˈhaɪnd/
+
+Common mistake:
+❌ “We are lagging from schedule.”
+✅ “We’re falling behind schedule.”
+
+Technical-discussion example:
+“We’re falling behind on validation because the test environment has been unstable.”
+
+Code-review example:
+“If this review stays open another day, the dependent patch may fall behind.”
+
+Leadership example:
+“We’re not blocked, but we are falling behind on documentation and release readiness.”
+
+3 — C1/C2 Vocabulary
+1. Trajectory
+Meaning: The direction in which progress, performance, or risk is moving.
+IPA: /trəˈdʒektəri/
+Synonyms: direction, trend, path
+Antonyms: stagnation, reversal, instability
+Common collocations: positive trajectory, current trajectory, delivery trajectory, risk trajectory
+
+Common learner mistake:
+❌ “The project direction is going good.”
+✅ “The project is on a positive trajectory.”
+
+Software-engineering example:
+“The defect trajectory is improving after the last two fixes, but we need another validation cycle.”
+
+Stakeholder example:
+“Based on the current trajectory, we expect to meet the milestone, assuming no new integration issues come up.”
+
+2. Slippage
+Meaning: Delay compared with the original plan or schedule.
+IPA: /ˈslɪpɪdʒ/
+Synonyms: delay, schedule drift, timeline slip
+Antonyms: acceleration, on-time delivery, schedule recovery
+Common collocations: schedule slippage, minor slippage, avoid slippage, cause slippage
+
+Common learner mistake:
+❌ “There is some delay happening in timeline.”
+✅ “There’s some schedule slippage.”
+
+Software-engineering example:
+“The test instability caused minor slippage, but the implementation work is complete.”
+
+Stakeholder example:
+“We’re seeing slight slippage in validation, but we still have room in the release buffer.”
+
+3. Contingency
+Meaning: A backup plan or alternative action if something goes wrong.
+IPA: /kənˈtɪndʒənsi/
+Synonyms: backup plan, fallback, alternative plan
+Antonyms: single path, no fallback, fixed plan
+Common collocations: contingency plan, build in contingency, contingency buffer, contingency option
+
+Common learner mistake:
+❌ “We need one backup if this is not working.”
+✅ “We need a contingency plan if this doesn’t work.”
+
+Software-engineering example:
+“Our contingency is to keep the old pipeline available until the new path passes soak testing.”
+
+Stakeholder example:
+“We have a contingency plan: if validation slips, we’ll release the feature behind a disabled flag.”
+
+4. Alignment
+Meaning: Shared understanding or agreement across teams or stakeholders.
+IPA: /əˈlaɪnmənt/
+Synonyms: agreement, coordination, shared understanding
+Antonyms: misalignment, disagreement, disconnect
+Common collocations: cross-team alignment, stakeholder alignment, technical alignment, alignment on priorities
+
+Common learner mistake:
+❌ “We need to take alignment from all teams.”
+✅ “We need to get alignment across the teams.”
+
+Software-engineering example:
+“We need technical alignment between the platform and application teams before changing the API contract.”
+
+Stakeholder example:
+“Before we commit to the customer date, we need alignment on scope, risk, and validation coverage.”
+
+4 — Natural English Upgrade
+Common Indian corporate English	Natural international English	Why it's better
+The work is going as per plan.	The work is on track.	Shorter and more natural in status updates.
+We faced one issue in testing.	We hit a snag during testing.	Sounds natural and appropriately low-drama.
+We are lagging from schedule.	We’re falling behind schedule.	Correct collocation: “fall behind schedule.”
+We need to take alignment from QA.	We need to get alignment with QA.	“Take alignment” sounds non-native.
+Timeline got delayed slightly.	We’re seeing minor schedule slippage.	More precise and senior-sounding.
+We will confirm the date after testing completion.	We’ll firm up the date after testing is complete.	More idiomatic and concise.
+Let us not go too deep technically now.	Let’s not get in the weeds right now.	Natural meeting phrase for staying high-level.
+We need one backup plan.	We need a contingency plan.	More professional and specific.
+I will arrange support from QA team.	I’ll line up QA support.	Cleaner, more native phrasing.
+Current progress direction is good.	The current trajectory looks positive.	Executive-friendly and concise.
+6 — Speaking Practice
+Answer these ALOUD. Don’t write first. Speak naturally, then record or type your final version.
+
+Meeting questions
+Your feature is mostly on schedule, but validation is tight.
+Force: on track, slippage
+
+A dependency from another team may affect your milestone.
+Force: line up, alignment
+
+The discussion is becoming too detailed for a status meeting.
+Force: in the weeds, firm up
+
+Presentation questions
+Give a 30-second project update to senior leadership.
+Force: trajectory, on track
+
+Explain a small delay without sounding defensive.
+Force: hit a snag, contingency
+
+Present the current release risk and next steps.
+Force: slippage, firm up
+
+Leadership-discussion questions
+Your manager asks whether the team can still meet the commitment.
+Force: fall behind, contingency plan
+
+A stakeholder wants a firm date before testing is complete.
+Force: firm up, alignment
+
+Another team has not committed support yet.
+Force: line up, on track
+
+9 — Output Correction
+No MY_ANSWERS were provided.
+
+For next session, write or speak 2 sentences using at least 3 of today’s expressions.
+Good targets:
+
+on track
+hit a snag
+firm up
+slippage
+contingency
+Example prompt:
+“Give a project status update where the work is mostly fine but one dependency may affect the timeline.”
+
+Tracker
+Date	Day	Expression	Type	5-word meaning	Status (new/review)
+2026-08-26	Day 7	on track	Idiom	Progressing according to the plan	new
+2026-08-26	Day 7	hit a snag	Idiom	Encounter an unexpected small problem	new
+2026-08-26	Day 7	in the weeds	Idiom	Too deep in unnecessary details	new
+2026-08-26	Day 7	line up	Phrasal verb	Arrange or coordinate dependencies clearly	new
+2026-08-26	Day 7	firm up	Phrasal verb	Make clearer, definite, reliable	new
+2026-08-26	Day 7	fall behind	Phrasal verb	Become delayed against planned schedule	new
+2026-08-26	Day 7	trajectory	Vocabulary	Direction progress or risk moves	new
+2026-08-26	Day 7	slippage	Vocabulary	Delay against the planned timeline	new
+2026-08-26	Day 7	contingency	Vocabulary	Backup plan for possible risk	new
+2026-08-26	Day 7	alignment	Vocabulary	Shared understanding across involved groups	new
+Tomorrow’s preview: Leadership discussion — how to disagree upward without sounding defensive.
