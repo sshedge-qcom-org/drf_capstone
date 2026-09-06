@@ -21,7 +21,7 @@ class CLUser(models.Model):
         INACTIVE = "inactive", "Inactive"
 
     class InactiveStatusReason(models.TextChoices):
-        CURRENTLY_ACTIVE = "account-currently-active", "Account currently cctive"
+        CURRENTLY_ACTIVE = "account-currently-active", "Account currently active"
         NO_ENTITLED_PROJECTS = "no-entitled-projects", "No entitled projects"
         LOST_ENTITLED_PROJECTS = "lost-training-not-completed" "LOST training not completed", "Lost training not completed"
         TERMINATED = "employment terminated", "Employment terminated"
@@ -31,16 +31,19 @@ class CLUser(models.Model):
     org = models.CharField(max_length=512)
     username = models.CharField(max_length=256, unique=True)
 
-    qcusername = models.CharField(max_length=256, unique=True, blank=True, null=True)
+    qcusername = models.CharField(max_length=256, unique=True,
+                                  blank=True, null=True)
 
-    qcquid = models.CharField(max_length=1000, unique=True, blank=True, null=True)
+    qcquid = models.CharField(max_length=1000, unique=True,
+                              blank=True, null=True)
 
     status = models.CharField(max_length=20,
                               choices=Status.choices,
                               default=Status.ACTIVE)
-    inactive_status_reason = models.CharField(max_length=256,
-                                              choices=InactiveStatusReason.choices,
-                                              default=InactiveStatusReason.CURRENTLY_ACTIVE)
+    inactive_status_reason = models.CharField(
+        max_length=256,
+        choices=InactiveStatusReason.choices,
+        default=InactiveStatusReason.CURRENTLY_ACTIVE)
 
     @classmethod
     def get_active_qc_users(cls) -> QuerySet["CLUser"]:
