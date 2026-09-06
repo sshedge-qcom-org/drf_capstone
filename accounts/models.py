@@ -37,6 +37,12 @@ class CLUser(models.Model):
     qcquid = models.CharField(max_length=1000, unique=True,
                               blank=True, null=True)
 
+    organization = models.ForeignKey(Organization,
+                                     related_name="clusers",
+                                     on_delete=models.SET_NULL,
+                                     null=True,
+                                     blank=True)
+
     status = models.CharField(max_length=20,
                               choices=Status.choices,
                               default=Status.ACTIVE)
